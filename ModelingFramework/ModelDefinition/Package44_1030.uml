@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5d53fc66-ed75-411a-9f77-63ca7d754a63"
+  name="Hosting"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="3a066ebe-8283-4758-a4ed-b98766e9d887"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.ComponentModel.Composition.Hosting"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6f2bacdd-bc05-4584-bc99-bf90e9ebf20c"
+        name="CompositionContainer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a19b5668-1edb-41ca-916a-8bd0930a9d77"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2FSystem.ComponentModel.Composition.dll&quot; Namespace%3DSystem.ComponentModel.Composition.Hosting Type%3DCompositionContainer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1b15fdcb-5d2d-4cee-9978-7ef061dc818a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe849bba-fc78-4c9a-8e8b-1420dcda36f3">
+                <propertyInstance
+                  Id="fe047e08-ef03-4a23-8e19-3a2e83f33780"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6918b77a-1052-44dd-8b69-29c0e77756c5">
+                <propertyInstance
+                  Id="c65cc42f-b44e-488b-92b5-05ec54647c9c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a2bee697-022e-4961-b035-afd6e9a028e8">
+                <propertyInstance
+                  Id="3010a478-1579-4f9c-8bed-03c14345d5fa"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="089702d4-33ec-4b81-bc0a-87e151af1d54">
+                <propertyInstance
+                  Id="de66a15c-a7db-457b-b468-4fbb800349c5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="39ea1e85-a9e1-417b-8150-1babbe4e7e64">
+                <propertyInstance
+                  Id="d11bcead-25e6-4301-8919-2c2e454519c7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4e5fa5b6-1881-4f31-9b56-46afb938742f">
+            <interfaceMoniker
+              Id="9c3398f1-5a31-43ba-aaf2-b315d76c93da"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package5_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

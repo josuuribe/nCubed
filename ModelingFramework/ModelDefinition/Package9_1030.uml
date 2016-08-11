@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6b574c20-dc61-43cc-8688-ec218151779b"
+  name="Common"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="74c506b0-f9f0-427e-8efb-6a3e9421186a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed.Core.Configurations.Common"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2abcd3d7-3a78-48e9-b45e-d2052b966f70"
+        LastKnownName="Sections"
+        LastKnownLocation="Package10_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="67c0a770-1fc3-4e0c-bffa-f9982781924e"
+        LastKnownName="Types"
+        LastKnownLocation="Package24_1030.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7d716ffb-62dd-4381-86f0-9e47e35c98de"
+  name="nCubed"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="8f4e3b15-cbdb-4994-b145-9d3be2596bf3"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0a1df2fb-49da-4b58-99fe-c5aebd286c97"
+        LastKnownName="Core"
+        LastKnownLocation="Package2_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8bd8f1bb-bff9-46ea-87eb-1b0669a1beb4"
+        LastKnownName="DDD"
+        LastKnownLocation="Package59_1030.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3553c23b-93f9-492b-b9b7-cccc53910494"
+  name="ExceptionHandling"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a67d3603-b538-4771-825b-28914128fb85"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Practices.EnterpriseLibrary.ExceptionHandling"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="02dcde8a-3b13-4e85-b5cc-820ab007a14c"
+        name="ExceptionManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c59b3c6c-7066-4db7-838d-46af056463ba"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FEntLib6%2FMicrosoft.Practices.EnterpriseLibrary.ExceptionHandling.dll Namespace%3DMicrosoft.Practices.EnterpriseLibrary.ExceptionHandling Type%3DExceptionManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2b3ee8df-6f45-440a-ae78-94a6edfe067b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="614b06cb-15b8-46bd-a354-44bb562edbfa">
+                <propertyInstance
+                  Id="746dc3bc-3e63-4062-bd96-1d0a5a7a59e6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="734d5a7d-9b5b-4419-9db8-0badef8e491c">
+                <propertyInstance
+                  Id="8f0fd150-cfb5-4db9-8964-9baa736958c5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3716a39f-e525-4003-9e5c-ab6eab5ae582">
+                <propertyInstance
+                  Id="ab7c222d-11bb-4de3-b5a4-09e1907bb647"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="84212477-198b-4763-ac62-461afe1f1efc">
+                <propertyInstance
+                  Id="97393feb-6f7b-4dee-8b0d-6aa5fc929239"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c6081f8-a8e1-4c31-a11d-7f73b8451477">
+                <propertyInstance
+                  Id="5a785362-009b-4fef-9a82-b9b73a5d8ce0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e42a4021-1dac-409d-8cad-12e1d293428d"
+        name="ExceptionFormatter"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4db263d1-2333-4630-9c81-78d905a2ff0e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FEntLib6%2FMicrosoft.Practices.EnterpriseLibrary.ExceptionHandling.dll Namespace%3DMicrosoft.Practices.EnterpriseLibrary.ExceptionHandling Type%3DExceptionFormatter"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8091fe1e-b587-4dad-a39f-74502b5842d3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d31b5306-cab6-4b1b-98b2-28f8740ec87a">
+                <propertyInstance
+                  Id="d40ac6f3-883c-4e86-8472-4f14458c7859"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91f9d0e2-ba5b-4e55-8a30-494498c552df">
+                <propertyInstance
+                  Id="d931d260-eba5-443f-a369-b4e68ea4e30d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b159043-c32c-426b-b245-c1e08b186baa">
+                <propertyInstance
+                  Id="d650688e-08a5-4f54-b9e6-9671bc6ae3be"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="14afc17c-aa2c-4dbb-bff7-0f09f18cdecd">
+                <propertyInstance
+                  Id="e83d5792-8be8-41aa-8e7c-fc9ea44d3ea5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c9418d9-747d-4c68-98b5-e93018cdd534">
+                <propertyInstance
+                  Id="c78bd340-0d17-4953-9af5-163695f45d92"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ab230b33-bdfb-42c9-a8a2-1cc1a37f952b"
+        name="IExceptionHandler"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="dac0fefe-7d61-49b9-aae0-49895704a6a7"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FEntLib6%2FMicrosoft.Practices.EnterpriseLibrary.ExceptionHandling.dll Namespace%3DMicrosoft.Practices.EnterpriseLibrary.ExceptionHandling Type%3DIExceptionHandler"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="21fbc1f5-d39b-4ae6-a669-8985d09dfcf5"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="83de41b3-e324-4092-8f77-abb90f0256d9">
+                <propertyInstance
+                  Id="2b9e3c16-4ea6-42b3-b033-19a416993aca"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4097a12d-4902-40f6-ba1f-69df1abbaacc">
+                <propertyInstance
+                  Id="a02ea31f-9eec-4d61-9ce1-53b5b212b9fd"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c5a0273-8fc3-43aa-9c81-c86b673427b9">
+                <propertyInstance
+                  Id="f776d1ed-537f-422b-8456-b05bf5255739"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4295fd45-2b6d-4336-b150-30277fe8015a">
+                <propertyInstance
+                  Id="55dc71da-cf37-4c41-91f6-a5a97cca0fad"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2fc42b6b-73fd-4e29-9bfa-470e86f9cc15"
+  name="EnterpriseLibrary"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="ec4299fe-3c20-4ba5-b0ed-ebd5e7729d18"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Practices.EnterpriseLibrary"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="aa4cb205-8c1e-480d-8693-18283cf0798e"
+        LastKnownName="Data"
+        LastKnownLocation="Package18_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3553c23b-93f9-492b-b9b7-cccc53910494"
+        LastKnownName="ExceptionHandling"
+        LastKnownLocation="Package32_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="60016ad0-e466-4148-815c-04c362195e68"
+        LastKnownName="TransientFaultHandling"
+        LastKnownLocation="Package50_1030.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

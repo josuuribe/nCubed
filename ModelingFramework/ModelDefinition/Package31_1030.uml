@@ -1,0 +1,1602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="745a4a24-2870-4903-be2c-00f844405c9a"
+  name="Core"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9664c9fb-7c29-4715-b522-a90596a983e1"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed.Core.Exceptions.Core"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="357861e1-0ac4-4cbb-b8c0-9a5c8758148c"
+        name="CoreExceptionProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b5359a41-929e-479e-bcfa-a2d3228b6066"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="44edca58-c655-40b7-8bad-540529acb9ad"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d92b4d39-f6c3-4a10-a02d-298dcfd8a4b1">
+                <propertyInstance
+                  Id="28e92f25-dfe5-4004-a529-121f5847a961"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f7ba6a6f-dd78-4ca4-b716-70b123b29b87">
+                <propertyInstance
+                  Id="973ff132-972c-4229-8b88-3e2a213f3dbb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6dfb5dbd-80bb-4e02-bc12-eb3a01458cb9">
+                <propertyInstance
+                  Id="d3a24532-0c70-4d99-acc1-0fb2d70ef324"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb2631c1-cdee-4c81-a446-1071ac498a09">
+                <propertyInstance
+                  Id="c73c9bf5-699c-4bdd-aacc-56585f650f9e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a82e51c-e8f9-4309-b3fa-daf58938a665">
+                <propertyInstance
+                  Id="30ce1b8d-b9cd-47ed-a3fe-49079f743d8d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="557f1737-ab01-4a69-bedd-91172127f634"
+            isDerived="false"
+            sourceEndRoleName="CoreExceptionProcessor"
+            targetEndRoleName="ExceptionManager"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="02dcde8a-3b13-4e85-b5cc-820ab007a14c"
+              LastKnownName="ExceptionManager"
+              LastKnownLocation="Package32_1030.uml" />
+            <description>Property ExceptionManager references type ExceptionManager.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="de535404-44ad-4deb-929d-66d0603d043b"
+                  name="CoreExceptionProcessor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f1a02510-7794-4e0b-80ef-5c2a6645ff1a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="eee712e5-0a12-4f50-a56b-6c82639c916b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c2e5c6f3-bf20-4b15-a04b-94a1b3897ee2"
+                  name="ExceptionManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ad99bdf2-13e1-4a14-a36f-fc232ec299f8"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cb59f2fe-3645-4576-be90-767eda04e2ea"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="73bac744-683f-4240-bc84-545acb1ecd4e"
+            name="ExceptionManager"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5748c763-ea23-4ea6-9e70-297736fdd089"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3DExceptionManager"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b68141ea-50f1-4d3f-a019-d07ce31d8fec"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff05c9df-9111-49f3-b2e5-9f546c97b335">
+                    <propertyInstance
+                      Id="907d9e43-d025-4dbb-b2e2-fdd0ade49519"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e1a9cd7-e6e5-4681-9da9-b597d6a81cc9">
+                    <propertyInstance
+                      Id="7c2b9f71-3aa1-4ab0-8305-24e8ad3c97ba"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9a9f9b5-1396-4432-9008-209c52ed7f0c">
+                    <propertyInstance
+                      Id="3116620e-113b-4108-b064-8b37829d1c88"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5c5b0ed-b8f2-46dc-9206-c5269cd1a11f">
+                    <propertyInstance
+                      Id="c9d2f8a7-ed0d-4bfb-b249-02deb113cd16"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3246d0c2-5436-4ae6-83a8-e8029daf48f1">
+                    <propertyInstance
+                      Id="bb3aded6-db0f-491d-aad9-f6d01e7ce3d8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="614d7b7d-6d5b-43d0-a7fa-7904a3300190">
+                    <propertyInstance
+                      Id="acea9e35-1291-4eba-8a02-6ca3ea7d4907"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26201daa-f77c-4dc3-b126-d2592128cd51">
+                    <propertyInstance
+                      Id="2794485d-626c-4b11-adcb-c6da024e49c0"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="02dcde8a-3b13-4e85-b5cc-820ab007a14c"
+                LastKnownName="ExceptionManager"
+                LastKnownLocation="Package32_1030.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5d061cdc-96af-4cb1-85c2-61cdce92f244"
+            name="Log"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2b9914c5-48b1-40b2-9c6a-63344979a4c5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3DLog"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b615111b-13fe-4566-81e7-b4a9256cf291"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d74bbe0-8668-41ed-b7bb-e2b765735dc1">
+                    <propertyInstance
+                      Id="334f1f40-6905-4f4b-b466-5ece066313a5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d6bbaeb-d151-4506-b0a7-10e9498cad8a">
+                    <propertyInstance
+                      Id="ebf544d9-9346-4cde-acbd-0517559d35c9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fc9a36d-897b-4946-8049-ea7c583bb446">
+                    <propertyInstance
+                      Id="c8503823-e790-42c4-8481-f681963a01be"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9df06562-2160-45f8-a963-bb1b64c950de">
+                    <propertyInstance
+                      Id="0a49248d-fb64-40de-8254-a6248eebc071"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb16d614-38aa-4812-a2fb-ede9db069de3">
+                    <propertyInstance
+                      Id="df22dd83-c572-4f42-ad7d-628cb7ab4f10"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c92fb7c0-3a2d-4c99-ad8c-d30631bb6287"
+                LastKnownName="CoreErrorEventSource"
+                LastKnownLocation="Package30_1030.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="49facb0f-824c-487d-a67c-d7e5237c15df"
+            name="exceptionManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d08ef846-7020-422e-b684-fca9c6997f0c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3DexceptionManager"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ff84522b-bfcb-4a51-aa81-e8c9f352b4e6"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16c65d71-9f2c-4458-a514-32a4ebb903e2">
+                    <propertyInstance
+                      Id="7ad65947-e389-435b-9758-ae52e06aaf1f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f21e1cac-f6e0-4799-a775-4901ffa1aa37">
+                    <propertyInstance
+                      Id="649ade7c-5bb1-4d45-920d-31cf4df97b7a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a18b46b-f0ae-46d7-be2a-e33804663078">
+                    <propertyInstance
+                      Id="805f4438-4baf-4a85-916a-d92e6dd4f645"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0956e75a-7041-4546-a92e-de381ec54bf7">
+                    <propertyInstance
+                      Id="a90c2a15-d558-41e2-9011-2faeea90ed2c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec596556-0353-4dbc-aa91-944c867b7da1">
+                    <propertyInstance
+                      Id="3ea379fa-d06b-4d7f-a402-55555d4bdfbe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="02dcde8a-3b13-4e85-b5cc-820ab007a14c"
+                LastKnownName="ExceptionManager"
+                LastKnownLocation="Package32_1030.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="08306f12-bf68-4d33-98f4-83f729726fd0"
+            name="CoreExceptionProcessor"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d83a1ba6-23d0-408b-9934-9a567b4bb7c0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2a40e0ef-0caf-4674-a1dc-22518b9097ec"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23247df3-56ae-418b-ae83-60ddabedc157">
+                    <propertyInstance
+                      Id="c2c2b2e4-cc48-4de5-9b5a-b83c58a47ed8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="803442ff-12e2-447a-90a8-d6908c3460df">
+                    <propertyInstance
+                      Id="027ad571-011b-40cb-8448-12d1c1579deb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82277556-423f-4df6-9602-78016c29658e">
+                    <propertyInstance
+                      Id="0f5793d7-1b90-4e8f-bedc-ceef247d41f8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d307d36-fb99-493a-a0b0-7ae274ddba6c">
+                    <propertyInstance
+                      Id="3e6e02ab-b1ca-4c90-92fa-34f5fc36379c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06e75d86-a4ab-4f42-87e1-c9c39062fb71">
+                    <propertyInstance
+                      Id="c86843d6-27fe-4822-91c6-b327cf59e9b8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3e689e3-281b-43cc-bf0e-3eb3ba3560de">
+                    <propertyInstance
+                      Id="dbff0989-dc7a-493c-83ac-7edb03c22e9b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="564109e7-4577-4489-ac03-ce7d635adada"
+            name="HandleExceptionCore"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2d4f3c10-e7c9-4fc8-8876-622d338d8b9c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionCore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="250879fc-06ba-42ed-bca3-e3fe00aecb5e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73644f31-e521-408a-96f2-feb3d1adfc2c">
+                    <propertyInstance
+                      Id="2cb180d8-73ef-4055-b4e1-dd6d560135c1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c03b52bb-cf5c-4da2-a586-ace4b00d99bb">
+                    <propertyInstance
+                      Id="9ed827e7-1ed9-4c74-b625-5bf6075dfa43"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d00e0216-4c67-401b-8b47-5bfd06b34577">
+                    <propertyInstance
+                      Id="f0734a63-19a1-46c3-bef6-c3a208694494"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cc52a2d-6fe5-4380-afdc-bb356d0df774">
+                    <propertyInstance
+                      Id="62c5159a-7afe-4c51-a799-472616cb57c6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c60870a-31fb-405e-9500-454f6c17ac27">
+                    <propertyInstance
+                      Id="2d368930-d390-4ec0-a939-f39dc84dc44f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="538ac240-dc71-47fa-ab33-eb765b3b0adb">
+                    <propertyInstance
+                      Id="a69bb481-e1b0-4351-96d8-2da6b5bc2262"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4607c495-b05e-48e1-af84-e07275b667ca"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="91c60147-3b47-424d-bc55-d4f131a6642c"
+                  name="exceptionToHandle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f0f0d607-92e6-41dd-9f24-bedaa50df5a6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionCore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3DexceptionToHandle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e3fa5802-490a-4ede-a1f0-ac8e7d735153"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="37a4b6d1-1676-450b-b663-10378c894511"
+            name="HandleExceptionCore"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e376846c-d8a0-4cb2-bbfe-13715049d7d6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionCore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException ParamKind%3DRef)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6e1bab3d-65e0-41c0-9db8-4da116210206"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2283a16e-9d3e-4017-8e16-e82d0e8a7855">
+                    <propertyInstance
+                      Id="47c5aaef-51bd-4041-93ce-72ada10b8713"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="604211cf-5d14-4f29-aa0b-377b2faf23e3">
+                    <propertyInstance
+                      Id="1d8cbb04-e2ef-4df8-b2ae-6976f8204f5d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d09d656a-6202-4188-89fa-f9f861e18ed4">
+                    <propertyInstance
+                      Id="de5c3038-a60a-40df-ba4f-4751dc156fa4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0ce558e-9695-4099-a54d-bb72c28c0c0f">
+                    <propertyInstance
+                      Id="5b4c76d5-9270-4689-a42f-0fb5d1068b76"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d11c13b-9055-4c27-89ae-d96b8656b007">
+                    <propertyInstance
+                      Id="1417274d-8d5e-421a-812f-6b706f65a093"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc1f29b5-2220-4423-a4c7-0155c1e4498d">
+                    <propertyInstance
+                      Id="6aa98637-6d46-4da0-aa38-75d12f9d3acb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="881e547b-d789-4d6f-9352-eee8fb265e30"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f8dc4001-9da0-4798-82b0-2d119f05e948"
+                  name="exceptionToHandle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bafc4d36-7205-4e6e-9c70-68b8a9f8b2eb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionCore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException ParamKind%3DRef)]) ParameterIdentifier%3DexceptionToHandle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e3fa5802-490a-4ede-a1f0-ac8e7d735153"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6b03853d-59b7-47c5-87ee-9e5de8cd82c1"
+                  name="exceptionToThrow"
+                  direction="Out">
+                  <referencesInternal>
+                    <reference
+                      Id="8b7d37d7-2bfd-4c9b-b780-3fe1cd93fa76"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionCore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException ParamKind%3DRef)]) ParameterIdentifier%3DexceptionToThrow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e3fa5802-490a-4ede-a1f0-ac8e7d735153"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="08bc19d4-6233-47d0-980c-08442ded3878"
+            name="HandleExceptionDataSource"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="42dda5af-1643-4f81-ab37-6fb35983677d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionDataSource OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7e2df52c-3952-44f5-b0d9-b7c31d1b0a61"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3559c9a6-c7ef-4d08-9f48-ef61718e1b48">
+                    <propertyInstance
+                      Id="03c02548-8caf-4e36-8f30-8f88a18a87f4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9df21da1-f0fa-42c9-a442-9feb5e527283">
+                    <propertyInstance
+                      Id="4ade5650-1a7c-40c9-ac91-e19733bf1aa1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2efc1fca-98b4-40c3-98af-908efe47c854">
+                    <propertyInstance
+                      Id="542a8389-a713-4901-9f8e-02ef4c057665"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8a8b2dd-fe9e-4df1-b5ca-4e3c899cc40b">
+                    <propertyInstance
+                      Id="aae6d2cd-f2d3-41f5-86b9-adfb7081ea59"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de8329ac-c6b2-4623-badb-ff16184e7a04">
+                    <propertyInstance
+                      Id="7d4d4d56-c945-4224-b197-6352faec1630"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8c98485-3a8e-4420-b64b-739f3e887b06">
+                    <propertyInstance
+                      Id="48c3c5f4-f9d9-4480-8019-d62b93dc466b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="da2e7ce0-326e-48ab-9b1c-c30596a7d769"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0fe1f1f7-47de-4297-940b-21220e43f700"
+                  name="exceptionToHandle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ec1c4136-da3a-4503-919c-1e846ef85c15"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionDataSource OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3DexceptionToHandle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e3fa5802-490a-4ede-a1f0-ac8e7d735153"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2afc1fbe-c11f-434b-8f22-1d95a80343f2"
+            name="HandleExceptionDataSource"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c0cc7947-a4c1-4a0b-a208-97bb6e1d666f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionDataSource OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException ParamKind%3DRef)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="852e1346-9190-446a-97f4-73c23b7c901d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a2080ae-71ce-4be0-ac5d-0cc7cce45a66">
+                    <propertyInstance
+                      Id="d98af95f-8de8-4e39-8021-462946296714"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7ca9d4e-a48a-49e4-9278-8099753459de">
+                    <propertyInstance
+                      Id="c4674aa6-469f-46a1-99a7-7facf3ae7e30"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7aabb21e-cc11-47fa-823b-ef4a444ded13">
+                    <propertyInstance
+                      Id="5ca3cc01-ec81-4177-9352-159896668d3f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc47c3d3-868b-4513-8cab-db1f07708903">
+                    <propertyInstance
+                      Id="15f5ab1d-9dd4-4250-a40a-43751c412a33"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bca90ff-0d23-4d81-a802-0eac6adf6478">
+                    <propertyInstance
+                      Id="6ca8b6b7-89d0-4281-a3de-96eab9815fca"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c76f29c6-836e-42e3-9fb2-e1bbf56c6a6f">
+                    <propertyInstance
+                      Id="0b51af7a-0b44-4cd2-b45b-89b98b3ae267"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eb504b93-387a-45ef-ad24-04a93ccef6c2"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b7ee4a1a-56a0-4b5c-af20-50eb9916d434"
+                  name="exceptionToHandle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fd673f26-75f7-4f0d-b7e7-e21a8a157899"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionDataSource OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException ParamKind%3DRef)]) ParameterIdentifier%3DexceptionToHandle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e3fa5802-490a-4ede-a1f0-ac8e7d735153"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4dc4b193-b119-4cae-ac51-cf31a768a719"
+                  name="exceptionToThrow"
+                  direction="Out">
+                  <referencesInternal>
+                    <reference
+                      Id="6424d3e3-cf2e-42e0-a5ba-e714b0696a36"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DHandleExceptionDataSource OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException ParamKind%3DRef)]) ParameterIdentifier%3DexceptionToThrow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e3fa5802-490a-4ede-a1f0-ac8e7d735153"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a0dad9e2-8c69-4d10-85c4-a7c16dedd9d8"
+            name="ProcessCore‎&lt;TResult‎&gt;"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="73efff51-c0fb-4e80-90f8-c3f76219b233"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessCore GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))%2C(ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="45a1b651-b234-409a-b40b-b2ae4d3fd99f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04701fd4-1b9d-4ceb-8b64-35cb25a89ea8">
+                    <propertyInstance
+                      Id="b29ae750-8bb0-4cfc-a2ee-fcbf02973eb9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d17b9c76-59d8-4781-a548-abd91f24263b">
+                    <propertyInstance
+                      Id="f24384bf-c2fa-43dd-8df0-68abfba84a19"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bc0ab01-c7f0-4b98-90a2-6a5f10bad7c7">
+                    <propertyInstance
+                      Id="b8f3ce49-c6f2-4348-b921-ee523414d73f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb8a7761-9913-4524-96c2-c1054811e66b">
+                    <propertyInstance
+                      Id="0f896c5c-e669-4f17-a964-97e448c51156"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccd0443a-b5f0-49bd-a917-69783edd2ac5">
+                    <propertyInstance
+                      Id="a65373ed-c09b-4197-afcb-7b6738103b5a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fe75e5d-e849-403d-8fdf-91bf82042135">
+                    <propertyInstance
+                      Id="5ec5b1a1-f1d5-43c6-8c89-df1f0d0321f7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f282cdf1-657f-4afe-ad3a-7016e51079ad"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b075f659-b477-4dc9-a3ae-bd31edac7ef2"
+                      LastKnownName="TResult"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9037456f-38a6-4f6b-9c27-44b91c013d2c"
+                  name="action"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a77afe83-ad2c-4b40-917d-03818c27b8e6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessCore GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))%2C(ParameterIdentifier%3D0)]) ParameterIdentifier%3Daction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="22f6db93-516b-46ff-a81d-be536b6b2a57"
+                      LastKnownName="Func&lt;TResult‎&gt;"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="514d1d74-adf7-447c-8313-e93d4b0742e8"
+                  name="defaultResult"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a05fbbed-6114-4653-a30f-f3e484209a0c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessCore GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))%2C(ParameterIdentifier%3D0)]) ParameterIdentifier%3DdefaultResult"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b075f659-b477-4dc9-a3ae-bd31edac7ef2"
+                      LastKnownName="TResult"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0cdb1e2e-b152-41f5-8625-7875d3ac974c"
+            name="ProcessCore‎&lt;TResult‎&gt;"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d14e4bdf-4be7-4c64-adf2-261658f43100"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessCore GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fe6bfedd-3609-4cbc-81f4-f0bd5d42d1cf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af63fa26-b37c-4c11-adcd-e8d90a045885">
+                    <propertyInstance
+                      Id="fa8c9c8d-7bd6-46f2-899a-6a10c2af649b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50b082b7-c210-4f50-898c-85a78c43c014">
+                    <propertyInstance
+                      Id="af51071d-3dad-4818-be73-6c338a5000c7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48d55354-0b64-4f46-9b2b-5e9cb6546fcc">
+                    <propertyInstance
+                      Id="9ab9352f-086d-4803-a10c-a3363e287ff9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10ae0343-5a1a-48bd-9bc0-66740e02d2ca">
+                    <propertyInstance
+                      Id="82492655-b69d-46ab-bd11-735c0535f2cd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27f174fc-b217-4d75-b75a-a689c9d4a31c">
+                    <propertyInstance
+                      Id="6d354640-c0da-4979-8065-cf745f4befd9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccf3c6ef-c160-4014-8e45-fa03717f2fed">
+                    <propertyInstance
+                      Id="042de67d-95fd-4a90-b010-50a587772977"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="83d44fd2-955a-47b5-ac16-34dd3677eb68"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b075f659-b477-4dc9-a3ae-bd31edac7ef2"
+                      LastKnownName="TResult"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c10190dc-acdc-464e-b252-676273de8692"
+                  name="action"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4d0d194c-d27c-45b4-9e95-3fed1a4a9e72"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessCore GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))]) ParameterIdentifier%3Daction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="22f6db93-516b-46ff-a81d-be536b6b2a57"
+                      LastKnownName="Func&lt;TResult‎&gt;"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="44068cd2-b75a-4bcb-a45e-cf9434d3c8b9"
+            name="ProcessCore"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fb3375cc-70f8-4f24-8460-bec52381f4b4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessCore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DAction)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cf69a282-1d79-42f2-9214-f15e33df352c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab9a9e44-e3da-4b45-9f41-70c21ac8e8b0">
+                    <propertyInstance
+                      Id="a81a4d7e-1f70-4853-aab5-9cf5444085db"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a654b9f7-0138-4ce4-b4c4-9031bd442660">
+                    <propertyInstance
+                      Id="c0062b1d-2788-48cb-af86-7f4256104427"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fbe499a-f291-4fce-ae83-f821698e8ddb">
+                    <propertyInstance
+                      Id="dde0178b-1a10-428e-b589-7514cbccf56e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49d3adb4-735b-406d-9f68-547767c68e19">
+                    <propertyInstance
+                      Id="cef4f719-5208-4a4f-9ecb-d9f36b3432e7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d13cbff4-29fc-46f3-ac0a-bee6051edaa6">
+                    <propertyInstance
+                      Id="53d8cf3e-1bf3-4fa5-aae0-df73998c6b52"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85ac8cd8-9705-4738-8252-94e8aa137685">
+                    <propertyInstance
+                      Id="64dba076-4122-4882-b053-e320931b4ed7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2d1c36c6-4bc6-4bb4-8c20-8d01a1ed642f"
+                  name="action"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2b8cdcf0-96e5-4ef7-b0b3-a46a20618028"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessCore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DAction)]) ParameterIdentifier%3Daction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4643ce0a-50cc-4de0-aee2-e5437eee9e7e"
+                      LastKnownName="Action"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="424337e9-1ffb-4c74-a1cf-a23f7542dacb"
+            name="ProcessInfrastructure‎&lt;TResult‎&gt;"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4d8485f8-1a84-4e93-8053-0b477618cccf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessInfrastructure GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))%2C(ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9cdafcdd-7da6-4acb-b2dc-dbea793ce445"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b75ff903-fe1d-40ea-8285-5912b8c5682b">
+                    <propertyInstance
+                      Id="f845b7af-be7a-4049-b20f-55ff8bedd4ed"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11b133b1-269f-48b7-a0b2-ba5b1cb4be69">
+                    <propertyInstance
+                      Id="69b8888c-2fc5-468c-9e7a-defc97bf2fd3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86ea1c66-8e5a-48d6-8327-100c859debe8">
+                    <propertyInstance
+                      Id="ba5edfe9-584c-41bd-b580-76e77e14d33a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85b21cdc-cc2f-4756-9112-f43525af1d24">
+                    <propertyInstance
+                      Id="385761ac-78bd-4f3b-b58b-de49419b54ce"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2ec7ae2-1dad-4940-8269-58f588d8668f">
+                    <propertyInstance
+                      Id="825094dc-1b40-4f04-a1d5-0fda6e58a3b2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a63001dd-bb24-4a92-a886-791f32529ec0">
+                    <propertyInstance
+                      Id="9ce578eb-f668-4ffb-a7fe-5424a54528bd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b37c25d6-a580-4a9b-b1c6-5ef746588d9e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b075f659-b477-4dc9-a3ae-bd31edac7ef2"
+                      LastKnownName="TResult"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1ee95bbf-44b1-48c9-9233-0d9e7b8a5f73"
+                  name="action"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="221bebb2-3e15-4b7a-817a-e31a92ae58d1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessInfrastructure GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))%2C(ParameterIdentifier%3D0)]) ParameterIdentifier%3Daction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="22f6db93-516b-46ff-a81d-be536b6b2a57"
+                      LastKnownName="Func&lt;TResult‎&gt;"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7af1342a-87d4-4198-803d-3e74e0333b8b"
+                  name="defaultResult"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2cb8a320-22ce-4048-b070-b5d2cf388cf0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessInfrastructure GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))%2C(ParameterIdentifier%3D0)]) ParameterIdentifier%3DdefaultResult"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b075f659-b477-4dc9-a3ae-bd31edac7ef2"
+                      LastKnownName="TResult"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7fdf776c-377f-48f6-bf08-d06f253b5235"
+            name="ProcessInfrastructure‎&lt;TResult‎&gt;"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f5f78328-ba1f-4ddd-9042-e125c7221294"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessInfrastructure GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="befd702b-adc2-4896-a2c8-c4fc2976f49d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66f0263b-beea-4b1d-b1d1-37c533c3a59d">
+                    <propertyInstance
+                      Id="18ab35b1-ed45-4c08-a630-d1be215c4790"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74560551-6a09-456c-889a-170b3a0b0b2b">
+                    <propertyInstance
+                      Id="8ba9ee04-dc44-404b-881c-1316b5338e19"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc1a51b4-9acd-4614-93a2-e840914db76d">
+                    <propertyInstance
+                      Id="a75f311f-b6ca-4fd9-be58-901e0b69c64f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="427a3fef-9201-4711-914e-16d5aad0e2b4">
+                    <propertyInstance
+                      Id="0cfca235-2119-4d7d-89d2-daa931e51c23"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2c758b5-624e-40bb-b573-24c8e9241682">
+                    <propertyInstance
+                      Id="2f4ab436-9806-400e-ae71-83f0071eec41"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee05a784-2b07-4373-a251-3deb06d4a111">
+                    <propertyInstance
+                      Id="32537e82-7713-48cd-ba3b-230ef7de5bc0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ad7461dd-04a6-47e1-b456-e0b9e7e92292"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b075f659-b477-4dc9-a3ae-bd31edac7ef2"
+                      LastKnownName="TResult"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7886422c-fa10-4810-90da-d805d8c64d84"
+                  name="action"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a42b2328-4982-4038-96ac-7389cfdee767"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessInfrastructure GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]))]) ParameterIdentifier%3Daction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="22f6db93-516b-46ff-a81d-be536b6b2a57"
+                      LastKnownName="Func&lt;TResult‎&gt;"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8a8a23f1-ad8a-4d35-a637-aa6af1a09909"
+            name="ProcessInfrastructure"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6413f865-c23b-4bce-bcac-8f23db2f51ba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessInfrastructure OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DAction)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="526b0af5-27b5-4acb-bd45-4d46f4449db9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e5686d6-c287-4ee8-9759-8cda0168ad25">
+                    <propertyInstance
+                      Id="45866f5f-fd98-4751-83c0-71ca7761e69c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52711d83-869a-4913-b007-b1898010288f">
+                    <propertyInstance
+                      Id="4c1b2e14-9a84-462a-bbf2-5577b7bb3c81"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cd5d3c3-8cda-4b84-9bb3-24b48923d1d6">
+                    <propertyInstance
+                      Id="649cfdb9-5f97-4d4f-b431-0ef1fad6b7e9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7eb8b5b9-d252-4dd7-ab28-b88ffa953f37">
+                    <propertyInstance
+                      Id="9e29d0ed-2acd-49ba-9bf9-02a762ebd86f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71552f2b-1f04-4016-a0ac-422d592716e1">
+                    <propertyInstance
+                      Id="b5b1c2a5-7103-4d3a-b2ba-0b5697a10943"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf2fe1a0-678c-4aea-ac68-518462a4fab7">
+                    <propertyInstance
+                      Id="16c7484c-f64b-4aea-a8a5-43a9e0b3f802"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63a7050e-b6db-45d5-93e8-fca8ed399912"
+                  name="action"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1463d829-cf46-4e33-9410-fcada7502f91"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3D(Name%3DProcessInfrastructure OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DAction)]) ParameterIdentifier%3Daction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4643ce0a-50cc-4de0-aee2-e5437eee9e7e"
+                      LastKnownName="Action"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e186f2b9-e1f8-47f6-a2bf-fe5c9f040b71"
+            name="BuildExceptionManagerConfig"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1d359107-6a2b-4532-ab82-7855b5635338"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3DCoreExceptionProcessor Member%3DBuildExceptionManagerConfig"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d6279564-aab7-4481-923f-a0caef45af0a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8664a498-14f5-4be6-b797-548e449cbee7">
+                    <propertyInstance
+                      Id="7681f9aa-5178-45f6-85db-a968d8f64402"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78f2c296-07aa-4316-af34-275e130c3f3e">
+                    <propertyInstance
+                      Id="e0149506-697b-47da-8a40-b8ee4a79e0f8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f434648-4708-451a-bd2a-894dce74291c">
+                    <propertyInstance
+                      Id="8b09e69e-bb78-4360-9f6b-64942f819e5c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1fc2ac7-83ef-4caf-b07f-9bfb878f4541">
+                    <propertyInstance
+                      Id="08d8a58e-0cbe-483b-aa3c-517c27cf92bb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="722ddef1-8e2b-4595-b8d3-75fba11cbad5">
+                    <propertyInstance
+                      Id="1afca323-5eee-43f1-9db7-b12c51c2041b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38c458c8-d4c5-46d9-b280-47c59a8d237b">
+                    <propertyInstance
+                      Id="48103af8-7ffd-494d-8cdd-2e578fcf9c5b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8183cf14-90f6-4fa6-a05c-ffe6e0f72109"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="02dcde8a-3b13-4e85-b5cc-820ab007a14c"
+                      LastKnownName="ExceptionManager"
+                      LastKnownLocation="Package32_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="b7d95be9-879b-44b5-886a-0e3b419aa0b2"
+        name="POLICIES"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="147f2e39-c7cb-4a8b-8ed5-a19336358798"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3D(Name%3DPOLICIES ParentType%3DCoreExceptionProcessor)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="dcdddeeb-1145-4232-b06b-fd0ce7ae16a5"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9120f8ef-e09a-44c7-85fe-bb86c8550b0c">
+                <propertyInstance
+                  Id="f856c30b-b7dd-4d10-a347-6df05564080b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="99b5454b-0099-4517-815f-af9d0574c037">
+                <propertyInstance
+                  Id="2470c680-51f7-457d-95b1-6b6d3ba5e56a"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="be09ba23-fa8e-40fa-82f9-75f306d19aef">
+                <propertyInstance
+                  Id="13963b35-7424-48c9-8176-f82a42500120"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="c62906bf-c142-49ca-8e1a-07e3a8834828"
+            name="CORE_POLICY">
+            <referencesInternal>
+              <reference
+                Id="6ae007f2-c863-4e80-a781-f987bc436dcd"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3D(Name%3DPOLICIES ParentType%3DCoreExceptionProcessor) Member%3DCORE_POLICY"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="e361db35-216b-4824-9c5b-3de88a3a7b3e"
+            name="INFRASTRUCTURE_POLICY">
+            <referencesInternal>
+              <reference
+                Id="0541e384-a71f-446d-9a97-6230369a8cfa"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Exceptions.Core Type%3D(Name%3DPOLICIES ParentType%3DCoreExceptionProcessor) Member%3DINFRASTRUCTURE_POLICY"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6678013d-a8c3-4a03-878e-00b4c4be3190"
+  name="IO"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d92e056f-db6d-47c9-a11b-0e78a1a3925c"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.IO"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="06b36541-01fb-4232-a2b3-f9ac6d4ecbff"
+        name="TextWriter"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="fc662c9e-2eee-47ce-88a8-18c6edba1d2e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DTextWriter"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="563ffbef-d62b-4974-b64f-504ac4b61112"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="59afb4c5-7f96-47f6-90ab-e74305f614ff">
+                <propertyInstance
+                  Id="96388005-0ffc-42b0-b07b-52de845c8372"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cc071851-4806-47f9-9446-8eca7c324d3b">
+                <propertyInstance
+                  Id="c7a89e96-5297-4d1c-9155-7a64fce9511a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4f376380-40ab-4ece-a4a4-ce2f83289d9b">
+                <propertyInstance
+                  Id="5dfea1d4-46c4-4a80-ac85-61ca94969b8a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="570b38a0-1e29-4473-a5b4-6b44f3acd5f0">
+                <propertyInstance
+                  Id="2ea6132a-faca-49d0-b086-60edcd44146f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="866d05a9-fc3b-4031-8419-896f2ccd0375">
+                <propertyInstance
+                  Id="f5ddce27-d263-47e5-abf3-6377157a37cb"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="6d9c9a11-3cf7-4860-bb32-2ce9587c427d">
+            <interfaceMoniker
+              Id="9c3398f1-5a31-43ba-aaf2-b315d76c93da"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package5_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

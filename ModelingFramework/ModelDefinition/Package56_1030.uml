@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="dd6ed4ae-2603-4aa9-a6f4-ee4ff58cf7a4"
+  name="Concurrent"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="6c72ed52-bf63-4119-a418-2d3865a7be9b"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Collections.Concurrent"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="ab0f0046-c6a6-4810-9d36-fb51ec47c4f3"
+        name="ConcurrentBag&lt;Type‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5ed33fcf-4481-4d5a-9873-2a489753f522"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15d40c82-5b2b-40e8-a4a7-58b1eaecfa89">
+                <propertyInstance
+                  Id="f58e639c-8142-4c35-97d6-59032e376ea0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba02024e-7287-41ad-ac45-26e0c27af77e">
+                <propertyInstance
+                  Id="9260d98f-bd6f-4249-837d-d3065aac59d2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12002456-0a29-449d-a40a-b539dc175bfa">
+                <propertyInstance
+                  Id="60e007ba-de33-406f-90a7-21c57a3068f1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f78d41d2-b5b9-48fc-acd1-fb1b066034e4">
+                <propertyInstance
+                  Id="65b80552-e178-414a-b0f7-ad2ab60fae38"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d8ec4f0-8601-4152-aad7-d4554f4a1ed9">
+                <propertyInstance
+                  Id="640bf7ed-46e1-47f7-8a61-b97147fb7ac4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d88e5083-3838-457b-a82b-33d26f8d62b7">
+            <interfaceMoniker
+              Id="84a9af36-a8e9-4603-8d9f-2d1086dd1b0f"
+              LastKnownName="IEnumerable&lt;Type‎&gt;"
+              LastKnownLocation="Package7_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <signatures>
+          <templateBinding
+            Id="8401687f-cd74-45db-9bee-2a3819e59f22">
+            <redefinableTemplateSignatureMoniker
+              Id="2fe9d5df-a100-49dd-b295-bd91110d9ca0"
+              LastKnownLocation="Package56_1030.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="dc4cc3b4-68e2-4619-a038-0d461fa8c886">
+                  <actuals>
+                    <classMoniker
+                      Id="477009ad-316d-44df-a932-2bbec25568c3"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="f5549278-9257-40b3-876f-3a02939b11d2"
+                      LastKnownLocation="Package56_1030.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="56d36ba9-1062-4677-8810-2cec42f8ea82"
+        name="ConcurrentBag"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4f77cdb6-479c-4f8e-8c50-6a1fa97ef169"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2FSystem.dll&quot; Namespace%3DSystem.Collections.Concurrent Type%3D(Name%3DConcurrentBag GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0ecbf28e-4c8e-44c0-9354-1408c271b0e1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="103b8a3a-0087-42cb-b751-5ac05ce30a3c">
+                <propertyInstance
+                  Id="06898303-f124-4dc7-8ced-35d165af181b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2916f45a-8b08-43db-b401-886876a88a16">
+                <propertyInstance
+                  Id="5781892f-2c20-4c65-9fbd-552b978efada"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c6c0e260-f21f-44d0-9b7d-43341247663d">
+                <propertyInstance
+                  Id="6ede09d0-2699-4c57-bbe9-8d68ddc76f7a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="338473f5-bdae-4993-8326-be744539a226">
+                <propertyInstance
+                  Id="056c57c7-a8fb-4e5c-ac58-2fe04fe5aa81"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dab4afa5-534a-4765-9d87-bc4745704c07">
+                <propertyInstance
+                  Id="98680eba-729c-4462-84b0-f22aafe6f048"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="61739789-1f7e-4a2a-80d0-5aa7bef3aad9">
+            <interfaceMoniker
+              Id="b0ea0e23-7137-422f-8272-2782a02bfdb8"
+              LastKnownName="IEnumerable&lt;T‎&gt;"
+              LastKnownLocation="Package7_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="2fe9d5df-a100-49dd-b295-bd91110d9ca0"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="f5549278-9257-40b3-876f-3a02939b11d2">
+                <referencesInternal>
+                  <reference
+                    Id="bc303cba-cf37-48d4-ad82-8105e6de4982"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2FSystem.dll&quot; Namespace%3DSystem.Collections.Concurrent Type%3D(Name%3DConcurrentBag GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="a91c2fe9-5380-4a80-861b-d310bc87ae9e"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

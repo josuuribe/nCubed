@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="65b526a6-ae1f-4395-b074-2828f3e95d47" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="46816e88-2f85-43e8-a2ad-2950ff457cd8" name="Core">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="cc2d12bd-8bef-437e-85ef-befb659854c2" direction="Forward">
+          <layerMoniker Id="27dd41d6-5bd4-498a-94c2-b059482b8840" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="4bef610e-aed6-4f9b-bdc3-3f3ecc22784c" name="CQRS.Core">
+          <ArtifactNode Label="CQRS.Core" Category="CodeSchema_Project" Id="(Assembly=../CQRS.Core/CQRS.Core.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RaraAvis.nCubed.CQRS.Core)" Label="RaraAvis.nCubed.CQRS.Core.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="e59520de-b62f-4715-b03d-dd877db1f6f5" name="CQRS.Infrastructure">
+          <ArtifactNode Label="CQRS.Infrastructure" Category="CodeSchema_Project" Id="(Assembly=../CQRS.Infrastructure/CQRS.Infrastructure.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RaraAvis.nCubed.CQRS.Infrastructure)" Label="RaraAvis.nCubed.CQRS.Infrastructure.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="dc0efe6e-e2e8-4715-9de7-3a9685ca6ea1" name="DDD">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ecb70466-5f53-4533-88da-7b6c0c036521" direction="Forward">
+          <layerMoniker Id="27dd41d6-5bd4-498a-94c2-b059482b8840" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="47f5f1ac-c9b2-47ff-b20c-856be6f60dec" name="DDD.Core">
+          <ArtifactNode Label="DDD.Core" Category="CodeSchema_Project" Id="(Assembly=../DDD.Core/DDD.Core.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RaraAvis.nCubed.DDD.Core)" Label="RaraAvis.nCubed.DDD.Core.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="8bdafa0c-32f3-47aa-8a43-8fd88b7ef1c7" name="DDD.Infrastructure">
+          <ArtifactNode Label="DDD.Infrastructure" Category="CodeSchema_Project" Id="(Assembly=../DDD.Infrastructure/DDD.Infrastructure.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RaraAvis.nCubed.DDD.Infrastructure)" Label="RaraAvis.nCubed.DDD.Infrastructure.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="27dd41d6-5bd4-498a-94c2-b059482b8840" name="Framework">
+      <references>
+        <reference Id="103fbfd9-aae3-4cdd-b42f-10a294a7fc75" name="Framework.Core">
+          <ArtifactNode Label="Framework.Core" Category="CodeSchema_Project" Id="(Assembly=../Framework.Common/Framework.Core.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RaraAvis.nCubed.Core)" Label="RaraAvis.nCubed.Core.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="c9b8a192-eed7-4171-a8b4-ffa05c687ef0" name="Framework.Infrastructure">
+          <ArtifactNode Label="Framework.Infrastructure" Category="CodeSchema_Project" Id="(Assembly=../Framework.Infrastructure/Framework.Infrastructure.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RaraAvis.nCubed.Core.Infrastructure)" Label="RaraAvis.nCubed.Core.Infrastructure.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="0157884d-fb4f-4f60-95f5-c8f306a3580a" name="Framework.Messaging">
+          <ArtifactNode Label="Framework.Messaging" Category="CodeSchema_Project" Id="(Assembly=../Framework.Messaging/Framework.Messaging.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RaraAvis.nCubed.Core.Messaging)" Label="RaraAvis.nCubed.Core.Messaging.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="484ec012-a13e-45f4-9744-3383a3116dd2" name="ES">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="5c7598f7-9833-42d5-b4dc-adffdeb7784f" direction="Forward">
+          <layerMoniker Id="27dd41d6-5bd4-498a-94c2-b059482b8840" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="6f693bdb-4eca-4f4f-bd52-655c584821b6" name="EventSourcing.Core">
+          <ArtifactNode Label="EventSourcing.Core" Category="CodeSchema_Project" Id="(Assembly=../EventSourcing.Core/EventSourcing.Core.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RaraAvis.nCubed.EventSourcing.Core)" Label="RaraAvis.nCubed.EventSourcing.Core.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="1a09541e-6837-4982-94b1-c66314030dd4" name="EventSourcing.Infrastructure">
+          <ArtifactNode Label="EventSourcing.Infrastructure" Category="CodeSchema_Project" Id="(Assembly=../EventSourcing.Infrastructure/EventSourcing.Infrastructure.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=RaraAvis.nCubed.EventSourcing.Infrastructure)" Label="RaraAvis.nCubed.EventSourcing.Infrastructure.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

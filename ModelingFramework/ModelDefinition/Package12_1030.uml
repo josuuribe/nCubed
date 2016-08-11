@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e17538cb-ebd1-458b-9845-d449d5fc081b"
+  name="Infrastructure"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e9b2e1b6-ad98-468e-ba80-80a3026eda47"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed.Core.Infrastructure"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="095b9270-ff93-4051-8d8d-b4432e970cc0"
+        LastKnownName="Data"
+        LastKnownLocation="Package13_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e3b42d6e-3e7f-4fac-8478-8977bfab34e4"
+        LastKnownName="Logging"
+        LastKnownLocation="Package20_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="be91e91a-4389-425c-958b-ae6c1ec52f4e"
+        name="DbCommonConfiguration"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="24668eda-b41e-4041-bb41-1d76a389e08e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure Type%3DDbCommonConfiguration"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7b8b4c81-9703-4d57-81a7-775970b12e50"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fdd55620-3533-43d7-84ab-bfbf0550a724">
+                <propertyInstance
+                  Id="b641b615-3c16-4249-af6b-7e21c190f7dd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a88f7155-6f39-4df6-92dd-51dd5a2e7688">
+                <propertyInstance
+                  Id="73c47773-9afe-46b3-a78e-78c2609c0d88"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c3b8d65c-338a-473c-b8dd-d53d6b0e6fc2">
+                <propertyInstance
+                  Id="0c8c7234-b332-4ef8-85f1-e1c45b77cec1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8c70223a-ffd9-4d00-8a47-c8dd4a0a3d5a">
+                <propertyInstance
+                  Id="622d1da4-71a8-4804-88a4-af9226b618e2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17cbe98b-e1a7-4eb8-a5de-cb7c38d26ce4">
+                <propertyInstance
+                  Id="010d91b0-af9b-474e-9536-e9eebeadc458"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="3ea1a0ee-9ac6-40d8-b687-d570c8bc14ba"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5ba053c7-081a-47f2-be12-948772f1c78c"
+              LastKnownName="DbConfiguration"
+              LastKnownLocation="Package34_1030.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="01fe130e-736d-4449-a3a9-505516b6eba4"
+            name="DbCommonConfiguration"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2e9ee31d-b238-4c98-8a48-436d171dcb8a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure Type%3DDbCommonConfiguration Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a46e1aba-1c2f-40c2-a9ac-b6247fdd739e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b7179bd-bac8-47ff-9a1d-e316b378d906">
+                    <propertyInstance
+                      Id="41784631-76d9-43ca-a417-561973423d5f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c3d8390-7432-435d-bf6b-bcc473c7314a">
+                    <propertyInstance
+                      Id="1058ce86-e8ae-4bc7-8cac-eb0c57b941b3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a2f82f9-bfd3-48a1-b96c-efabea525879">
+                    <propertyInstance
+                      Id="6703b2b8-0ab7-403f-a4df-5669725e05ab"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9de4e47a-8c3b-48d5-a866-59e9d0168f0d">
+                    <propertyInstance
+                      Id="0661ffee-f440-441d-9c62-eb8bc9e1d262"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f4a8211-7393-4508-a64c-ab1fec301fa2">
+                    <propertyInstance
+                      Id="6af6e3c7-ba40-40e5-b32d-8de1f9375798"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cefc446-548a-4ed2-a2ad-b1161937a044">
+                    <propertyInstance
+                      Id="274b84fe-4e2b-48b3-ad05-097028ba3e5e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e20a0788-1c5e-43a7-88be-d36b716dfb7e"
+        LastKnownName="Repositories"
+        LastKnownLocation="Package39_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="9e08250e-ab76-4ec1-a3e9-cb834219d89b"
+        LastKnownName="StrategyErrors"
+        LastKnownLocation="Package57_1030.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

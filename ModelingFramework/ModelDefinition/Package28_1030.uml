@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="24540e88-02c4-4eb7-9d4e-88b81046e353"
+  name="Types"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="7cc71449-e2bc-4a7f-b8aa-d0a70451ab22"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="bb0c0315-9a76-413d-8346-9aded1970953"
+        name="CommandBusElement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c3351fef-f92c-4cfd-96f6-7aba35a59bad"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types Type%3DCommandBusElement"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5a42a32c-70c8-419f-bd8b-99128e07cc99"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="685e0ad9-2fbd-4773-b335-833278434dab">
+                <propertyInstance
+                  Id="850cae31-0c72-42dc-a792-693c121a023e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e0aab346-c709-47e7-8878-23f2e90c884e">
+                <propertyInstance
+                  Id="62d791b3-ece4-4742-a88f-81a9e2971b56"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b2f0798-b630-4f5d-8ff0-346fb87f7d26">
+                <propertyInstance
+                  Id="606ee16b-2e8e-40a6-8f33-be757121156f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ea39ac4-a4b0-45f7-93ed-6719afeab60b">
+                <propertyInstance
+                  Id="1d340214-0e81-448c-b5bd-6b4ad3cef089"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cac8390d-1b63-4d80-86f5-34d7f81f699f">
+                <propertyInstance
+                  Id="516e7731-71c0-4ed7-9c5a-9fa10c062de8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="c95d204c-c754-4528-9dd2-30190bdc1013"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3f3eace5-0175-4035-897b-5fd4c2868cd3"
+              LastKnownName="TypesElement"
+              LastKnownLocation="Package24_1030.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="11cfbfbd-c484-404d-99d0-48ac3829be64"
+            name="CommandBusElement"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6114df77-dade-4b11-b941-1f58c1e2d958"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types Type%3DCommandBusElement Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="326fdb98-9ab3-4573-8388-52778cbb6bd5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a435645-8168-4297-b3bf-7e20e7f3a2d0">
+                    <propertyInstance
+                      Id="7f5daa82-e10b-47a7-b8c9-43fa0693c455"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="111f8fd9-eb28-4303-962b-be836216f03e">
+                    <propertyInstance
+                      Id="a0deb025-bee5-4995-a24e-3e2f6225e373"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="991e91aa-2190-4fac-9e8f-756e95410333">
+                    <propertyInstance
+                      Id="35c4ec83-99a9-432e-b0c0-79ab0e5f45ec"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c300897-c61b-4a9e-af48-3a64347c123a">
+                    <propertyInstance
+                      Id="6ca2a15a-394c-4fe1-8d10-9b8b52e16363"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d7b31d6-cf65-49e7-b16f-9f799db28a5a">
+                    <propertyInstance
+                      Id="51ac7d84-91da-42ca-8f08-063509103d16"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00eadd96-75b2-4e2c-9e5b-b848b89979e0">
+                    <propertyInstance
+                      Id="de6e4205-233b-4be6-8e6a-9170cbd6733c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="99a812b0-73d5-4a32-b780-577e92f22408"
+        name="CommandElement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2b664996-10dc-42c2-b5f3-20ff2f468d9b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types Type%3DCommandElement"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6a8eead3-5a76-4065-9161-e57796b23164"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8905c887-9810-45d2-a7b5-07b1e5baeaa4">
+                <propertyInstance
+                  Id="cbba620e-1153-44ff-bb2b-0c3c19bb5624"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="356cf241-4345-4c35-a660-ba0000ed6ecf">
+                <propertyInstance
+                  Id="9a4cf509-7088-4491-9165-b19b9c31029e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b1789012-a3ec-4109-a2af-1dc03f3e3948">
+                <propertyInstance
+                  Id="cd26c00d-2795-443a-ba18-d535db0a1610"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a198ecac-2518-4699-8aa5-e177ca1169eb">
+                <propertyInstance
+                  Id="b8b87975-de50-4031-9aaf-9d12c6892e90"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f9a05d5e-4843-4c97-823f-51bb1bf5cd35">
+                <propertyInstance
+                  Id="5e109841-856c-4ab4-8daa-72c6c92cc861"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="dffbc525-a71e-4e69-90e6-a805d6ddd224"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3f3eace5-0175-4035-897b-5fd4c2868cd3"
+              LastKnownName="TypesElement"
+              LastKnownLocation="Package24_1030.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a57c8238-629a-4317-8ef3-8f8f7629d509"
+            name="CommandElement"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9e77bfb4-30ae-4c6b-8dcf-c1d709515317"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types Type%3DCommandElement Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="810c6bc6-d20c-42ed-9866-e04d3eb812d1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f7c112a-300e-41fd-a580-4c916cb8076b">
+                    <propertyInstance
+                      Id="cba867c9-340a-48c7-a65c-5f27b8a53836"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bcfc0f4-0b6e-4b3b-a9d4-0b91b7e0c48e">
+                    <propertyInstance
+                      Id="24f8969e-c4cf-4a6a-a194-4720972c50e4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7210d083-6206-4f67-a315-4633d4a8cad1">
+                    <propertyInstance
+                      Id="8cbe60c1-a2c7-45ad-831b-fe7ccc149364"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de956391-8136-44d4-88e8-af53ce09105b">
+                    <propertyInstance
+                      Id="83b82ed9-1e5f-4c02-9b3b-6809277ca208"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="085f8d47-1870-4891-89fd-68afc2c63a5f">
+                    <propertyInstance
+                      Id="f22f7ef4-892f-4dc7-b59a-07ae0ea436a0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bf4dd20-d303-4a76-8769-584dc67a08ce">
+                    <propertyInstance
+                      Id="651123d2-f95a-4ccb-a801-7e2d770bfb18"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0c11f346-42ff-41a3-a923-d3209a904a3a"
+        name="CommandHandlerElement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="030b5563-eb34-43ed-a69b-6e076b87886b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types Type%3DCommandHandlerElement"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="344818cf-b140-427c-a889-d700f991b21d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89d363a4-2632-478c-a939-f90264ff0718">
+                <propertyInstance
+                  Id="bb518ba1-300f-4a46-9297-70e02ef2ec6d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="346153c8-f05c-4abb-ac9b-efef8aa2f073">
+                <propertyInstance
+                  Id="6342f175-0ece-45c0-85e8-e36ecb875aa4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0883cbea-40d9-4343-b174-9232d97b2b59">
+                <propertyInstance
+                  Id="f5ff68c6-30ab-40bb-93dc-d58b0aee21ce"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="61acb492-b952-4090-9203-0c8dced32b06">
+                <propertyInstance
+                  Id="12c0f4b1-7858-4b01-b3bf-523ef1a29188"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5355c3c2-924c-41bf-901c-d31cc5d9d7f9">
+                <propertyInstance
+                  Id="a39e7d5e-5b18-4771-aeba-b97dea911141"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="e1edec77-fc42-44aa-895c-57dec3e4c44b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="3f3eace5-0175-4035-897b-5fd4c2868cd3"
+              LastKnownName="TypesElement"
+              LastKnownLocation="Package24_1030.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7082eb6d-4664-4525-903b-b2cc0598ddef"
+            name="CommandHandlerElement"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="12cd0916-66ec-4efa-8048-56434aff182a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types Type%3DCommandHandlerElement Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5155b513-8689-4993-881a-4ee1201ee981"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17fccbf6-c1fd-49ea-b8b2-45247db9bb69">
+                    <propertyInstance
+                      Id="c7c6edb3-7a56-4a15-b27c-c879d347db46"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30d14bac-b7e7-4afe-ba75-e53aa08fdd3d">
+                    <propertyInstance
+                      Id="b699cb0a-7f4f-4918-a85e-fd58554ab90b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4621fc2-abdb-4cbb-afe0-9a7d05dcd490">
+                    <propertyInstance
+                      Id="7c5cf5a1-e357-46e1-a057-1769b32e00db"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="359e9d0c-3082-4a3e-9003-4bbc15c5b819">
+                    <propertyInstance
+                      Id="6a34cfdc-d980-402f-9590-542eb1b6bed0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="127129d6-2fb4-4c92-91a5-497f12137668">
+                    <propertyInstance
+                      Id="4a15fc15-69de-4587-b457-0bd3d4253805"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cca0fa8c-9edd-4a5a-bb4a-1e0bcd8c95ca">
+                    <propertyInstance
+                      Id="da19b03a-cf37-40c2-bb32-2599b866b007"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1ae38c30-4d6f-4ba4-bcd0-2a49c839cf7d"
+        name="SerializeCommandElement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d74dafbf-6cfb-4b2a-8b55-5a57aad6b021"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types Type%3DSerializeCommandElement"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7e48a28e-b92d-4567-8878-eed3c15af2a0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ff7519a5-ce54-4ed9-bc4d-5747ff7883dc">
+                <propertyInstance
+                  Id="503d47aa-abbf-4390-b3a9-e017ce8dedf7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c89137e5-1165-4b8f-9efd-86c30b766e0e">
+                <propertyInstance
+                  Id="628f71ef-6beb-40f1-919e-10e9b178891c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7d119444-c724-4b6c-8a0f-52630341b767">
+                <propertyInstance
+                  Id="bdbf1de6-732b-43a6-8918-cc3aebfbbb2a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5cf32e0d-bd1d-4b1b-88d1-77f7848f9d83">
+                <propertyInstance
+                  Id="f986d45c-4583-4f2b-811d-4e1d46a0c431"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d932be69-45d3-43a8-9098-450f953e71c7">
+                <propertyInstance
+                  Id="5d175c9e-b776-4150-9a06-fb6431ca4177"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="055fe22c-1e56-40d0-b3a0-0d983f95a2ae"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c6df6bfc-2c8b-4fa4-a95a-2904bcd538ee"
+              LastKnownName="ConfigurationElement"
+              LastKnownLocation="Package11_1030.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="935e022c-33cf-4ade-91f7-ece9cf89cd89"
+            isDerived="false"
+            sourceEndRoleName="SerializeCommandElement"
+            targetEndRoleName="Commands"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="99a812b0-73d5-4a32-b780-577e92f22408"
+              LastKnownName="CommandElement"
+              LastKnownLocation="Package28_1030.uml" />
+            <description>Property Commands references type CommandElement.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a09c94f1-03d7-414e-a3df-a05fbab545d4"
+                  name="SerializeCommandElement"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="54d0bf93-c2a9-4990-9d20-37b17b26f431"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="980a567a-ef88-47f7-99f3-2f3bbc430225"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a056df1-8ad7-47e0-b90a-a1fdae8dc32c"
+                  name="Commands"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5ef6d26e-dd73-42aa-bd2f-dc29a3f2a836"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="469e1048-9b97-4fe8-86a8-ea60fe6ee900"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a499dcaa-34a9-4e48-9075-7ebe574b2549"
+            name="Commands"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="283044b3-7b27-4f3d-a570-0f8484d334da"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types Type%3DSerializeCommandElement Member%3DCommands"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2bb442e9-50b8-450e-8e97-8aba92ead7f7"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b56957c-34dc-460a-8745-7e06a2ca0fbf">
+                    <propertyInstance
+                      Id="82804f15-f587-4ab3-aa30-6fbdce44917b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="511bb95c-ab57-4c91-a110-8ed4674ed223">
+                    <propertyInstance
+                      Id="dac2d05f-6056-4db3-8a1a-037e77e83279"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13c1f21c-28c2-48a1-a6c8-1a724d371cd8">
+                    <propertyInstance
+                      Id="2161b5d7-ff1e-45d9-ba5d-b7a18ee237e0"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4009af6-938e-49e9-b871-b360dd829c25">
+                    <propertyInstance
+                      Id="bccb2811-fd7a-4cd2-a677-d8f0d8ae7aa8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4062a441-0360-4da0-a7a3-c8b66a9e473a">
+                    <propertyInstance
+                      Id="349c13f0-1477-4518-a272-7b30e4acfa1e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f14af84f-78c3-4526-b2c1-abb708889afb">
+                    <propertyInstance
+                      Id="41c99ce7-327b-4d7b-9a52-5dd363280b0f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12d2a36a-88e5-4c10-9d4b-b9aa73bb3573">
+                    <propertyInstance
+                      Id="9a49aa19-6e27-4d2d-84e6-61c68ba906bd"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="99a812b0-73d5-4a32-b780-577e92f22408"
+                LastKnownName="CommandElement"
+                LastKnownLocation="Package28_1030.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d35515d2-ce84-4d37-8c12-df9c5958d128"
+            name="SerializeCommandElement"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="51af7b74-f4c0-4314-8820-fc7de560ab60"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Configurations.CQRS.Types Type%3DSerializeCommandElement Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9bdba8a3-2e11-42bd-b001-9793736f25d9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26e6391d-7c1a-4d15-b24b-f4863715cd0e">
+                    <propertyInstance
+                      Id="3c73789a-532b-4b32-a041-30db61191f78"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c6ae8cf-f87c-46bb-9133-aa38876a906d">
+                    <propertyInstance
+                      Id="b2f31f52-daa7-43bb-b675-ee372fa1bbe4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1d05044-3380-4406-8cdc-c4b7e088c294">
+                    <propertyInstance
+                      Id="81ddf50d-e2e7-4aea-86f5-d2f76a613c68"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b57fcffa-d5d1-45d1-834b-c457fffe513d">
+                    <propertyInstance
+                      Id="ce34c7f1-1b15-4640-a184-7e6763b54bc4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53490a2a-449b-48b1-b51e-97b4e18ea61d">
+                    <propertyInstance
+                      Id="5e0ad6df-702d-4c19-aa94-4d255f44f8d4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5525d77-19a0-4d9d-9cd2-69759dfdc530">
+                    <propertyInstance
+                      Id="0c8bee3b-a0ee-4186-914e-8a5cb1dba0a4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

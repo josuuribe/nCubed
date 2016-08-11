@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="0a1df2fb-49da-4b58-99fe-c5aebd286c97"
+  name="Core"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d8952f54-742a-4b74-bac7-4d179357e532"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed.Core"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="597f0280-8406-4b35-b6b1-cb067553caa7"
+        LastKnownName="Messaging"
+        LastKnownLocation="Package3_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="77e817c4-39e5-42e1-8bbd-9ed33b1251db"
+        LastKnownName="Expressions"
+        LastKnownLocation="Package4_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f46efd51-5259-4064-90a6-0f3d7d308bc7"
+        LastKnownName="Configurations"
+        LastKnownLocation="Package8_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e17538cb-ebd1-458b-9845-d449d5fc081b"
+        LastKnownName="Infrastructure"
+        LastKnownLocation="Package12_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d856e9a2-d7b7-4d6e-ac83-355ab2bbee04"
+        LastKnownName="Exceptions"
+        LastKnownLocation="Package30_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="38c7e7be-3c49-493c-9fc3-2f1eb5297e65"
+        LastKnownName="Logging"
+        LastKnownLocation="Package38_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cded7373-1b1d-490d-9db8-e78f414167e8"
+        LastKnownName="RepositoryContracts"
+        LastKnownLocation="Package40_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8d37b7d2-9b63-41d1-aa4b-6fc265591f1c"
+        LastKnownName="Containers"
+        LastKnownLocation="Package41_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="be31a1d6-9bb7-46d4-8d30-98f09400ea2e"
+        LastKnownName="Serialization"
+        LastKnownLocation="Package47_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fc242e2f-87ee-4b97-8936-bd98c15cf1b3"
+        LastKnownName="Adapter"
+        LastKnownLocation="Package48_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6d8404f0-f97f-46dc-ac2d-d60d89140a55"
+        LastKnownName="StrategyErrors"
+        LastKnownLocation="Package51_1030.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

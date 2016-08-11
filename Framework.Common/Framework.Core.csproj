@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{195B545F-9018-4430-847A-D08B2AF21D91}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RaraAvis.nCubed.Core</RootNamespace>
+    <AssemblyName>RaraAvis.nCubed.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\Docs\Xml\RaraAvis.nCubed.Core.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EmitMapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmitMapper.1.0.0\lib\EmitMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.ExceptionHandling.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.SemanticLogging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.SemanticLogging.2.0.1406.1\lib\net45\Microsoft.Practices.EnterpriseLibrary.SemanticLogging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.Composition.registration" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Reflection.Context" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\ITypeAdapter.cs" />
+    <Compile Include="Adapter\TypeAdapter.cs" />
+    <Compile Include="Configurations\Common\Sections\DatabaseSection.cs" />
+    <Compile Include="Configurations\Common\Sections\Retries\CommonRetrySection.cs" />
+    <Compile Include="Configurations\Common\Sections\ActivitySection.cs" />
+    <Compile Include="Configurations\Common\Sections\Retries\MessagingRetrySection.cs" />
+    <Compile Include="Configurations\Common\Sections\Retries\DatabaseRetrySection.cs" />
+    <Compile Include="Configurations\Common\Sections\Retries\ProcessRetrySection.cs" />
+    <Compile Include="Configurations\Common\Sections\RetrySection.cs" />
+    <Compile Include="Containers\DI\ApplicationFactory.cs" />
+    <Compile Include="Containers\SystemContainer.cs" />
+    <Compile Include="Containers\DI\SystemFactory.cs" />
+    <Compile Include="Containers\DI\DIManager.cs" />
+    <Compile Include="Containers\DI\FactoryManager.cs" />
+    <Compile Include="Exceptions\Core\CoreErrorEventSource.cs" />
+    <Compile Include="Exceptions\Core\CoreExceptionProcessor.cs" />
+    <Compile Include="Exceptions\FrameworkEventSource.cs" />
+    <Compile Include="Exceptions\SemanticException.cs" />
+    <Compile Include="Exceptions\SemanticLoggingErrorHandler.cs" />
+    <Compile Include="Expressions\CacheAnyEnumerableExtensions.cs" />
+    <Compile Include="Configurations\Common\SystemSection.cs" />
+    <Compile Include="Configurations\CQRS\CQRSConfiguration.cs" />
+    <Compile Include="Configurations\CQRS\CQRSSection.cs" />
+    <Compile Include="Configurations\CQRS\Types\CommandBusElement.cs" />
+    <Compile Include="Configurations\CQRS\Types\CommandElement.cs" />
+    <Compile Include="Configurations\CQRS\Types\CommandHandlerElement.cs" />
+    <Compile Include="Configurations\CQRS\Types\SerializeCommandElement.cs" />
+    <Compile Include="Configurations\DDD\DDDConfiguration.cs" />
+    <Compile Include="Configurations\DDD\DDDSection.cs" />
+    <Compile Include="Configurations\DDD\Types\ApplicationElement.cs" />
+    <Compile Include="Configurations\DDD\Types\InfrastructureElement.cs" />
+    <Compile Include="Configurations\DDD\Types\RepositoryElement.cs" />
+    <Compile Include="Configurations\Common\Types\ExcludeCollection.cs" />
+    <Compile Include="Configurations\Common\Types\ExcludeElement.cs" />
+    <Compile Include="Configurations\Common\Types\PathElement.cs" />
+    <Compile Include="Configurations\Common\Types\TypeCollection.cs" />
+    <Compile Include="Configurations\Common\Types\TypeElement.cs" />
+    <Compile Include="Configurations\Common\Types\TypesElement.cs" />
+    <Compile Include="Configurations\EventSourcing\EventSourcingConfiguration.cs" />
+    <Compile Include="Configurations\EventSourcing\EventSourcingSection.cs" />
+    <Compile Include="Configurations\EventSourcing\Types\EventBusElement.cs" />
+    <Compile Include="Configurations\EventSourcing\Types\EventElement.cs" />
+    <Compile Include="Configurations\EventSourcing\Types\EventHandlerElement.cs" />
+    <Compile Include="Configurations\EventSourcing\Types\SerializeEventElement.cs" />
+    <Compile Include="Containers\SerializerContainer.cs" />
+    <Compile Include="Configurations\N3Section.cs" />
+    <Compile Include="Containers\DI\RegisteredEventArgs.cs" />
+    <Compile Include="Containers\DI\RegisteringEventArgs.cs" />
+    <Compile Include="Expressions\CombinerExpression.cs" />
+    <Compile Include="Expressions\IAnyEnumerableCollection.cs" />
+    <Compile Include="Expressions\ProjectionExpression.cs" />
+    <Compile Include="Expressions\QueryableExtensions.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="IdentityGenerator.cs" />
+    <Compile Include="Logging\FrameworkLogging.cs" />
+    <Compile Include="Logging\FrameworkLoggingEventSource.cs" />
+    <Compile Include="Logging\FrameworkLoggingFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialization\ITextSerializer.cs" />
+    <Compile Include="Serialization\JsonTextSerializer.cs" />
+    <Compile Include="Serialization\XmlTextSerializer.cs" />
+    <Compile Include="Containers\SerializeContainer.cs" />
+    <Compile Include="StrategyErrors\AppProcessErrorStrategy.cs" />
+    <Compile Include="StrategyErrors\ProcessFixedRetry.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

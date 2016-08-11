@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerDiagram dslVersion="1.0.0.0" Id="0a4a8a88-ae09-4fb8-abd1-9a1105c85e03" absoluteBounds="0, 0, 11, 8.5" name="LayerFramework">
+  <layerModelMoniker Id="65b526a6-ae1f-4395-b074-2828f3e95d47" />
+  <nestedChildShapes>
+    <layerShape Id="016c6578-27d4-49a4-a19b-ef583faddfb0" absoluteBounds="4, 1.375, 2, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="46816e88-2f85-43e8-a2ad-2950ff457cd8" />
+    </layerShape>
+    <layerShape Id="cccd09df-c97c-4dd6-8e58-f2fb361d079d" absoluteBounds="1.125, 2.75, 2, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="dc0efe6e-e2e8-4715-9de7-3a9685ca6ea1" />
+    </layerShape>
+    <layerShape Id="a8682ecd-716d-456a-a7c4-580bebade0ca" absoluteBounds="3.75, 4.5, 2, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="27dd41d6-5bd4-498a-94c2-b059482b8840" />
+    </layerShape>
+    <layerShape Id="5ae882d6-1398-4a4e-a775-0e954a25ba1e" absoluteBounds="6.75, 2.75, 2, 0.75" customColor="161, 199, 231">
+      <layerMoniker Id="484ec012-a13e-45f4-9744-3383a3116dd2" />
+    </layerShape>
+    <dependencyConnector edgePoints="[(4.8437475 : 2.125); (4.8437475 : 4.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <dependencyFromLayerToLayerMoniker Id="cc2d12bd-8bef-437e-85ef-befb659854c2" />
+      <relativeChildShapes />
+      <nodes>
+        <layerShapeMoniker Id="016c6578-27d4-49a4-a19b-ef583faddfb0" />
+        <layerShapeMoniker Id="a8682ecd-716d-456a-a7c4-580bebade0ca" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(3.125 : 3.5); (3.75 : 4.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <dependencyFromLayerToLayerMoniker Id="ecb70466-5f53-4533-88da-7b6c0c036521" />
+      <relativeChildShapes />
+      <nodes>
+        <layerShapeMoniker Id="cccd09df-c97c-4dd6-8e58-f2fb361d079d" />
+        <layerShapeMoniker Id="a8682ecd-716d-456a-a7c4-580bebade0ca" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(6.75 : 3.5); (5.75 : 4.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <dependencyFromLayerToLayerMoniker Id="5c7598f7-9833-42d5-b4dc-adffdeb7784f" />
+      <relativeChildShapes />
+      <nodes>
+        <layerShapeMoniker Id="5ae882d6-1398-4a4e-a775-0e954a25ba1e" />
+        <layerShapeMoniker Id="a8682ecd-716d-456a-a7c4-580bebade0ca" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</layerDiagram>

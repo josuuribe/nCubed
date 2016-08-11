@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ea76cd8c-4dac-4409-8645-4e6644bc5fcb"
+  name="Infrastructure"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2bdb5b21-7889-4c67-b2d2-63776672b865"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Data.Entity.Infrastructure"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f8354dbd-7970-41ac-b561-a1e5ab07fb84"
+        LastKnownName="Interception"
+        LastKnownLocation="Package46_1030.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6ae63696-0240-48d1-aec4-00ca2099b383"
+        name="DbExecutionStrategy"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="01e27bb4-2b65-48a9-93cd-cd4f2f230b78"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FSrc%2FFramework%2Fpackages%2FEntityFramework.6.1.1%2Flib%2Fnet45%2FEntityFramework.dll Namespace%3DSystem.Data.Entity.Infrastructure Type%3DDbExecutionStrategy"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e31025b9-e14f-4161-ab41-23330574dc65"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="33d3fbbb-496c-42d6-9cd8-422e85090a50">
+                <propertyInstance
+                  Id="456126e9-a9d8-407d-871a-2efadddd97b8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a062d8e-0065-4d81-a687-d7f13c4f14f3">
+                <propertyInstance
+                  Id="46be3e78-c08c-4000-a497-34065db1dab6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f611501c-67d1-4c98-b049-fbec9b59206a">
+                <propertyInstance
+                  Id="85df9f1f-8819-47af-9570-8bde7e65bf36"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cea210c6-c4eb-4df7-95a1-4cdf2a0a57f4">
+                <propertyInstance
+                  Id="c8690ac0-d441-4b6c-a830-93636c8190d3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17b2fae8-2ec0-45a2-9b33-ddd731581f93">
+                <propertyInstance
+                  Id="11d4cd1f-30c4-48df-8b19-440d9b872ef3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

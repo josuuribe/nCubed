@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="9e08250e-ab76-4ec1-a3e9-cb834219d89b"
+  name="StrategyErrors"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="286dc94a-b367-4f89-aa4b-f65f876c2692"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="0d895859-2be4-4758-b473-db4b23b7a366"
+        name="SqlIncrementalRetry"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="21e6aef7-d992-4f83-8ac5-82cde107e3fe"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlIncrementalRetry"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="fe995b7d-e4a4-46d9-bde0-d560d8e25c06"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6e4d70d1-4d42-49b3-a6dd-a174a14cd51e">
+                <propertyInstance
+                  Id="b76bd903-0da6-411b-b58d-19ecb71775fd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c73e2aec-479c-40aa-afa3-73e38bd2c98b">
+                <propertyInstance
+                  Id="8b3c3819-f3da-4cd5-882a-97df1a8eea94"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0484d328-e3d5-428d-a324-3ad1325c4511">
+                <propertyInstance
+                  Id="746e5878-097a-47bb-8198-d6cfd5843185"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c8ceaa6-55b8-4a2c-8d20-9406fb642e95">
+                <propertyInstance
+                  Id="67ece2d4-4513-4cd3-8d4f-3d85a99d8fdc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="094ca3ea-5266-446a-a06d-a45b8085a225">
+                <propertyInstance
+                  Id="e357ae19-4810-4789-9a14-00c5c57b5193"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="4a136691-9b2e-42e5-ac08-36fe753802fb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="30997257-9ea0-4589-868e-e67825730b5c"
+              LastKnownName="RetryPolicy&lt;SqlDbExecutionStrategy‎&gt;"
+              LastKnownLocation="Package50_1030.uml" />
+          </generalization>
+          <generalization
+            Id="266bcbf2-7a8d-4090-95b2-0dd76da25085"
+            isSubstitutable="false">
+            <classMoniker
+              Id="4daed74d-2652-43f5-a62f-cb1eaab289ef"
+              LastKnownName="RetryPolicy&lt;MessagingErrorDetectionStrategy‎&gt;"
+              LastKnownLocation="Package50_1030.uml" />
+          </generalization>
+          <generalization
+            Id="9c082897-0e78-4cf9-9899-5d7c01a54847"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ea879426-b4e0-4527-b38b-00b180e5a990"
+              LastKnownName="RetryPolicy"
+              LastKnownLocation="Package50_1030.uml" />
+          </generalization>
+          <generalization
+            Id="9e8fbd9a-db56-4484-9e25-51dfcc0e6e2b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="443d3d84-726f-4d99-acb5-47d4a30f3d71"
+              LastKnownName="RetryPolicy&lt;AppProcessErrorStrategy‎&gt;"
+              LastKnownLocation="Package50_1030.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3be4aab6-9d85-4aed-afce-ed2d35b79711"
+            name="SqlIncrementalRetry"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="aafc63b5-8639-45e5-8a54-bb9823d302cf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlIncrementalRetry Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c3b6f722-8e56-43fe-a19d-c7e98b97712b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c8ba7cb-f2cb-4cc8-8263-889c4a45c552">
+                    <propertyInstance
+                      Id="5823bcb5-65b4-4834-9a19-2aa26a599b20"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7773b662-f570-458c-b7ba-11730619c7a5">
+                    <propertyInstance
+                      Id="2a82fbf5-20a1-42ec-b0f3-57e59bb2beb0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2478a79b-dbcf-401a-a62a-ba3273bda4ab">
+                    <propertyInstance
+                      Id="b9d0e9c3-cefb-48d9-8ec5-bc80dadbf7b3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3e09d4e-28fe-411d-8eeb-1be78f4ca834">
+                    <propertyInstance
+                      Id="6b0ac1f8-7270-466f-be10-af907c49e8a3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e2fa912-df76-4ccd-8524-086ded16359f">
+                    <propertyInstance
+                      Id="9905b7a2-e47c-47bd-b2db-904112353e8f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41c32382-f0b1-472c-8d50-a51914038187">
+                    <propertyInstance
+                      Id="671d5e94-e9a6-43df-a658-ea6c908ed566"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8d35d378-f26f-4935-8491-58f1d8556873"
+        name="SqlDbExecutionStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cdd2b557-99af-4b22-937b-2d25a2cf9d8d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlDbExecutionStrategy"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c835ad9f-5ba6-45ff-b056-732df721565f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1a87e706-27f1-4c7d-b925-a6e008df9d7d">
+                <propertyInstance
+                  Id="f53bcdcd-3004-4c01-ba12-8cfe1cf81716"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="42ca144e-4478-473e-9de4-5b0bbb0f15c0">
+                <propertyInstance
+                  Id="25fd4410-1613-4184-ad7d-9ae2e6222127"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04fa57a4-06b4-4537-8117-5708909a17ea">
+                <propertyInstance
+                  Id="9e9732f2-62f1-450a-91cc-60ee44b1735c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8f55815-1df1-4778-ac4a-8bd58739a5ac">
+                <propertyInstance
+                  Id="32fe9869-2831-4315-9cfd-6a5ad6653bcf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6f789e9e-63c3-43fe-b66c-36d04fb9d155">
+                <propertyInstance
+                  Id="bc43a6d7-b2bb-4306-a7dc-780817956c0e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="fefe0e67-1ceb-4629-9708-8eda416ade64">
+            <interfaceMoniker
+              Id="6cd002bc-9c14-4629-9639-0a9717ce71cc"
+              LastKnownName="ITransientErrorDetectionStrategy"
+              LastKnownLocation="Package50_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="8495b8b8-8b3b-4752-8e4e-3ad2ccc62094"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6ae63696-0240-48d1-aec4-00ca2099b383"
+              LastKnownName="DbExecutionStrategy"
+              LastKnownLocation="Package45_1030.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="be8ad7d8-b762-4a2e-9f93-8addb0e1baf2"
+            name="SqlDbExecutionStrategy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f5d3b8fa-99a8-4d06-b08d-3a5c5eebe7b0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlDbExecutionStrategy Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ab010090-ca1a-4efd-9dd0-45373fc176ca"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d7337e6-1dad-406c-8b82-b95c534304b9">
+                    <propertyInstance
+                      Id="cd056593-6cee-495a-aef6-3e8af717bebf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5333ccb9-9090-42a8-a8e0-8e909533c525">
+                    <propertyInstance
+                      Id="41dcf72d-e493-464b-996b-35b038999357"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c30479a-235b-4644-8b48-7c94c1c3520a">
+                    <propertyInstance
+                      Id="9b68d71c-c91d-4c58-9b12-73d8e72909f0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="913293e9-f7c6-4807-8b6a-780677a4aa82">
+                    <propertyInstance
+                      Id="b9b1a1c5-6e84-4769-8fc9-3a797d647e85"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be30f02d-7c70-4b17-bbcb-a4571a8e99ff">
+                    <propertyInstance
+                      Id="a4863cfc-ee00-4650-80f7-192a6c12cca8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9107cf5-ff8a-4835-a283-c8dc12337dd2">
+                    <propertyInstance
+                      Id="1d085331-e5ae-44b0-bc1e-a62012d95cf9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="de395bd1-0c03-433b-a412-9467172c3f81"
+            name="SqlDbExecutionStrategy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="79572499-deab-4751-9e07-afaadbc6449d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlDbExecutionStrategy Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DTimeSpan)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ae5f8f09-d00b-4d22-b037-c6ba3e59a5a5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="519eb1c2-2f12-492f-aeba-bd346ad415a8">
+                    <propertyInstance
+                      Id="f8a7ca4c-9cb9-4c60-b9e1-4af3a1a2ef33"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="345fa869-976d-4298-b682-06196f058d33">
+                    <propertyInstance
+                      Id="ea474800-adca-4bed-b056-b106a5103084"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="909b1f0e-0018-4ab9-82c2-cea7b595fd26">
+                    <propertyInstance
+                      Id="7a45570c-47e1-4e9f-8710-00499c9aff00"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a0a35b1-d43d-4fb7-b5ec-119c8644b594">
+                    <propertyInstance
+                      Id="5e477376-fd96-46cd-b10d-c6d23799c573"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fed7319-d73e-4c6c-b901-f75da4861b06">
+                    <propertyInstance
+                      Id="85169227-e45c-4d49-8522-5f68c3e44ad6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eaa645c2-809f-4d79-b295-f4107c3a53ff">
+                    <propertyInstance
+                      Id="fcb303be-666c-4047-9d90-be511b4479a4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c1b50778-df8b-47be-b188-14df39cf02b3"
+                  name="maxRetryCount"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="67d28098-4734-4d9e-a846-b38bd5c9ff6f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlDbExecutionStrategy Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DTimeSpan)]) ParameterIdentifier%3DmaxRetryCount"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="46c936ce-0ea1-4a1d-a679-0b47a4b6e396"
+                  name="maxDelay"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2ab2a363-d86e-424d-82e7-75412566dd29"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlDbExecutionStrategy Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DTimeSpan)]) ParameterIdentifier%3DmaxDelay"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6725f344-dc91-44f9-b750-65c5db86aac8"
+                      LastKnownName="TimeSpan"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f8b62e34-a6da-406a-aabf-a2ca498e70c2"
+            name="IsTransient"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f935a6aa-a4c3-44d1-b86a-19b1fa04eeb8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlDbExecutionStrategy Member%3D(Name%3DIsTransient OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="07e84454-eedf-4983-94b4-cd7d3c735ae9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b76db9f3-21d8-43f4-bcaa-d36bd0e8597b">
+                    <propertyInstance
+                      Id="2f17f2a6-f552-496d-a0ad-c4a004a33ce5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0cc2a5b-de4a-4219-8ffd-cf6086b300b0">
+                    <propertyInstance
+                      Id="e53bab8b-2951-46ac-bd56-ccee0ceb6065"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76a3de2f-a468-4981-b513-4e1e6d9edf32">
+                    <propertyInstance
+                      Id="b5687569-5ea4-4d8a-90c4-1dd4c49e153d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92356301-5a97-4f87-b4a4-0c14adb5cef4">
+                    <propertyInstance
+                      Id="9c1f3cfa-917e-4ce9-9ef7-546941b6708b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0f03328-4535-4867-9e10-839ee037bdbd">
+                    <propertyInstance
+                      Id="ada19648-3c81-4265-927a-ec1c102f1cd7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba3b47d1-5cab-45bb-bff9-854cf59efdf8">
+                    <propertyInstance
+                      Id="fcd7349f-fda8-4a12-ba24-7b49e3de83e8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec9d6ff3-6e18-402a-b34d-efa7f6be4ddd"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="51195fc7-8982-480b-ab74-7ba6543c0d51"
+                  name="ex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ff324977-2ade-4d16-9bec-21231ae9849c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlDbExecutionStrategy Member%3D(Name%3DIsTransient OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3Dex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e3fa5802-490a-4ede-a1f0-ac8e7d735153"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4afc5df7-6477-4379-a7b9-ad97266ecac9"
+            name="ShouldRetryOn"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9afd8365-2fd8-41de-8345-10663fb9d2a6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlDbExecutionStrategy Member%3D(Name%3DShouldRetryOn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="726d3d23-9dd3-4e8e-b2f1-67b0f0d698d6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98e820c4-bc7f-40c6-96c7-f14428e1d5a2">
+                    <propertyInstance
+                      Id="f1f6fa84-0ab5-464b-aa23-b70929532be9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54386d1a-a89d-4930-aee4-78884a62fff0">
+                    <propertyInstance
+                      Id="0d6e5332-7ec3-41e7-ad5b-8a8b3cd21f3b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2eca4831-0a9c-46d3-b50c-ff691b196b7a">
+                    <propertyInstance
+                      Id="a459dc9f-ec6a-45cd-8252-b85bd7efb81b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="979e8a3f-1ff3-4577-802a-7987165c3ec3">
+                    <propertyInstance
+                      Id="4dd29f60-5e5c-40fe-b888-622c53307403"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50efa7cb-c367-4e44-b073-2aa845287670">
+                    <propertyInstance
+                      Id="a986e8bd-4c6d-4025-aedd-991f0eeeaa1d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed6a18fc-0ac6-46a3-8b79-7dc64ac93c5d">
+                    <propertyInstance
+                      Id="0ce1e98a-98ed-425a-897c-3f6ed0d3b32e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ca7b2223-b4da-48bc-8583-9fdadd4b16b9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="15e609df-4297-4ca8-a34d-cc83dbe6ce64"
+                  name="exception"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5f20fe78-871f-4ddf-991d-bc24fd0fcc17"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.StrategyErrors Type%3DSqlDbExecutionStrategy Member%3D(Name%3DShouldRetryOn OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3Dexception"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e3fa5802-490a-4ede-a1f0-ac8e7d735153"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

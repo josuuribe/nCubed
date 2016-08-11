@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e20a0788-1c5e-43a7-88be-d36b716dfb7e"
+  name="Repositories"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="321fde7a-48c7-4c7c-8f5a-afc67734c68f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed.Core.Infrastructure.Repositories"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="670805bd-8c98-46e9-b8ee-b82f5340c95d"
+        name="HealthRepository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6e20ebf7-94e0-40a1-99ff-4382a747a0aa"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.Repositories Type%3DHealthRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4f6124d2-b544-4c64-a1d3-1e826d6d6b0a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d5d3b0b1-f8f8-47c9-94a6-485d497eab4c">
+                <propertyInstance
+                  Id="73756ca8-b217-4833-bbad-e07997777083"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ba2a03e-700f-451d-9a44-7e7d16d9586e">
+                <propertyInstance
+                  Id="e5ae33d8-896b-49ea-a719-b8940759c104"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e6f6005-cc1d-4905-87f6-e29ab3376a71">
+                <propertyInstance
+                  Id="8988da07-705b-4160-81c8-e3fb2fd5ffd3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e5f687fb-fca9-4656-bcf3-dc8a27f6c7cb">
+                <propertyInstance
+                  Id="84ef4814-7576-41ff-9591-b270fbe45bb7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3c41c72-fe7d-49a3-8445-38a45c3da5e3">
+                <propertyInstance
+                  Id="77c76c33-0cfd-4665-80a6-8622df331b3f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="f3998b84-a1ac-48e7-816a-eabaa1743b0a">
+            <interfaceMoniker
+              Id="f6e235a7-36e1-4008-9af9-1405d1b51ffc"
+              LastKnownName="IHealthRepository"
+              LastKnownLocation="Package40_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bd399821-eccc-47e7-aaf0-26236c4d216b"
+            name="HealthRepository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="257226c7-8266-4345-8b58-9707cb56d59f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.Infrastructure.dll Namespace%3DOptimissa.nCubed.Core.Infrastructure.Repositories Type%3DHealthRepository Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b30ec708-e715-42e5-9359-fc08c24eaacb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0119fa1f-1c5d-4333-af79-05e314de05de">
+                    <propertyInstance
+                      Id="c29d43b0-d775-4575-af02-95c178ec3e5d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09a1be35-fc72-4a84-bad1-93a6b5b37f42">
+                    <propertyInstance
+                      Id="6f77a9cc-f679-46b3-b477-88d7012af7f7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e397e4c3-4965-4e85-b955-92135869e428">
+                    <propertyInstance
+                      Id="85c1cef0-2488-4430-854a-055eab799589"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b23a69e6-cf8b-4909-84b5-974810ec0252">
+                    <propertyInstance
+                      Id="d771c19e-e341-4ce2-9f42-5ee31c42ee36"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a19ed3eb-8822-4221-8a9a-beba0ff6b671">
+                    <propertyInstance
+                      Id="eb05ae8b-380d-47ee-8b33-e98806d3ee89"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb340140-2a1c-45eb-a8b4-b0a0e724eb89">
+                    <propertyInstance
+                      Id="de1686e2-0dfc-4675-a80f-e602fd47d4bb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

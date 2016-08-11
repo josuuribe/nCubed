@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bf503ec1-3df5-4a4d-a30b-f752de01398c"
+  name="Core"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="36630a46-d8c2-4d5f-842c-a25e057007d8"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed.DDD.Core"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="ad9f0f28-2d3a-4f21-b5ab-7e3cd3131f5d"
+        name="ApplicationFactory&lt;T‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a3d6725e-58ff-4c3a-8ae7-bef89758dd34"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1651bd8a-06d5-4610-8798-cf88e2a179b2">
+                <propertyInstance
+                  Id="e761a081-e46f-4f7e-b1cc-784ff3b6980f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5786c485-43e0-44b0-863e-66c926b963be">
+                <propertyInstance
+                  Id="f149dfdb-6b6f-4912-9b4f-d94289908552"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d616e8f0-889b-4e05-b857-3e1d1aa5c936">
+                <propertyInstance
+                  Id="e6aac066-a3b5-4f1a-b7ac-ecd0f5673014"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b50613f-bc61-4ba5-94dd-24bcd5e3e6b6">
+                <propertyInstance
+                  Id="564159a1-41c4-4956-b3b3-af6f4841e3be"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8f28fd0e-56c5-410b-8973-9eedd73e700b">
+                <propertyInstance
+                  Id="9d85b8a4-8927-4ae8-89d9-a75536d30b0f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="94dfc910-9867-4a78-803d-1a1d7e858858">
+            <interfaceMoniker
+              Id="9c3398f1-5a31-43ba-aaf2-b315d76c93da"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package5_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <signatures>
+          <templateBinding
+            Id="44c4fc7d-6912-463e-ac6b-2c4dcca96782">
+            <redefinableTemplateSignatureMoniker
+              Id="80057bd0-fe22-4184-9d0e-2f166c022b6c"
+              LastKnownLocation="Package60_1030.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="f1e86f7e-992f-44a8-a4c3-023b361576a9">
+                  <actuals>
+                    <classMoniker
+                      Id="1ca8d4f7-3c35-40b8-8dee-d03d37bb3a1b"
+                      LastKnownName="T"
+                      LastKnownLocation="Package41_1030.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="8e1374c9-48c1-4eb5-8660-b70e135881c7"
+                      LastKnownLocation="Package60_1030.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4c45bb9d-e653-4b86-ba54-4ebc5ca85e68"
+        name="ApplicationFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d77a59bc-07fb-484f-bc54-9ed86da2b671"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.DDD.Core Type%3D(Name%3DApplicationFactory GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="cf451c02-6af8-4fa4-96b4-4840dadebfca"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="160f3afb-7b12-49be-8334-11f3fccfa7af">
+                <propertyInstance
+                  Id="a9c08b11-73fc-4060-8335-d9b3f0360ca4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="20fe0633-8b34-42bf-b5bd-328654fd6ff6">
+                <propertyInstance
+                  Id="e1542386-0e74-417e-8cc8-fbba591de1be"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a34f8950-cc06-482c-9c69-a2a3d489c7f6">
+                <propertyInstance
+                  Id="50454525-d03e-4ab1-880a-c059b2f0e4b0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c9065cae-bfa6-42fb-87ab-99d156f4efeb">
+                <propertyInstance
+                  Id="10fbfeb3-587f-4979-8662-30d2952ab058"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a3c87409-2ed8-497c-a516-207715992f89">
+                <propertyInstance
+                  Id="2ed0da6d-0e6c-479b-9f5f-b53abf669d21"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="bc89aee4-4412-4602-b487-9aa4e02ba5f5">
+            <interfaceMoniker
+              Id="9c3398f1-5a31-43ba-aaf2-b315d76c93da"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package5_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="80057bd0-fe22-4184-9d0e-2f166c022b6c"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="8e1374c9-48c1-4eb5-8660-b70e135881c7">
+                <referencesInternal>
+                  <reference
+                    Id="c63afc17-42b8-4fd5-ace7-461247dac6e3"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.DDD.Core Type%3D(Name%3DApplicationFactory GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="c6d8bf10-0d94-41d1-b81e-31b6baca7d01"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,3467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="be31a1d6-9bb7-46d4-8d30-98f09400ea2e"
+  name="Serialization"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="6c080be2-e6f9-403d-89fc-3e9a3a71be21"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOptimissa.nCubed.Core.Serialization"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="90bc168b-48c3-4c7b-9e0a-2cd20cba60e3"
+        name="ITextSerializer"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a6d6e8ac-4646-4388-b16a-2d411a38b77b"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c162e7b1-1c1d-4ef1-bd2d-144b4f44353c"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="16b96050-32ef-42de-9e20-d276c1a6833c">
+                <propertyInstance
+                  Id="461d5997-cb1b-4989-87e6-519aaf4a8757"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fd2144b1-d114-4644-a83e-e997ff9518ef">
+                <propertyInstance
+                  Id="26ce772c-785f-473b-bce6-b9a55c15a523"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="be3a6c90-3d91-46fb-b78c-86d5177e9273">
+                <propertyInstance
+                  Id="c526b52f-1ff6-42a6-b17c-a619b80fdc2d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="425f4278-2dd8-4229-93c9-181d18cd0717">
+                <propertyInstance
+                  Id="3c71ed74-03f8-468f-97ec-bea2b3dbad37"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="fa57ef77-bc88-4bf3-8b0f-df7506812848"
+            isDerived="false"
+            sourceEndRoleName="ITextSerializer"
+            targetEndRoleName="SerializeContainer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="41807d3b-4e56-4040-9a66-231c8b0da762"
+              LastKnownName="SerializeContainer"
+              LastKnownLocation="Package41_1030.uml" />
+            <description>Property SerializeContainer references type SerializeContainer.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="293e0f66-a2e0-46ab-b03e-1429c386aa84"
+                  name="ITextSerializer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="edf3ec90-ddca-4900-9dcf-87728be65f78"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0ecb039b-cc1e-4fb8-bec4-a69f7682ee73"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="990cb2d8-7f59-4b9d-afdc-03782e301902"
+                  name="SerializeContainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e5e3909e-e493-4f15-aafc-1212de147df9"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4842012b-224e-4ac9-aeac-c84e33ab9dff"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="73088a89-94d7-434c-bb37-562575fe9f5d"
+            name="SerializeContainer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b6f09432-fec7-41b3-aaff-cb5c8c5d9372"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3DSerializeContainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="09cd88d0-dc17-449d-a870-a1d015a66987"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="394deab1-617e-4bd3-a456-d93fac431fca">
+                    <propertyInstance
+                      Id="94f86f4c-e094-40bd-a6ba-b1d764b8db8e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e955a08-3953-461c-80cf-848afb91bff4">
+                    <propertyInstance
+                      Id="599894d6-dc6e-42ea-9710-db0c15669d2e"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c421420-a548-44b6-8143-afa1dbd72c07">
+                    <propertyInstance
+                      Id="1dfaf16f-1919-4229-974d-2a889cd3102e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59893ad1-1369-4bc1-bcce-a07f9d30a046">
+                    <propertyInstance
+                      Id="248c09c0-8fec-4346-8c2f-07bce1e0461d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="260dc14b-42ba-433d-bd52-69ffad21edc6">
+                    <propertyInstance
+                      Id="da5a6c0d-c7ce-45dc-8c94-d2b296cdac4c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bf29bf6-8789-4ce4-9fca-833b7c076034">
+                    <propertyInstance
+                      Id="c3e27176-6507-4a65-962d-aa74f2652992"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0b53d99-b1ec-42be-adea-5adea92cdf01">
+                    <propertyInstance
+                      Id="08acd186-f1e7-4097-a8da-dc0f03d5ac32"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="41807d3b-4e56-4040-9a66-231c8b0da762"
+                LastKnownName="SerializeContainer"
+                LastKnownLocation="Package41_1030.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="7e586da5-522c-4336-b6c3-dc8a633381ae"
+            name="Deserialize‎&lt;T‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="58c719e8-1a07-469f-8d1e-829f210429ce"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7c431767-27fe-4ffa-9625-f344bb4af466"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af1ec9a9-229a-4203-bbcf-9abef04f0d37">
+                    <propertyInstance
+                      Id="17478ab7-c324-4139-85c9-7e92eb00e91d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98245328-ad0d-463a-9a98-61d36136cc66">
+                    <propertyInstance
+                      Id="c58c63ea-4d07-4571-b5c3-ff3dfa941434"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09ce9d29-6e3b-4dbe-ba9b-175221f8d456">
+                    <propertyInstance
+                      Id="92d6cd88-7129-4efa-ae95-633693fb44db"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="883e56c5-2690-40e4-b8b3-7419074778be">
+                    <propertyInstance
+                      Id="46903b88-3c8b-47b3-87cc-f0d33f70121c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df379fe0-bcd8-477b-a0db-ae6b5b3666f7">
+                    <propertyInstance
+                      Id="258765f5-6dde-4343-abb6-b872a2e81b33"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="defa54e1-d9e3-494b-bf5b-647eeb5bd7c7">
+                    <propertyInstance
+                      Id="68cf0819-b222-4b44-b8a0-c2f3ea9a1a5b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b839f50e-9e42-4d31-8bd0-cfc4fc49dcca"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eac1d9f5-fd37-40ca-b22d-f489915712b2"
+                      LastKnownName="T"
+                      LastKnownLocation="Package4_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fcaec32f-2279-4f23-998a-987de5bb25b7"
+                  name="serialized"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="110cf577-ea3e-4a8a-8448-7cb46f7f9124"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dserialized"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eba85b80-50a7-490f-a9bc-c7f278f64e24"
+            name="LoadType"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0ce3c250-7a74-45c9-82e3-7c783f11dca3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3D(Name%3DLoadType OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0c453a5e-8175-4597-880c-1cb1a2fbd532"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85f6c943-f744-4091-be1f-493993a2e313">
+                    <propertyInstance
+                      Id="51049ef5-dc54-4581-873c-c7a315b5ca87"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf1abfa5-3772-4824-b92f-b4c04d4febb2">
+                    <propertyInstance
+                      Id="3ec719ee-2b38-4b9a-a991-b0b7f468299f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="127f78e0-2e6d-4674-b2d4-4b1cf2880281">
+                    <propertyInstance
+                      Id="983c8bcf-ff78-44a2-8932-fd64e73aff47"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="027e3a00-df33-4b43-af18-a3d07139e13f">
+                    <propertyInstance
+                      Id="6ca0138e-0b4f-465d-8ec3-8876daa07c7e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f1a423b-f0d8-4bac-99d2-091a734e994a">
+                    <propertyInstance
+                      Id="d6968c86-d522-48d2-9de8-24fd67426a1e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b38fd69-98e8-47dc-8f34-e3a0911cb222">
+                    <propertyInstance
+                      Id="bf15fb11-52cb-4088-ac6c-f19fa0aef90b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5e2f5a86-59b6-4d23-a7ab-800e7be96340"
+                  name="type"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="834627a6-4c5a-4fab-8d54-f7a4a1089f35"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3D(Name%3DLoadType OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dtype"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="477009ad-316d-44df-a932-2bbec25568c3"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="15aa342b-e44d-429f-aea7-a3462a6980cf"
+            name="Serialize‎&lt;T‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f3afe792-ccb5-44f8-9123-4be7abbd20f1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f4b51a94-1f80-4c79-adc1-88f06df74a5a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e330fd3d-5824-4b81-8018-32c6ee8022b5">
+                    <propertyInstance
+                      Id="0f109b48-7ccf-441e-90e9-a49e64897583"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="848436b3-659c-4dfe-a506-66e8b75c2a05">
+                    <propertyInstance
+                      Id="1377d464-72d3-44ef-8f1a-4f41104c4222"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="562e3311-b472-48d7-8144-bda335350f29">
+                    <propertyInstance
+                      Id="458a8833-ada1-4980-94e8-59811476f56d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a41f225f-17f9-4da5-9384-03395d18f30e">
+                    <propertyInstance
+                      Id="473e28cb-9161-4fbc-a559-779a7878a216"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91212b1a-bfdc-41b4-ac4a-d673e55a8aa1">
+                    <propertyInstance
+                      Id="10e496c5-ac75-472c-a15d-19afffde0b05"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17e28a4e-9810-492e-a918-3ec03c8f40ce">
+                    <propertyInstance
+                      Id="e79751ff-eb93-4552-a5ce-b198f6bce4d6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9a0f6be6-5b02-4a36-a4b9-3f2555c6381e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dc1ba06f-221c-4aaf-bd5e-ef77d69cad53"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6cc39d7b-4a1c-4032-b443-44423ecdce28"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eac1d9f5-fd37-40ca-b22d-f489915712b2"
+                      LastKnownName="T"
+                      LastKnownLocation="Package4_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="42085e4e-5089-467e-8ada-698ed413081f"
+            name="Serialize"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9f58ae66-291a-4b87-b8ec-8aeb4c5021e4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2684b4d8-542b-4791-9bb9-6f5e8e823f51"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc7c34ad-32bf-48ea-be16-85369309a763">
+                    <propertyInstance
+                      Id="73f855b7-34ea-4e89-b2fd-6e429c9789b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fa1fa7c-bf08-48de-99ff-a77634b9cc91">
+                    <propertyInstance
+                      Id="2bfdb681-45f0-4bb6-87fa-ee8ff7949e10"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0093f13b-2410-48f2-bb23-18573418a3c5">
+                    <propertyInstance
+                      Id="5c0a2ed2-bb9b-4442-8e99-61ea02425ff2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3682740-89c7-4021-9e76-95ac215678cc">
+                    <propertyInstance
+                      Id="07d61996-e80a-4ccd-b73f-cd8918326c57"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d898ea10-7601-4996-ad56-97628b17d53f">
+                    <propertyInstance
+                      Id="4294f096-6165-48bf-949b-576b566e13a3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cf312b1-64fc-4f81-81bd-315d7d2ce23e">
+                    <propertyInstance
+                      Id="d8e10bb8-3c88-40a2-96fb-17250f3bd410"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="45aad089-e4fc-4cd7-afcc-e6c084ef9c2c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a852bc0-f4b6-40b9-9fea-67bd37ac9355"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d21543d6-f192-4bf8-afbf-815b9f47e503"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b0740bbc-e286-4cfc-b659-45986a1ac463"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d8e68922-d21c-4151-b0fe-6898d2bde717"
+                  name="type"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0e4de273-8827-4534-9e87-89af8eff9a7b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DITextSerializer Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dtype"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="477009ad-316d-44df-a932-2bbec25568c3"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="64f1aadb-231b-4b4c-be7a-0a29c3ff577c"
+        name="JsonTextSerializer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="48b294de-4648-456b-b9cf-27e2d8b52f8b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="91cbb169-2873-42ff-9259-4ed0c73dc1ca"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53ee1708-28fb-4997-b7c9-e683f7b89753">
+                <propertyInstance
+                  Id="542af212-e552-433f-bef5-d34ea9708d88"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="594be13a-3e1e-4c94-878e-710f78cae241">
+                <propertyInstance
+                  Id="4f8450a5-d60e-4e98-8ce6-a993c4087e9d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88132d32-64da-4f81-bdc1-0d9e4dd0811e">
+                <propertyInstance
+                  Id="7375f86d-694a-4edb-99b1-407c18655ca0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1fb45bca-a0e2-4701-9b22-1d3cb0c3532e">
+                <propertyInstance
+                  Id="1812ec02-e1a5-4126-ae13-461385605fc7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6b10cbde-54b6-4cde-a9e6-b62f07102ac6">
+                <propertyInstance
+                  Id="4bb64ae2-7a07-475e-830e-663a6efb9610"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="66821d74-6775-4cbf-ba8f-44fb3b2aa31c">
+            <interfaceMoniker
+              Id="90bc168b-48c3-4c7b-9e0a-2cd20cba60e3"
+              LastKnownName="ITextSerializer"
+              LastKnownLocation="Package47_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="9696f32a-417b-4246-bc64-5ee2bb840f8e"
+            isDerived="false"
+            sourceEndRoleName="JsonTextSerializer"
+            targetEndRoleName="SerializeContainer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="41807d3b-4e56-4040-9a66-231c8b0da762"
+              LastKnownName="SerializeContainer"
+              LastKnownLocation="Package41_1030.uml" />
+            <description>Property SerializeContainer references type SerializeContainer.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2a2f896-2fed-4e8d-a9b3-d4a88afd0745"
+                  name="JsonTextSerializer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1a255b50-9035-41dd-9424-aa9081c980de"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c8428c52-900c-4731-901c-7e00e62fde92"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b76b3795-e039-4843-b6dd-f2231a0ede42"
+                  name="SerializeContainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aa450d1d-13c6-4f56-a76b-0ef11f590d5f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="59abbad2-4dad-4351-bd0c-5b00f9e66628"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="575c32b9-7720-4f5c-856b-37578b1c8c28"
+            name="SerializeContainer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="15cc9db7-6398-4edd-9bc3-222f1477aa7e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3DSerializeContainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="188d5994-6ba2-4844-b990-a22f778fa6d6"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a3c15fe-9ce8-469d-af9e-8ba199fda735">
+                    <propertyInstance
+                      Id="11ca3be4-1745-4f8b-a3bf-4f02460df6d6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0310f126-0f5d-4e93-9d95-ad5c2f5b47a0">
+                    <propertyInstance
+                      Id="8fceb5eb-d376-4ea2-8770-f2dbbb4f58b1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26507c3e-d5c6-48da-bc2c-0ad1c6b5b5d5">
+                    <propertyInstance
+                      Id="95556080-11dc-4510-bf3f-08d4dc60dd4b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="646c1885-b7b2-43af-8f30-e6bec213d4e6">
+                    <propertyInstance
+                      Id="8097905d-b0ae-495b-98f4-c321621671d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2357d521-f991-4e8b-9bee-41d05e18e32e">
+                    <propertyInstance
+                      Id="aed22c21-0d34-408a-ad09-96d19b54cb07"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa75c69d-63c9-4a1a-b339-48e35eee5c73">
+                    <propertyInstance
+                      Id="7ea2d016-7f77-47b6-92ad-3d4b827bc571"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69ada610-3712-4968-9c46-b2768dd3ff7e">
+                    <propertyInstance
+                      Id="47b54968-9b8a-400c-8713-8c2746b9ac25"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="41807d3b-4e56-4040-9a66-231c8b0da762"
+                LastKnownName="SerializeContainer"
+                LastKnownLocation="Package41_1030.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b088b6f5-f61e-4d4f-a2be-fb8ff1222825"
+            name="JsonTextSerializer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bd9b2f91-1c1c-4ce7-8c30-94b46875c2c8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2082fe42-def8-47d7-82a8-4ced882ad1fb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd20bb40-8f33-4e78-b8fd-baf84d399016">
+                    <propertyInstance
+                      Id="af304ffe-8092-4b51-8d66-ef3b751693b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af13099b-ec78-4531-b01f-566aa09ac784">
+                    <propertyInstance
+                      Id="d0363594-a178-4160-ab80-738d6f887891"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efdc3186-4aa9-4f10-805e-a45bdf6f8589">
+                    <propertyInstance
+                      Id="4a801f6a-f137-466c-a65d-70f93e26d7a8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d89f1680-0bf9-4e07-a448-a7e88d42c687">
+                    <propertyInstance
+                      Id="8a431dbb-f45c-4cb2-bdb8-7afaf91e4125"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a12afc25-309c-45ea-9394-a02dbbb9490d">
+                    <propertyInstance
+                      Id="626e9e99-3d9b-4ade-af02-4d921413fd17"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50aaa603-2955-4495-b80c-f1f89cd11361">
+                    <propertyInstance
+                      Id="bac70ef6-6bfe-4bc5-aef0-56fe017d2877"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="6500cfd4-095d-422c-b10b-525c34a0267e"
+            name="Deserialize‎&lt;U‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6eadef95-8ded-4ec2-b476-ed81e10b49ac"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b1ab714c-20e2-41ea-8c85-0f600f6227e5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adc37071-5c8e-4000-99a6-5449710f3f72">
+                    <propertyInstance
+                      Id="d89c6356-4d77-4ba8-8312-bfc7d2068378"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b74f493c-9cf8-4b1d-a7f1-0400d955003a">
+                    <propertyInstance
+                      Id="d2231db7-020f-4e69-b9ba-9939a43c5280"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb9db1ef-5396-40d5-9a89-6d67033ba69b">
+                    <propertyInstance
+                      Id="a871dd45-6f82-4d69-b416-1713105e4754"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="496007d5-3a47-4eb7-b78d-0064ad71cdc9">
+                    <propertyInstance
+                      Id="6bc51288-a90f-4d4b-b301-f47668394c83"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="becf7682-c91d-4f33-a170-d3a5fd233a81">
+                    <propertyInstance
+                      Id="5a3e7203-5c98-4ec1-8401-7c9c9844024b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1043043a-aebb-429e-9f29-17daceb10a72">
+                    <propertyInstance
+                      Id="94d8261c-62a4-4575-8853-1c1e91288247"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0035b745-00c8-40ea-a1ae-af0ae88bb7a6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ae0730f-b7b6-49cc-a983-bcfb39db6b5f"
+                      LastKnownName="U"
+                      LastKnownLocation="Package3_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="335ee4fe-2b51-4f8d-9fe9-8a717957762e"
+                  name="serialized"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dbb9f08a-9d14-4349-9751-f03c98a54646"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dserialized"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d0db8bd4-319a-4d40-a4b9-148f514e7c62"
+            name="Deserialize‎&lt;U‎&gt;"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="400c60c2-42f3-446d-8baf-b31c38009316"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="059a10b6-2b11-4cfa-88fa-60a2ad9a4197"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6384b27-7caf-4a5e-a8c9-9a423e07bcfe">
+                    <propertyInstance
+                      Id="0d2bb551-6694-435b-8c4a-4713b7aad04f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ec52d6a-570f-42d0-a9b7-9d4962dbbc22">
+                    <propertyInstance
+                      Id="33c0f9d7-ad45-4ad6-9d70-43ec86613a0c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="006444d0-aa7e-41a5-9628-f6023b6a1504">
+                    <propertyInstance
+                      Id="dcb59e33-a64d-439f-bca8-7fe8d2862132"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f17214d-5925-4dc0-a553-31ebf78c2543">
+                    <propertyInstance
+                      Id="a193e2d6-e1fe-4194-9fd4-102979441937"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d31de5c3-d392-46d8-9686-11cfb8dab5b6">
+                    <propertyInstance
+                      Id="90b2f6a9-8741-40b0-9c48-32ec0e34136a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="681faafe-2dea-47dd-bcd6-aa35b21ef78f">
+                    <propertyInstance
+                      Id="c299767d-566c-4f86-bea8-b4bda3e86112"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c211584f-686e-41da-9650-8eff62be3cf7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ae0730f-b7b6-49cc-a983-bcfb39db6b5f"
+                      LastKnownName="U"
+                      LastKnownLocation="Package3_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2aac61e3-e88e-4724-9c44-9418ba5ebc1e"
+                  name="serialized"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ba46f21e-6e94-4f20-9f30-6fb48f04dc37"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))]) ParameterIdentifier%3Dserialized"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="57ba88f4-29f5-4838-8927-cf5d1e6ca6aa"
+                  name="knownTypes"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ad0e9e5a-2a2f-4807-916a-f001e952e5d1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))]) ParameterIdentifier%3DknownTypes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="84a9af36-a8e9-4603-8d9f-2d1086dd1b0f"
+                      LastKnownName="IEnumerable&lt;Type‎&gt;"
+                      LastKnownLocation="Package7_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3b0602cf-2dbe-4ffd-bbe9-c7277a020f6e"
+            name="LoadType"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1ec0088e-546b-4a59-a48b-6914c517b395"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DLoadType OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="84f6e3e7-54ee-4560-87ba-484a83d414a9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e494531-fdb4-415c-87a4-2ba9333b2dca">
+                    <propertyInstance
+                      Id="8cda56ff-8af0-4c0d-82c5-5080a0dd16a7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b42e8a4-85b1-4f3c-9e1b-3279f5d17a8c">
+                    <propertyInstance
+                      Id="c0570acf-4b08-429d-b4f4-85b13356ab3d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3e62eaf-501c-42ca-95f5-f495142eb47f">
+                    <propertyInstance
+                      Id="276d5e99-1291-4bf7-a0ca-272e04b42a36"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c05bde1-d858-477d-a70c-4af1aedd411c">
+                    <propertyInstance
+                      Id="b48d22ff-c341-4269-b861-5c72a4004523"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="012cc942-73c3-43d5-82ee-ed87bed6a159">
+                    <propertyInstance
+                      Id="427ba503-ae40-4cfa-8f39-2a3f71ba98ee"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa9d3025-bd0a-4149-80a3-463319e1a48f">
+                    <propertyInstance
+                      Id="1eabf4b2-4744-4184-9e23-84e20607cc2e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dba0f0d6-5304-4710-b057-85da612dd9b8"
+                  name="type"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="95c71eb6-aabe-443b-b02a-6c2b1c3a198f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DLoadType OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dtype"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="477009ad-316d-44df-a932-2bbec25568c3"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="43379b40-de50-4dfe-9b6f-e4ee931d629d"
+            name="Serialize‎&lt;U‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3df3b019-69c5-4325-b963-3d2a08b1642c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0daff3b6-1cb5-49c6-beac-c65091d7fdc6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee6c94c1-7061-4f72-8b9d-5c0a4af31e7c">
+                    <propertyInstance
+                      Id="58d389a9-5669-40b0-95b8-2c41ad05fd05"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af7a6311-98d4-4372-b1ba-b74a5b7eb8f2">
+                    <propertyInstance
+                      Id="44d54093-c397-44d3-b7bb-723866b5c1e6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1de88bd9-bc70-4921-ac0a-e20a40a44937">
+                    <propertyInstance
+                      Id="b9c6a2a8-dc30-460d-a885-ad052f202b34"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fb0e1d1-509f-46a3-8310-9782db47a6ed">
+                    <propertyInstance
+                      Id="99ad1d42-e225-40fb-bd44-b0b2aa4e58e7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="467350d4-a4dd-48ee-aaa6-a877ad21d581">
+                    <propertyInstance
+                      Id="13bf23e8-60c2-4829-af13-f129f98ea0c3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="297fd3cc-9110-42f5-b103-28f056d22312">
+                    <propertyInstance
+                      Id="43515705-a80f-46c9-a6dd-168a3d3ed7a2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2db8b506-e43c-44fe-a1fd-0245e6ade23a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="82926178-6aad-47bb-9ecc-4ab61e507f71"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="26d81f19-0fff-45f6-8138-49add1765f12"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ae0730f-b7b6-49cc-a983-bcfb39db6b5f"
+                      LastKnownName="U"
+                      LastKnownLocation="Package3_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d358140d-2c5e-4a47-85f9-a2dd12b89238"
+            name="Serialize‎&lt;U‎&gt;"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d5832630-335b-4789-a7b0-1652eda01f83"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="054f2146-8299-4fa9-b817-6d0763027238"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cecccdc4-cea9-4f85-be54-bf867ad56754">
+                    <propertyInstance
+                      Id="028a6c08-f493-46ae-ab67-ff78b4af1761"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1e9ac5c-5797-466e-8258-22c251978c53">
+                    <propertyInstance
+                      Id="d033d63b-e966-49be-9a7a-eed692516f16"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3be760d-6544-4644-a9b2-21e1d8a1a132">
+                    <propertyInstance
+                      Id="f78ecf3f-0af3-4b9c-aebb-32d23a815fc1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d90c04ad-f5ac-41a3-9dbf-6e2741a8eea0">
+                    <propertyInstance
+                      Id="b4d561a2-f3ac-4486-b6e2-9e5e0a8c0167"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6dab844-1fd6-44ba-b8de-2ba7182876b3">
+                    <propertyInstance
+                      Id="f2b13db4-3ba1-494f-b953-14e810a7203c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="122a6ead-8633-4ef4-bbc0-704de27c1af2">
+                    <propertyInstance
+                      Id="9abc21e8-857d-4f27-846c-b3a1e257da0f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4910b976-af7b-4e7f-9a70-2494af8d6904"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="90a627e9-cce8-4f49-894b-8d6a4df53472"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="38ac3204-7207-42b9-8dbf-d18dff3026d1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ae0730f-b7b6-49cc-a983-bcfb39db6b5f"
+                      LastKnownName="U"
+                      LastKnownLocation="Package3_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="79748d72-3196-4c76-93d1-489e631c357f"
+                  name="knownTypes"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3a308ace-de52-4754-9c4e-a03f4b6e8a62"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))]) ParameterIdentifier%3DknownTypes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="84a9af36-a8e9-4603-8d9f-2d1086dd1b0f"
+                      LastKnownName="IEnumerable&lt;Type‎&gt;"
+                      LastKnownLocation="Package7_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1baa4c9d-7986-4dab-90f5-4d3268f192f1"
+            name="Serialize"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="40a0a730-91ef-42f5-9735-37561f6b53d2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f9a2cada-4c02-4034-be13-60eeb793a902"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0e4df61-5821-46e5-ae9c-11565db34845">
+                    <propertyInstance
+                      Id="1d474966-2dbf-4f01-8c50-dddc07404d20"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="172fe6d2-2d05-4d50-927d-81623b834f5e">
+                    <propertyInstance
+                      Id="e412ff1c-4c0b-437e-b8ea-788cb03dec1e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79d0662f-9269-4b3b-9503-55b1399da5bd">
+                    <propertyInstance
+                      Id="f1bced71-2c55-44d0-9b60-b54a0c226648"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb7e7a06-fde5-459d-bbe0-8a4fd66b2501">
+                    <propertyInstance
+                      Id="b7abdafc-efa7-4542-8fe9-ea32696df74e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9595d88a-c97a-4c12-a85b-5d9e5b5cb1a5">
+                    <propertyInstance
+                      Id="07cfe7ff-d1af-46bb-9a66-05c53ec95448"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9318b13-8e7f-4125-a9b9-a9242b0127c3">
+                    <propertyInstance
+                      Id="c40de8d5-0452-4305-819b-9da05a7f15bb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a954a1c7-dccb-41eb-b0cd-4b8e45318348"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="36044088-22f0-4f9e-8149-e904fc77df2b"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3ed221e2-d8e3-4bc3-88a3-2bf96a4791ea"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b0740bbc-e286-4cfc-b659-45986a1ac463"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc322550-adf0-44ff-b25d-ff2bab95d673"
+                  name="type"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c28498a5-fa4d-4144-a2e3-f14547215a29"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DJsonTextSerializer Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dtype"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="477009ad-316d-44df-a932-2bbec25568c3"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fb787c26-c444-43bf-b4ec-20566f48c404"
+            name="Deserialize‎&lt;T‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c4d15626-9ae9-4d92-9f1c-d129e5b453fe"
+                  name="serialized"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5b7eacc6-2645-4d12-bd7f-59cc19015355"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eac1d9f5-fd37-40ca-b22d-f489915712b2"
+                      LastKnownName="T"
+                      LastKnownLocation="Package4_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2b833fd2-4c16-4604-b67d-4434d0098c1c"
+            name="Serialize‎&lt;T‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="69d145a4-e968-471d-ace1-cbfefbcb1d0c"
+                  name="graph"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eac1d9f5-fd37-40ca-b22d-f489915712b2"
+                      LastKnownName="T"
+                      LastKnownLocation="Package4_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9e14353b-1d18-403f-8428-3094a528a624"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="482defe9-ff1d-4279-946a-6eddfc8db05b"
+        name="WCFEventContainer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c5214e3b-8352-40d1-8a09-d79fa0098f4c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="67a9684f-73dc-4c4f-a486-ad5214abfc9d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="71acdd71-56cb-4c7c-bdad-b1b852ac48dc">
+                <propertyInstance
+                  Id="78b9a910-349d-49bc-b2f5-b64f45b07d86"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f1ed0a09-1c1f-4c48-86bc-7c504bc3108e">
+                <propertyInstance
+                  Id="3fbd72e0-0664-4bbb-87ce-a5e214603c11"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc1f433e-76fd-48f6-961a-e32500388b4d">
+                <propertyInstance
+                  Id="1490659f-9802-4954-8bde-3c4a92e56ae6"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ec083bd-51d5-4b27-9113-65c1edbb69fd">
+                <propertyInstance
+                  Id="1e6a26fb-8d1e-49d4-bc72-561715290f83"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af700786-347f-4f0e-b211-07cd1516158a">
+                <propertyInstance
+                  Id="faa7c1f1-4821-477b-8b56-9650ce109827"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="7692812c-a2f7-495e-a944-228e967d54ea"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e6710ba0-316c-4eef-aeff-c5e97664ce04"
+              LastKnownName="CommonContainer&lt;XmlTextSerializer‎&gt;"
+              LastKnownLocation="Package41_1030.uml" />
+          </generalization>
+          <generalization
+            Id="085af455-5e20-44bb-a270-2a29f1df7621"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d8bb6f40-31e8-4f1a-98be-f5faba3c88bc"
+              LastKnownName="CommonContainer"
+              LastKnownLocation="Package41_1030.uml" />
+          </generalization>
+          <generalization
+            Id="e9781752-91f8-4715-82a4-69f7a79218d2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="050cc964-477e-4e9c-b768-0db0171aa507"
+              LastKnownName="CommonContainer&lt;T‎&gt;"
+              LastKnownLocation="Package41_1030.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4046a48c-5317-4826-8afb-a07141dcbd87"
+            name="Section"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c03f1041-a341-4dc3-8c2c-b10d48d7df94"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3DSection"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ebef9ed4-3d49-4e4f-a162-2e27c11e37b3"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="752de53e-ccd3-459b-9065-2417e8a778ea">
+                    <propertyInstance
+                      Id="f8353963-6686-40b8-b082-53cdc93cc81d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df4e6d0a-4a2d-4bfe-8c3c-1991efbf4dda">
+                    <propertyInstance
+                      Id="7e476589-ca0d-4ab0-b3e1-729eeb677035"
+                      name="Get"
+                      value="protected" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5d3e145-f491-4424-9ca0-eefae39be744">
+                    <propertyInstance
+                      Id="4052f820-42a6-4ee1-b72e-18204f8ca01c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d66ccd43-1be0-4134-a728-2bf6eb8277f2">
+                    <propertyInstance
+                      Id="1e6f0902-9883-4b98-b32a-a19e2ca4a483"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e78c2e2-056c-4807-9660-85eeb4e89051">
+                    <propertyInstance
+                      Id="dc670a35-3498-4526-9c67-e89631534aba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84bc1b12-1f47-4219-a999-821da91fed6e">
+                    <propertyInstance
+                      Id="7f0437ff-14df-4cc3-afe8-f8041e472ea5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4da1f5ca-f09f-4136-8729-b8fb92b01779">
+                    <propertyInstance
+                      Id="994be3f0-9112-480d-84a6-ccc949fc8f15"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="7613113d-9f0b-4d5b-b98c-6b9140a1f8a4"
+                LastKnownName="ICommonConfiguration"
+                LastKnownLocation="Package8_1030.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="df9a0a6e-0a5c-4b1d-a4d1-a7143ac4162b"
+            name="serviceContainer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2332f3ea-f5b9-4d7d-8dbf-f3b1444a72cf"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3DserviceContainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="69cb706a-5380-4bed-8926-b65322e82eab"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74b7bbe0-8b2e-4c72-bf1b-80b5dd107ed7">
+                    <propertyInstance
+                      Id="7c6b56fc-a804-4014-bae7-08301e83258e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1742594-e041-457e-bab8-7c26994da55d">
+                    <propertyInstance
+                      Id="cda35be4-61dc-413c-ad63-41acebaf113e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43eb8571-e075-4a3e-92e3-aa498077f47b">
+                    <propertyInstance
+                      Id="071550b4-912a-4d91-b584-5c37808ed2fe"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49f7f8ec-e91b-40c7-a1da-3cf991d1115c">
+                    <propertyInstance
+                      Id="970a3be1-a58f-448b-97bb-a194c9320401"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4a7f215-d781-4a9e-a0aa-4403f16d0a3d">
+                    <propertyInstance
+                      Id="7b15be36-882b-4c2d-ad3c-673ef33b9cc3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6f2bacdd-bc05-4584-bc99-bf90e9ebf20c"
+                LastKnownName="CompositionContainer"
+                LastKnownLocation="Package44_1030.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9969d03d-820d-4482-8878-221c1048b3df"
+            name="serviceContainerDTO"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7deb0194-204e-4674-9c20-02f3200d1b4b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3DserviceContainerDTO"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b71481b-2ad6-4fb4-a13e-fb39d9ace719"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15986964-a25a-41f1-bfe5-d285176ff80e">
+                    <propertyInstance
+                      Id="924f07f3-d655-454f-bccd-611458a9ea6a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c4757fa-8fd8-48da-9453-931228b36012">
+                    <propertyInstance
+                      Id="c0801784-6d23-4d70-9556-6a3e5f196fb3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="449d3c8c-c094-469c-991c-b4ea4d5f2fc2">
+                    <propertyInstance
+                      Id="31af3962-2b5e-4422-9c0a-5551ec24467b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbcdf818-4d5d-45a0-a451-dec7591d44ff">
+                    <propertyInstance
+                      Id="c43066fa-5047-4754-9de9-a7901fcf67a4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7f4ab7f-ac6a-4800-a54c-19dfc827dada">
+                    <propertyInstance
+                      Id="5739860b-a523-4dce-bf59-faa549bf3d9a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6f2bacdd-bc05-4584-bc99-bf90e9ebf20c"
+                LastKnownName="CompositionContainer"
+                LastKnownLocation="Package44_1030.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9d2e5b06-ac65-431c-87c3-f3777b8aea41"
+            name="WCFEventContainer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="84304b14-ce4b-4f1c-9bb1-1eb165fbc56d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9dab825a-b83d-4b40-97af-64bb6e485f30"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43db7dbd-e49e-40ff-8f2e-69f63b1555f1">
+                    <propertyInstance
+                      Id="e43dd4c2-2479-47ef-9852-6a0bd293a578"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="841d7447-7ceb-4684-905a-bc8ba294b93b">
+                    <propertyInstance
+                      Id="23b6f728-bd7b-4e38-b481-22153934c634"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9a507d1-2e60-4ec1-a587-680d803289b4">
+                    <propertyInstance
+                      Id="e61cd0cb-a75a-496b-b6d4-b6807e56ba9d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc7afc3c-c313-4d4e-9edb-c56444f518af">
+                    <propertyInstance
+                      Id="a83e9d73-5314-45c4-9126-399e156adfef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6fbf5b7-7279-4457-bbac-7f1bae64e5f0">
+                    <propertyInstance
+                      Id="a857c3ed-a88b-4c9b-8bed-7936548aafd2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf0fd224-acc4-49ba-9702-4ec02e57f09c">
+                    <propertyInstance
+                      Id="ac2b1e02-0549-4005-b371-f98952fb4c30"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="3b9056af-e2ff-45fc-b9fa-f497c6e3db20"
+            name="GetKnownTypes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="77a57f58-eb72-4d04-81dd-69723df616a7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DGetKnownTypes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2FSystem.ComponentModel.Composition.dll&quot; Namespace%3DSystem.ComponentModel.Composition.Hosting Type%3DCompositionContainer)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3366c25d-2414-4c8f-bff4-967e33b25fcf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="546fa1cb-7377-4ebb-a64f-5ace6d6c22d8">
+                    <propertyInstance
+                      Id="5bf09af7-437f-43a0-91a1-f7e9656d2ba6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="488e974d-3b92-41b6-b587-4381842f855f">
+                    <propertyInstance
+                      Id="89af3e02-b9c4-422e-8b1d-1592ec92af59"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6cf2cff-5713-4068-b02c-457a0ef6ae38">
+                    <propertyInstance
+                      Id="dd1779b6-fcbf-4598-94f4-d3f09220886e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ceb00c8-e1da-4f1b-ba18-b634256c031a">
+                    <propertyInstance
+                      Id="d5edd91b-7087-4520-b5b7-b18c25862a18"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7aab6070-3728-4172-8551-f3f57c5a6f8d">
+                    <propertyInstance
+                      Id="2b4350f5-f901-452e-894f-f877beabbbe2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b933596-ec3c-4861-99b9-e14c3f5e7b8b">
+                    <propertyInstance
+                      Id="bf4a0d15-1bbd-470a-aead-9de877583c1f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="452d40d3-1d2c-476d-bf93-1469deb34f1e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="84a9af36-a8e9-4603-8d9f-2d1086dd1b0f"
+                      LastKnownName="IEnumerable&lt;Type‎&gt;"
+                      LastKnownLocation="Package7_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d49cd60f-faef-488c-adc6-bf3d4c610b7f"
+                  name="serviceContainer"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8ecc15ff-929b-49bb-b9b9-52496b01be1b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DGetKnownTypes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2FSystem.ComponentModel.Composition.dll&quot; Namespace%3DSystem.ComponentModel.Composition.Hosting Type%3DCompositionContainer)]) ParameterIdentifier%3DserviceContainer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6f2bacdd-bc05-4584-bc99-bf90e9ebf20c"
+                      LastKnownName="CompositionContainer"
+                      LastKnownLocation="Package44_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d5e79eb8-9924-4bcd-876f-920579b0f25c"
+            name="GetKnownTypes"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d824eed3-86d0-43db-aef7-3ed88b88e3bb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DGetKnownTypes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Reflection Type%3DICustomAttributeProvider)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="84348eda-c77e-4be7-9ff3-2b023e1cad35"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32a16893-3a05-44a5-9119-e9f813a54c4d">
+                    <propertyInstance
+                      Id="a9d854a0-282e-437a-86c6-70f33a583785"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0156b299-2399-42a8-81e7-bb33f8c0f903">
+                    <propertyInstance
+                      Id="02c96cc7-8d8c-4a46-8cc3-df57fde22c72"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19b689b4-d826-4e3f-bbde-dbd8e93075a7">
+                    <propertyInstance
+                      Id="f8e514b7-8c21-44c4-bc78-82523673d53f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6803ff1-699c-4322-a0f1-ec63d34d6419">
+                    <propertyInstance
+                      Id="3e575a6a-126d-49dd-99a3-3963706fe9b2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c5c8b67-ef09-4538-9f48-3df6a2966089">
+                    <propertyInstance
+                      Id="8b8cc9dc-49b2-48c9-8cf4-32b151760c25"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85a61d21-92bf-4a3b-bc52-ce0ea0f0cf99">
+                    <propertyInstance
+                      Id="c9d235a1-a416-44ed-8096-478cb3f4fefa"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34e892c0-c565-47fa-be35-9ff2ac1fcb3e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="84a9af36-a8e9-4603-8d9f-2d1086dd1b0f"
+                      LastKnownName="IEnumerable&lt;Type‎&gt;"
+                      LastKnownLocation="Package7_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d132c10a-5c7a-42a2-af3a-d7bf54032a95"
+                  name="provider"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="25f733b4-e1b9-44a1-90d7-e4f8d9f0c0aa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DGetKnownTypes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Reflection Type%3DICustomAttributeProvider)]) ParameterIdentifier%3Dprovider"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="cb14fd4a-2459-4501-b42a-b4e72d5c1f9e"
+                      LastKnownName="ICustomAttributeProvider"
+                      LastKnownLocation="Package58_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2927b47c-7aaa-4a98-baec-a1d91dd1d73f"
+            name="WCFEventContainer_Registered"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4a37bc3f-2d99-473f-8c12-6936eba88924"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DWCFEventContainer_Registered OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3D(Name%3DCommonContainer GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3DRegisteredEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4ad448ac-099d-4845-8950-52a84349fc9e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77af03e0-35ad-4aa1-954f-0439c64a76fa">
+                    <propertyInstance
+                      Id="2f54111f-8c50-459e-9644-677752b30cd2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d405be26-e865-467d-a667-bf914c64ea38">
+                    <propertyInstance
+                      Id="c1121ab0-2ffc-4d26-a990-7ebe267e66c7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e4c2094-7dc1-4b62-8a53-001fc3de0c55">
+                    <propertyInstance
+                      Id="8762a98d-efaf-4ca7-9650-084a4ab52ae7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51897981-fb50-4bb6-afc8-74435feee1bd">
+                    <propertyInstance
+                      Id="f5b45cee-30fe-44d8-8ec2-f5046a9064a2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8af35f5b-de05-4c6c-839f-5c675d61cc19">
+                    <propertyInstance
+                      Id="0b23b1bf-5606-4fbe-917f-1f0fe75c5562"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5aaebdb6-29f8-4d5d-820e-aa0f19ac58bc">
+                    <propertyInstance
+                      Id="79310e48-ca4a-4da3-ba83-537d683aabde"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc543fef-727e-4aa1-9e42-94d714f28a87"
+                  name="container"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="924e794d-47f5-4ff5-9ccd-896bfa40b156"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DWCFEventContainer_Registered OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3D(Name%3DCommonContainer GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3DRegisteredEventArgs)]) ParameterIdentifier%3Dcontainer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e6710ba0-316c-4eef-aeff-c5e97664ce04"
+                      LastKnownName="CommonContainer&lt;XmlTextSerializer‎&gt;"
+                      LastKnownLocation="Package41_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e30e9736-44af-4613-9ad9-4436698fb6e8"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="edb96509-0482-40c1-b76b-67186c09a247"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DWCFEventContainer_Registered OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3D(Name%3DCommonContainer GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3DRegisteredEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c3a92a09-860f-4f54-b1e4-53c5247b8ede"
+                      LastKnownName="RegisteredEventArgs"
+                      LastKnownLocation="Package41_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ed0cf57d-2976-48f9-a3d3-796ee4894773"
+            name="WCFEventContainer_Registering"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9544c6f7-ad46-497e-b49a-814352822a80"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DWCFEventContainer_Registering OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3D(Name%3DCommonContainer GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3DRegisteringEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6be0efbd-b73d-4f67-b519-edcc9fe29aec"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8ebdbc6-ee6c-4fbd-a4a0-855ae3c9bd3d">
+                    <propertyInstance
+                      Id="e214810f-0409-45af-9eac-828e9571099e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="105048f0-9828-44eb-be40-201c14b66847">
+                    <propertyInstance
+                      Id="8b4e0224-22f7-439d-a0b2-0149f4844668"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f312aee9-fd43-4822-afb9-f35e6e8b323a">
+                    <propertyInstance
+                      Id="02426c83-5284-4823-9b51-4a83fff8bdd4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a25885e9-98fe-42f2-930f-a4de1399d03d">
+                    <propertyInstance
+                      Id="4eb578f0-54be-4632-b91b-13f2545c3da9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad16412e-d12e-45d0-8272-9d53ed31eedc">
+                    <propertyInstance
+                      Id="6b2d07c5-0a0d-4a38-b042-f3ed81dbab0b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b64cd1d2-3a4b-4d80-bc3f-25c7aad8f453">
+                    <propertyInstance
+                      Id="62ce90fc-eafe-4dc4-9c0a-ce194a75c0cd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39fa5be6-9b18-4e2e-a86e-cab80c24c525"
+                  name="container"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="20898222-e555-472f-a0b8-891576909a86"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DWCFEventContainer_Registering OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3D(Name%3DCommonContainer GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3DRegisteringEventArgs)]) ParameterIdentifier%3Dcontainer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e6710ba0-316c-4eef-aeff-c5e97664ce04"
+                      LastKnownName="CommonContainer&lt;XmlTextSerializer‎&gt;"
+                      LastKnownLocation="Package41_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6181c5cc-e3ab-4f19-b517-ae0f9a6c5f87"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b58c91f9-1cc5-41f6-b5d9-5cb1ca2739e0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3D(Name%3DWCFEventContainer_Registering OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3D(Name%3DCommonContainer GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Containers Type%3DRegisteringEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f178024f-2df5-49a0-a273-300d1c1616b0"
+                      LastKnownName="RegisteringEventArgs"
+                      LastKnownLocation="Package41_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="97102f7a-091b-4b97-a16d-ab7fb70c0280"
+            name="GetKnownTypes"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="898c294c-1e94-4abe-859d-1585697e11f3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.EventSourcing.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DWCFEventContainer Member%3DGetKnownTypes"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c3149a6d-675b-4306-bdf1-494ece3b7180"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21c553dd-0c59-45b7-8e0a-1e736e082e42">
+                    <propertyInstance
+                      Id="4b9dd89d-cc4f-4663-a548-d85a4f32aad6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="713c6b55-e26a-4a08-b74b-9de5077bde5a">
+                    <propertyInstance
+                      Id="39ebcc41-2aa7-4981-819b-4cb37eb86271"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e726fe24-0a4f-49c7-a912-6ac86e9f11a4">
+                    <propertyInstance
+                      Id="87388e0b-435d-42cd-b6b2-71d367ba7e26"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3144d34f-a67c-4083-beae-66fa5ac17d6b">
+                    <propertyInstance
+                      Id="ce91b4dc-be66-4851-a2bf-bd54fdfd0a26"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c739edea-7c91-4da5-a89a-df67422ab098">
+                    <propertyInstance
+                      Id="704f6cb1-ad76-4092-83a2-b1c3d6363063"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4f50da4-65de-4401-8205-2bc75ac04bfa">
+                    <propertyInstance
+                      Id="21ffc69b-18c6-494b-b228-938008d5e10f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a4eda28d-f6b9-4727-ac18-deccf649f77d"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="30dc772c-c864-4a61-bce9-9f23771662e0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d512c083-46ce-4f21-bb64-1823c1f96c93"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="477009ad-316d-44df-a932-2bbec25568c3"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="03819591-c8f6-4e19-aabf-ed2db3567db6"
+        name="XmlTextSerializer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="47949ba0-23aa-4d1e-bf14-3b3113d6d3cb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b9b65f21-c151-4529-969e-8b55d31a5c80"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4c65c6cb-cad2-463a-9211-f54fdbcc2d40">
+                <propertyInstance
+                  Id="7f149671-f49b-4cd4-9762-e1118bab4c98"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1680d621-8cf9-4bff-8556-81f45cf2d3c2">
+                <propertyInstance
+                  Id="16e5315c-ed01-4738-8d1a-ab7b18c88c08"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fafb7662-d472-467b-8673-80ff2cf6056a">
+                <propertyInstance
+                  Id="f208d266-fbe2-4700-8acc-279065584850"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d6e6059e-1b4a-4f86-9e10-f255631d7b0d">
+                <propertyInstance
+                  Id="fcf0d50d-ab2d-4b30-84ca-81598f07fc35"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f071f0e9-aa0f-4410-9f0a-504c910ea2f5">
+                <propertyInstance
+                  Id="488a5d0f-d827-4eb5-8a7b-d79b357c3cba"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e2fd84ce-ec36-4494-9a37-9407faa29701">
+            <interfaceMoniker
+              Id="90bc168b-48c3-4c7b-9e0a-2cd20cba60e3"
+              LastKnownName="ITextSerializer"
+              LastKnownLocation="Package47_1030.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="a7fe29a0-b8f5-470e-bca8-e029f312545b"
+            isDerived="false"
+            sourceEndRoleName="XmlTextSerializer"
+            targetEndRoleName="SerializeContainer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="41807d3b-4e56-4040-9a66-231c8b0da762"
+              LastKnownName="SerializeContainer"
+              LastKnownLocation="Package41_1030.uml" />
+            <description>Property SerializeContainer references type SerializeContainer.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bfc88d1f-7fe2-4287-a155-8eeed6f84aa3"
+                  name="XmlTextSerializer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="27561c7b-dc3a-4f9a-906e-8d46f7ea11d6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2aa5bcb4-6d39-4344-982e-05e40eec31e1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e6d4f0f8-3339-4613-ae95-914746d1349b"
+                  name="SerializeContainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="40cab850-5a24-4bd5-859d-6ac80bd78fcd"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="67b1b417-f5bb-42f3-9ff5-ee3303a5f6e5"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3dc3766b-0ac6-4a6b-8787-9cd38b5fd273"
+            name="SerializeContainer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8e036763-d923-42ed-8700-bebe4077b44b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3DSerializeContainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a3e46843-75fa-444c-87d3-570d1342f59d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c09c16d7-87d1-403b-be5e-e2a6aa3a626a">
+                    <propertyInstance
+                      Id="386b80e6-a1f9-4c02-ae92-c8ce327bbf06"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1adf2a6f-d73b-4680-be0f-3096dc6f53ec">
+                    <propertyInstance
+                      Id="bd69e238-0138-42ee-9764-a9c3b2851ba1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="712b523b-6200-4954-81a7-7f44a45d1ba2">
+                    <propertyInstance
+                      Id="c4ad3df9-e7f4-472d-9bb5-aa5923bbd30f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fb07fd1-1a72-4cbc-b756-faff5bef99e7">
+                    <propertyInstance
+                      Id="23518586-f7fa-4a24-b022-82090d611007"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8576e4f6-abaf-4357-908a-6708a0b5596f">
+                    <propertyInstance
+                      Id="d9285981-0960-4864-988c-2794b90115d8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="583f7730-fb15-4ebf-a8e6-f5f1bc96c117">
+                    <propertyInstance
+                      Id="2f2ea0c3-089a-4922-b082-6994ebc2fa20"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed919fd7-baf5-430b-80ff-9781606bf65a">
+                    <propertyInstance
+                      Id="e2a47bc2-e303-44b1-96a6-7364ab6f9ca3"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="41807d3b-4e56-4040-9a66-231c8b0da762"
+                LastKnownName="SerializeContainer"
+                LastKnownLocation="Package41_1030.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fda06544-1005-4475-b9c2-b42102f14881"
+            name="XmlTextSerializer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3a470cd0-1af1-4a9e-a067-37cd294db232"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f830fbca-df41-4f5e-acc3-aed14f3aec94"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2045791f-9fcd-4257-bb52-1ace61686fe9">
+                    <propertyInstance
+                      Id="f61af183-93bc-43bc-bc4f-1388b1556381"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55f38491-383a-4291-ad97-1cc52a16ff84">
+                    <propertyInstance
+                      Id="df833bef-28a3-465f-9a35-8f6446d8c8f0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72eef6f1-0649-48fb-b79d-e8053a5ad729">
+                    <propertyInstance
+                      Id="a8116692-82c7-447f-829f-880e3c9d889a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efbefcbc-34dd-43f2-b492-fe3a41485181">
+                    <propertyInstance
+                      Id="d72389e6-a676-44ba-a233-72bc9b7c4347"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="028e5068-cf19-4175-a64f-822c1dabbcf4">
+                    <propertyInstance
+                      Id="e10988da-624d-41b4-a07f-d59401c08e9a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b190fc24-5917-4fe3-9ce7-928cecffa383">
+                    <propertyInstance
+                      Id="a2b045ea-c763-4d92-9f25-975341fb75cf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="1399fee8-929f-4f5a-ae7a-54da419bbf86"
+            name="Deserialize‎&lt;U‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a22e70b0-5289-4f54-b474-e270518ed417"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3b07214c-08ac-4412-a27a-d6bca5dc8d48"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45c85106-d00b-4980-9adb-c4e95c2bff03">
+                    <propertyInstance
+                      Id="c4f3f7da-c8b4-4f54-84ff-38ba5dc47740"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c33955d-0b8f-4710-8cae-96beef699368">
+                    <propertyInstance
+                      Id="b141f765-0bea-4384-b5dc-24b8febd7154"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cb64b6c-c216-4b22-82c2-8569bf2a1280">
+                    <propertyInstance
+                      Id="f546aab3-cfe8-450b-a3be-83b21504c40a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b405678c-39b9-4020-be1f-5227440cfe28">
+                    <propertyInstance
+                      Id="746de326-20a2-4e71-b560-8c1f9d65f632"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8353c78-bc01-4d45-b640-f778ddda162b">
+                    <propertyInstance
+                      Id="4e17637e-7ba2-4f0d-8780-59177188a018"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="357f58ac-397e-42ee-8926-a1b78ccf5685">
+                    <propertyInstance
+                      Id="00af8af7-e12d-4328-88de-8a02e6298666"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="76806ec8-bf93-4590-9b1c-bc4638df9dfd"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ae0730f-b7b6-49cc-a983-bcfb39db6b5f"
+                      LastKnownName="U"
+                      LastKnownLocation="Package3_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f849c2e5-bfea-47d0-b9bc-51044062adcf"
+                  name="serialized"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="12cae02c-7082-45a9-a87e-dd1dfd6b029d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dserialized"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d516bb69-115f-4a26-bce3-99697b71a877"
+            name="Deserialize‎&lt;U‎&gt;"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="624dbb40-f995-4b52-a650-e72542ec6cd8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="46e6749e-8635-47e6-81c0-adcb8084a156"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57afd3bb-df20-47f5-a0b1-fe91bd8727e2">
+                    <propertyInstance
+                      Id="401ca2e2-69fb-476c-a8ab-bd4b1a9bdc5c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3c2c68f-2d2c-4cca-8a22-d05e4eb24885">
+                    <propertyInstance
+                      Id="ff27d9e1-ae17-4f8a-8b81-1366c210b3ae"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23ab1c3d-26c0-4d87-ba73-de0e439b9db2">
+                    <propertyInstance
+                      Id="63408e42-be26-4e9f-8d7b-f4c1619e7a4e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef279ad1-c0f4-4a59-8b55-5be811562ebb">
+                    <propertyInstance
+                      Id="9d9cb90c-9049-4a98-a31f-afb890f8762f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5341c534-e642-4ad0-b807-0bc6c5b120c2">
+                    <propertyInstance
+                      Id="2d0229a1-35e7-4621-8695-60a3632ab1df"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67dc9c1b-60c1-401e-a309-e4ea65b6494f">
+                    <propertyInstance
+                      Id="0bb7620d-4200-4302-a4c1-2d2ec52db8bf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="65218e41-51f1-4c77-9268-a15c7510578a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ae0730f-b7b6-49cc-a983-bcfb39db6b5f"
+                      LastKnownName="U"
+                      LastKnownLocation="Package3_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3f031bb-d7e8-41e1-84f8-d7029e8acd11"
+                  name="serialized"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d1fa2ce7-fb18-4990-8218-f18f1e5575c5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))]) ParameterIdentifier%3Dserialized"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39259336-3af8-4c58-91e1-ddf578c89f7b"
+                  name="knownTypes"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="db6a2d47-4241-4261-9404-2a16b6883464"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DDeserialize GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))]) ParameterIdentifier%3DknownTypes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="84a9af36-a8e9-4603-8d9f-2d1086dd1b0f"
+                      LastKnownName="IEnumerable&lt;Type‎&gt;"
+                      LastKnownLocation="Package7_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b57346cf-2a14-4add-9d90-c5a29cf8d9b2"
+            name="LoadType"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fcff21a0-f487-4de8-ad0b-566cab2502ff"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DLoadType OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c6a5d253-31be-454c-9014-72e633c3d117"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0ec31ad-465d-4f10-aaa8-ce958d730825">
+                    <propertyInstance
+                      Id="e9043c97-ca8f-47e1-9f98-9e8cef9b25af"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18f72b27-79e8-4eda-a201-0c74faebf18a">
+                    <propertyInstance
+                      Id="ec9c4212-b6a7-416b-a3f9-8b89d81506a8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09982a6c-a9ea-4d4b-a03c-2ac521691cdf">
+                    <propertyInstance
+                      Id="71ec1869-59e6-4797-8daf-19f3e518f2cc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b6d8992-7d11-4fd4-8a7e-0921daec426a">
+                    <propertyInstance
+                      Id="0d0b4038-1df7-4f70-bdfa-a1e990012fef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2ea65db-2819-4f5b-882d-5e3f0c1f58cc">
+                    <propertyInstance
+                      Id="9c952d6f-b869-4269-bcb2-740aa913403b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e92df47-f4b8-4d62-b4e6-66526d175935">
+                    <propertyInstance
+                      Id="508e14cc-89e5-4e04-a71b-b82f9861f27b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="69e96230-79f3-43fa-993b-deb79e2ea6ca"
+                  name="type"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="000b7ffb-798b-4ed6-8401-beded881ec8f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DLoadType OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dtype"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="477009ad-316d-44df-a932-2bbec25568c3"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="16031e97-24ee-474a-8242-2c12d876f019"
+            name="Serialize‎&lt;U‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="796b2b3c-8f0b-4b18-a6c5-6f33c9eb540f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="df4b2d48-1e13-40b6-a875-cf78372ef171"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3f83a09-530f-4ae7-bd8a-af3757319d55">
+                    <propertyInstance
+                      Id="f7df8d4f-a8c5-4133-a500-3dbe93735801"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbf68a9f-320f-4c34-9570-4627730222d2">
+                    <propertyInstance
+                      Id="d7aba29e-30c3-42eb-a827-e8b2613efcda"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c7cd301-ad67-48aa-9896-a0c17fd8f93f">
+                    <propertyInstance
+                      Id="bbc1df83-afb0-4e9c-84f7-de534e5a2ccb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39bf71c0-404e-4979-ae7a-c79b5e5700f0">
+                    <propertyInstance
+                      Id="6383ba70-51eb-419c-809c-d83a7b597818"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b615ff9d-0f48-4eb8-982f-c098b6ec1652">
+                    <propertyInstance
+                      Id="7c700ae9-3bc5-4257-aa6c-48421ddaffdb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e8ce006-64a4-45b1-af11-7b585793dd39">
+                    <propertyInstance
+                      Id="b73cad07-6cdc-4bee-ae6b-da133930d764"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ee967eb2-5ca4-4258-bdbd-55f9377066a4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fe26dc79-f647-4ebd-880f-69a84e5ce0dc"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9e846ffd-8457-4ce2-908d-1a5a559583cd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ae0730f-b7b6-49cc-a983-bcfb39db6b5f"
+                      LastKnownName="U"
+                      LastKnownLocation="Package3_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="182b6887-1683-4dc0-af3e-a2da5a3a4fb9"
+            name="Serialize‎&lt;U‎&gt;"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="24f95e2c-2833-487a-9e5f-9b3da873c894"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2d41a808-2aad-4308-b4a2-2978dde668ce"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86386a86-37a3-4560-94d6-b5d643435488">
+                    <propertyInstance
+                      Id="668f8b20-a73e-4090-8868-861788839099"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34b57b92-e0ef-48dd-b6ff-b86fb96177f7">
+                    <propertyInstance
+                      Id="43c6880d-fe21-48b9-8b81-bf9c695c74bd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1aae8a9-94b3-4eed-ac3c-f1709b81bce9">
+                    <propertyInstance
+                      Id="aa2d0738-6920-4c5f-bd39-0118391e62e1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dbd145dc-ed85-4fc1-8b01-6bc712b1e8f6">
+                    <propertyInstance
+                      Id="7ecc4c7a-f797-4890-8b46-c879a0248427"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5f181d4-8a0d-4cc2-b24b-f9b0a53d3336">
+                    <propertyInstance
+                      Id="f41ae590-ba47-42f5-b04a-921aecae6bb7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc674e49-cfbe-4394-80f8-2ba13e983eb3">
+                    <propertyInstance
+                      Id="f26b28b4-a68e-4048-a8b6-ca35522d8237"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="50037511-a172-4e27-84fe-5952c6f33b7f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e33572a7-49b3-4ccc-89c8-c334361e52cd"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e8b1d104-e0ff-43f2-bd71-496519dca6f0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4ae0730f-b7b6-49cc-a983-bcfb39db6b5f"
+                      LastKnownName="U"
+                      LastKnownLocation="Package3_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a7da998e-15ad-4f0f-bd00-70adc8460aad"
+                  name="knownTypes"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7929560f-8f4a-4965-b879-d623cf09cdd6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DSerialize GenericParameterCount%3D1 OverloadingParameters%3D[(ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]))]) ParameterIdentifier%3DknownTypes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="84a9af36-a8e9-4603-8d9f-2d1086dd1b0f"
+                      LastKnownName="IEnumerable&lt;Type‎&gt;"
+                      LastKnownLocation="Package7_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e7223878-0d4c-48dc-83d7-0cbffcb7c1d9"
+            name="Serialize"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e3479bd5-cf5a-4efe-aa9a-94e0c72defcb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c84753b8-640a-46fc-83ab-e583dcacdf74"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="331e45df-421d-4e9f-bff8-4a5aee8085c3">
+                    <propertyInstance
+                      Id="ecfc057c-1061-468b-bbb3-c04283198d41"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0316bd62-147f-40b0-ab0b-2b68f51936ba">
+                    <propertyInstance
+                      Id="f4a900bc-e724-403d-816c-b2ab10eba8b5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f84e940c-c139-42db-9239-2f71204250e9">
+                    <propertyInstance
+                      Id="813b514f-8a9f-4d4d-b59c-713ac73b732c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ff464a6-501d-43f0-9ba6-9d74107b9b38">
+                    <propertyInstance
+                      Id="59413c36-2244-439f-9a70-c4998c911c41"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d34665b-1590-437e-9ede-f366bc6d8c24">
+                    <propertyInstance
+                      Id="0b21c6d2-12f4-4db5-add0-5243598d2a5f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0de2ebb-857b-47d8-a512-aec61fe99875">
+                    <propertyInstance
+                      Id="9ccf3148-1b90-4644-a582-ea3b31db0b51"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7bc85c8d-e5b9-4af2-9908-e4d3038d1c24"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7eda8c92-2929-4cb9-ac12-d302c9138ab0"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="74289c9c-7bb6-4d60-92c1-59a8fbd5b69a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b0740bbc-e286-4cfc-b659-45986a1ac463"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dbc72d79-0f6b-48e3-891f-3bd63c1490cc"
+                  name="type"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="029ac51c-9461-4650-8c6a-88d8279a98fe"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FOptimissa%2FnCubed%2FDev%2F1.0.2.0%2FBin%2FFramework%2FDebug%2FOptimissa.nCubed.Core.dll Namespace%3DOptimissa.nCubed.Core.Serialization Type%3DXmlTextSerializer Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dtype"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="477009ad-316d-44df-a932-2bbec25568c3"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package5_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d6d53f15-e9e6-49c2-b89f-aa5569638054"
+            name="Deserialize‎&lt;T‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3002a7c-c472-45e5-abea-9f2f0873fdc0"
+                  name="serialized"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c90a17d8-2ec9-4c2a-bab6-7b3ad429c80a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eac1d9f5-fd37-40ca-b22d-f489915712b2"
+                      LastKnownName="T"
+                      LastKnownLocation="Package4_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6593348e-2ee7-495a-a0bd-1a5a430763a9"
+            name="Serialize‎&lt;T‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="06994945-aa9d-4302-b377-0db688fef203"
+                  name="graph"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eac1d9f5-fd37-40ca-b22d-f489915712b2"
+                      LastKnownName="T"
+                      LastKnownLocation="Package4_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8cdc306f-eda5-4a83-9be7-6ee68acfbed0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingFramework.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
