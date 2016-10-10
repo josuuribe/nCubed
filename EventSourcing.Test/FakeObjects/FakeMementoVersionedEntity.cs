@@ -6,51 +6,64 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RaraAvis.nCubed.EventSourcing.Core.Services;
+using RaraAvis.nCubed.EventSourcing.Core.Entities;
 
 namespace RaraAvis.nCubed.EventSourcing.Test.FakeObjects
 {
     public class FakeMementoVersionedEntity : IEventSourced, IMementoOriginator
     {
-        private Guid id;
-        private VersionedWrapper<FakeMementoVersionedEntity> wrapper;
+        private readonly EventSourced eventSourced;
+
         public string FakeString { get; set; }
 
-        
-
-        public FakeMementoVersionedEntity(Guid id)
-            : this()
+        private EventSourced EventSourced
         {
-            this.id = id;
-        }
-
-        public FakeMementoVersionedEntity()
-        {
-            id = Guid.NewGuid();
-            wrapper = new VersionedWrapper<FakeMementoVersionedEntity>(this);
-            wrapper.Handles<FakeEvent>(OnFakeEvent);
+            get
+            {
+                return eventSourced;
+            }
         }
 
         public Guid Id
         {
-            get { return id; }
+            get
+            {
+                return EventSourced.Id;
+            }
         }
 
         public int Version
         {
             get
             {
-                return wrapper.Version;
+                return EventSourced.Version;
             }
         }
 
         public Queue<IVersionedEvent> Events
         {
-            get { return wrapper.Events; }
+            get
+            {
+                return EventSourced.Events;
+            }
         }
 
-        public void ApplyEvents(IEnumerable<IVersionedEvent> events)
+        public FakeMementoVersionedEntity(Guid id)
         {
-            wrapper.ApplyEvents(events);
+            this.eventSourced = new EventSourced(id);
+            this.EventSourced.Handles<FakeEvent>(OnFakeEvent);
+        }
+
+        public FakeMementoVersionedEntity()
+            : this(Guid.NewGuid())
+        {
+
+        }
+
+        public void RaiseFakeEvent(FakeEvent @event)
+        {
+            this.EventSourced.Update(@event);
         }
 
         private void OnFakeEvent(FakeEvent @event)
@@ -58,9 +71,9 @@ namespace RaraAvis.nCubed.EventSourcing.Test.FakeObjects
             this.FakeString += @event.TestString;
         }
 
-        public void RaiseFakeEvent(FakeEvent @event)
+        public void ApplyEvents(IEnumerable<IVersionedEvent> events)
         {
-            wrapper.Update(@event);
+            EventSourced.ApplyEvents(events);
         }
 
         public IMemento Memento
@@ -69,7 +82,7 @@ namespace RaraAvis.nCubed.EventSourcing.Test.FakeObjects
             {
                 return new FakeMemento()
                 {
-                    Version = this.Version,
+                    Version = this.EventSourced.Version,
                     FakeString = this.FakeString
                 };
             }

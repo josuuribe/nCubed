@@ -11,7 +11,6 @@ using RaraAvis.nCubed.EventSourcing.Infrastructure;
 using RaraAvis.nCubed.EventSourcing.Test.FakeObjects;
 using RaraAvis.nCubed.EventSourcing.Test.FakeObjects.Events;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -30,19 +29,11 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             }
         }
 
-        public IEventSourcedRepository<FakeVersionedEntity> FakeEventSourcedRepository
+        public IEventSourcedRepository FakeEventSourcedRepository
         {
             get
             {
-                return SystemFactory<EventSourcingContainer<JsonTextSerializer>>.Container.CreateEventSourced<FakeVersionedEntity>();
-            }
-        }
-
-        public IEventSourcedRepository<FakeMementoVersionedEntity> FakeMementoEventSourcedRepository
-        {
-            get
-            {
-                return SystemFactory<EventSourcingContainer<JsonTextSerializer>>.Container.CreateEventSourced<FakeMementoVersionedEntity>();
+                return SystemFactory<EventSourcingContainer<JsonTextSerializer>>.Container.CreateEventSourced();
             }
         }
 
@@ -50,9 +41,6 @@ namespace RaraAvis.nCubed.EventSourcing.Test
         public static void ClassInitialize(TestContext context)
         {
             testAction = new TestAction(context);
-
-            //fjsonContainer = new FakeJsonContainer();
-            //MemoryCache mc = new MemoryCache("TestCache");
         }
 
         [TestInitialize]
@@ -75,6 +63,7 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             EventBus.Dispose();
         }
 
+        [TestCategory("EventSourcing")]
         [TestMethod]
         public void ESSaveEntity()
         {
@@ -89,6 +78,7 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             Assert.AreEqual(Store.Id, fee.Id, "Different IDs");
         }
 
+        [TestCategory("EventSourcing")]
         [TestMethod]
         [ExpectedException(typeof(SemanticException))]
         public void ESSaveEntityFailedPublishing()
@@ -104,6 +94,7 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             Assert.AreEqual(Store.EnvelopeId.ToString(), typeof(FakeFailedEvent).Name);
         }
 
+        [TestCategory("EventSourcing")]
         [TestMethod]
         [ExpectedException(typeof(SemanticException))]
         public void ESSaveEntityFailedSavingAfterFailedPublishing()
@@ -120,6 +111,7 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             Assert.AreEqual(Store.EnvelopeId.ToString(), typeof(FakeFailedEvent).Name);
         }
 
+        [TestCategory("EventSourcing")]
         [TestMethod]
         [ExpectedException(typeof(SemanticException))]
         public void ESSaveEntityFailedPublishSuceeded()
@@ -134,6 +126,23 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             Assert.AreEqual(Store.EnvelopeId.ToString(), fee.Id.ToString());
         }
 
+        [TestCategory("EventSourcing")]
+        [TestMethod]
+        public void ESSaveEntityWithCorrelationId()
+        {
+            FakeEvent fe = new FakeEvent();
+            string correlationId = "test-correlation";
+
+            FakeSimpleEntity fee = new FakeSimpleEntity();
+            fee.Events.Enqueue(fe);
+            FakeEventSourcedRepository.Save(fee, correlationId);
+
+            Assert.IsTrue(fee.Events.Count == 0, "Events in queue");
+            Assert.AreEqual(String.Compare(Store.EnvelopeId, correlationId), 0, "Different IDs");
+            Assert.AreEqual(Store.Id, fee.Id, "Different IDs");
+        }
+
+        [TestCategory("EventSourcing")]
         [TestMethod]
         [ExpectedException(typeof(SemanticException))]
         public void ESSaveEntityFailedSaving()
@@ -145,6 +154,7 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             FakeEventSourcedRepository.Save(fee);
         }
 
+        [TestCategory("EventSourcing")]
         [TestMethod]
         public void ESEventBusPublish()
         {
@@ -155,6 +165,7 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             Assert.IsNull(Store.EnvelopeId, "Envelope Id must be null.");
         }
 
+        [TestCategory("EventSourcing")]
         [TestMethod]
         public void ESEventBusPublishAsync()
         {
@@ -167,9 +178,11 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             Assert.IsNull(Store.EnvelopeId, "Envelope Id must be null.");
         }
 
+        [TestCategory("EventSourcing")]
         [TestMethod]
         public void ESLoadEvents()
         {
+            int expectedEvents = 0;
             FakeVersionedEntity feeOriginal = new FakeVersionedEntity();
 
             FakeVersionedEntity feeRestored = new FakeVersionedEntity(feeOriginal.Id);
@@ -183,10 +196,11 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             FakeEventSourcedRepository.Load(feeRestored);
 
             Assert.AreEqual(feeOriginal.FakeString, feeRestored.FakeString, "Not the same string.");
-            Assert.AreEqual(feeOriginal.Events.Count, 0, "Original with events.");
-            Assert.AreEqual(feeRestored.Events.Count, 0, "Restored with events.");
+            Assert.AreEqual(feeOriginal.Events.Count, expectedEvents, "Original with events.");
+            Assert.AreEqual(feeRestored.Events.Count, expectedEvents, "Restored with events.");
         }
 
+        [TestCategory("EventSourcing")]
         [TestMethod]
         public void ESTestMemento()
         {
@@ -198,9 +212,9 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             feeOriginal.RaiseFakeEvent(new FakeEvent() { TestString = "b" });
             feeOriginal.RaiseFakeEvent(new FakeEvent() { TestString = "c" });
 
-            FakeMementoEventSourcedRepository.Save(feeOriginal);
+            FakeEventSourcedRepository.Save(feeOriginal);
 
-            FakeMementoEventSourcedRepository.Load(feeRestored);
+            FakeEventSourcedRepository.Load(feeRestored);
 
             Assert.AreEqual(feeOriginal.FakeString, feeRestored.FakeString, "Not the same string.");
             Assert.AreEqual(feeOriginal.Events.Count, 0, "Original with events.");

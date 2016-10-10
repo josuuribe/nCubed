@@ -91,14 +91,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\EventSource.cs" />
+    <Compile Include="Entities\EventData.cs" />
+    <Compile Include="Entities\EventSourced.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="RepositoryContracts\IEventSourcedRepository.cs" />
     <Compile Include="Services\Projections.cs" />
     <Compile Include="Events\IEnvelopedEventHandler.cs" />
     <Compile Include="Events\EventDispatcher.cs" />
     <Compile Include="Events\IEventSourced.cs" />
-    <Compile Include="Events\VersionedWrapper.cs" />
     <Compile Include="Exceptions\EventSourcingErrorEventSource.cs" />
     <Compile Include="Exceptions\EventSourcingExceptionProcessor.cs" />
     <Compile Include="Mementos\IMemento.cs" />

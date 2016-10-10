@@ -26,25 +26,20 @@ using RaraAvis.nCubed.Core.Messaging.Messages;
 namespace RaraAvis.nCubed.EventSourcing.Infrastructure.Repositories
 {
     /// <summary>
-    /// An implementation of <see cref="T:RaraAvis.nCubed.EventSourcing.Core.RepositoryContracts.IEventSourcedRepository`1"/>.
+    /// An implementation of <see cref="T:RaraAvis.nCubed.EventSourcing.Core.RepositoryContracts.IEventSourcedRepository"/>.
     /// </summary>
-    /// <typeparam name="T">The entity type to persist.</typeparam>
-    public class EventSourcedRepository<T> : IEventSourcedRepository<T>
-    where T : IEventSourced
+    public class EventSourcedRepository : IEventSourcedRepository
     {
-        private readonly string sourceType = typeof(T).Name;
         private readonly IBus<EventDispatcher, IEventHandler> eventBus;
         private readonly ITextSerializer serializer;
         private readonly ObjectCache cache;
         private readonly MessagingRandomRetry messagingRandomRetry;
         private readonly SqlIncrementalRetry sqlIncrementalRetry;
-        private readonly Action<T> assignMemento;
-        private readonly Action<T> saveMemento;
         /// <summary>
         /// Base constructor.
         /// </summary>
         /// <param name="eventBus">Event Bus.</param>
-        /// <param name="serializer">Serializer.</param>
+        /// <param name="serializer">Object that serializes.</param>
         /// <param name="cache">Cache to store objects.</param>
         [ImportingConstructor]
         public EventSourcedRepository([Import]IBus<EventDispatcher, IEventHandler> eventBus, [Import]ITextSerializer serializer, [Import]ObjectCache cache)
@@ -55,46 +50,46 @@ namespace RaraAvis.nCubed.EventSourcing.Infrastructure.Repositories
 
             this.messagingRandomRetry = new MessagingRandomRetry();
             this.sqlIncrementalRetry = new SqlIncrementalRetry();
+        }
+        private static string PartitionKey<T>(Guid id) where T : IEventSourced
+        {
+            return typeof(T).Name + "_" + id;
+        }
 
+        private void AssignMemento<T>(T entity) where T : IEventSourced
+        {
             if (typeof(IMementoOriginator).IsAssignableFrom(typeof(T)))
             {
-                assignMemento = (originator) =>
-                    {
-                        (originator as IMementoOriginator).Memento = (IMemento)this.cache.Get(PartitionKey(originator.Id));
-                    };
-
-                saveMemento = (originator) =>
-                    {
-                        var memento = (originator as IMementoOriginator).Memento;
-                        this.cache.Set(PartitionKey(originator.Id),
-                            memento,
-                            new CacheItemPolicy { AbsoluteExpiration = DateTime.UtcNow.AddMinutes(((ConfigurationManager.GetSection(N3Section.N3_NAME) as N3Section).ES.TypesConfiguration.CacheExpires)) });
-                    };
-            }
-            else
-            {
-                assignMemento = (originator) => { };
-                saveMemento = (originator) => { };
+                IMementoOriginator originator = (IMementoOriginator)entity;
+                originator.Memento = (IMemento)this.cache.Get(PartitionKey<T>(entity.Id));
             }
         }
-        private string PartitionKey(Guid id)
+
+        private void SaveMemento<T>(T entity) where T : IEventSourced
         {
-            return sourceType + "_" + id;
+            if (typeof(IMementoOriginator).IsAssignableFrom(typeof(T)))
+            {
+                var memento = (entity as IMementoOriginator).Memento;
+                this.cache.Set(PartitionKey<T>(entity.Id),
+                    memento,
+                    new CacheItemPolicy { AbsoluteExpiration = DateTime.UtcNow.AddMinutes(((ConfigurationManager.GetSection(N3Section.N3_NAME) as N3Section).ES.TypesConfiguration.CacheExpires)) });
+            }
         }
         /// <summary>
         /// Load an entity applying all events, using <see cref="RaraAvis.nCubed.EventSourcing.Core.Mementos.IMemento"/> if available. 
         /// </summary>
+        /// <typeparam name="T">The entity type to persist.</typeparam>
         /// <param name="entity">Entity to apply events.</param>
-        public void Load(T entity)
+        public void Load<T>(T entity) where T : IEventSourced
         {
             CoreExceptionProcessor.ProcessInfrastructure(() =>
             {
-                assignMemento(entity);
+                AssignMemento<T>(entity);
 
                 using (var context = new EventSourcingContext())
                 {
                     var deserialized = context.Set<EventData>()
-                        .Where(x => x.AggregateId == entity.Id && x.AggregateType == sourceType && x.Version > entity.Version)
+                        .Where(x => x.AggregateId == entity.Id && x.AggregateType == typeof(T).Name && x.Version > entity.Version)
                         .OrderBy(x => x.Version)
                         .AsEnumerable()
                         .Select(this.Deserialize)
@@ -110,9 +105,10 @@ namespace RaraAvis.nCubed.EventSourcing.Infrastructure.Repositories
         /// <summary>
         /// Save event source object using <see cref="RaraAvis.nCubed.EventSourcing.Core.Mementos.IMemento"/> if available.
         /// </summary>
+        /// <typeparam name="T">The entity type to persist.</typeparam>
         /// <param name="eventSourced">A source object.</param>
         /// <param name="correlationId">Related correlation id.</param>
-        public void Save(T eventSourced, string correlationId)
+        public void Save<T>(T eventSourced, string correlationId) where T : IEventSourced
         {
             CoreExceptionProcessor.ProcessInfrastructure(() =>
             {
@@ -125,8 +121,9 @@ namespace RaraAvis.nCubed.EventSourcing.Infrastructure.Repositories
                         {
                             var versionedEvent = eventSourced.Events.Dequeue();
                             versionedEvent.SourceId = versionedEvent.SourceId == Guid.Empty ? eventSourced.Id : versionedEvent.SourceId;
-                            this.messagingRandomRetry.ExecuteAction(() => this.eventBus.Publish(new Envelope<IEvent>(versionedEvent) { CorrelationId = correlationId }));
-                            eventsSet.Add(this.Serialize(versionedEvent, correlationId));
+                            EventData ed = this.Serialize(versionedEvent, typeof(T).Name, correlationId);
+                            this.messagingRandomRetry.ExecuteAction(() => this.eventBus.Publish(new Envelope<IEvent>(versionedEvent) { CorrelationId = ed.CorrelationId }));
+                            eventsSet.Add(ed);
                         }
                         catch (Exception ex)
                         {
@@ -148,7 +145,7 @@ namespace RaraAvis.nCubed.EventSourcing.Infrastructure.Repositories
                     try
                     {
                         this.sqlIncrementalRetry.ExecuteAction(() => { context.SaveChanges(); });
-                        saveMemento(eventSourced);
+                        SaveMemento<T>(eventSourced);
                     }
                     catch (Exception ex)
                     {
@@ -162,12 +159,13 @@ namespace RaraAvis.nCubed.EventSourcing.Infrastructure.Repositories
         /// <summary>
         /// Save event source object using <see cref="RaraAvis.nCubed.EventSourcing.Core.Mementos.IMemento"/> if available.
         /// </summary>
+        /// <typeparam name="T">The entity type to persist.</typeparam>
         /// <param name="eventSourced">A source object.</param>
-        public void Save(T eventSourced)
+        public void Save<T>(T eventSourced) where T : IEventSourced
         {
-            this.Save(eventSourced, String.Empty);
+            this.Save<T>(eventSourced, String.Empty);
         }
-        private EventData Serialize(IVersionedEvent e, string correlationId)
+        private EventData Serialize(IVersionedEvent e, string typeName, string correlationId)
         {
             EventData serialized;
 
@@ -175,7 +173,7 @@ namespace RaraAvis.nCubed.EventSourcing.Infrastructure.Repositories
             serialized = new EventData
             {
                 AggregateId = e.SourceId,
-                AggregateType = sourceType,
+                AggregateType = typeName,
                 Version = e.Version,
                 Payload = s,
                 CorrelationId = correlationId

@@ -1,20 +1,18 @@
-﻿using RaraAvis.nCubed.EventSourcing.Core.Events;
+﻿using RaraAvis.nCubed.EventSourcing.Core.Entities;
+using RaraAvis.nCubed.EventSourcing.Core.Events;
 using RaraAvis.nCubed.EventSourcing.Test.FakeObjects.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RaraAvis.nCubed.EventSourcing.Core.Services;
-using RaraAvis.nCubed.EventSourcing.Core.Entities;
 
 namespace RaraAvis.nCubed.EventSourcing.Test.FakeObjects
 {
-    public class FakeVersionedEntity : IEventSourced
+    public class FakeSimpleEntity : IEventSourced
     {
         private EventSourced EventSourced { get; set; }
         public string FakeString { get; set; }
-
         public Guid Id
         {
             get
@@ -39,15 +37,10 @@ namespace RaraAvis.nCubed.EventSourcing.Test.FakeObjects
             }
         }
 
-        public FakeVersionedEntity(Guid id)
+        public FakeSimpleEntity()
         {
-            this.EventSourced = new EventSourced(id);
+            this.EventSourced = new EventSourced();
             this.EventSourced.Handles<FakeEvent>(OnFakeEvent);
-        }
-
-        public FakeVersionedEntity() : this(Guid.NewGuid())
-        {
-            
         }
 
         public void RaiseFakeEvent(FakeEvent @event)

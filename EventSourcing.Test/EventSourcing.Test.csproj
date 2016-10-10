@@ -6,7 +6,7 @@
     <ProjectGuid>{DB13F410-425A-4548-A668-31CE6455D4FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Optimissa.nCubed.EventSourcing.Test</RootNamespace>
+    <RootNamespace>RaraAvis.nCubed.EventSourcing.Test</RootNamespace>
     <AssemblyName>RaraAvis.nCubed.EventSourcing.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -49,9 +49,11 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="Optimissa.nCubed.EventSourcing.Core.Fakes">
-      <HintPath>FakesAssemblies\Optimissa.nCubed.EventSourcing.Core.Fakes.dll</HintPath>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="RaraAvis.nCubed.EventSourcing.Core.Fakes">
+      <HintPath>FakesAssemblies\RaraAvis.nCubed.EventSourcing.Core.Fakes.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -80,6 +82,7 @@
     <Compile Include="FakeObjects\FakeVersionedEntity.cs" />
     <Compile Include="FakeObjects\Events\FakeEventDTO.cs" />
     <Compile Include="FakeObjects\Events\FakeFailedEvent.cs" />
+    <Compile Include="FakeObjects\FakeSimpleEntity.cs" />
     <Compile Include="FakeObjects\Store.cs" />
     <Compile Include="Handlers\TestEventHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +123,7 @@
       <SubType>Designer</SubType>
     </None>
     <Fakes Include="Fakes\EntityFramework.fakes" />
+    <Fakes Include="Fakes\RaraAvis.nCubed.EventSourcing.Core.fakes" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

@@ -10,25 +10,27 @@ namespace RaraAvis.nCubed.EventSourcing.Core.RepositoryContracts
     /// <summary>
     /// Interface for event source repository.
     /// </summary>
-    /// <typeparam name="T">A <see cref="T:RaraAvis.nCubed.EventSourcing.Core.Events.IEventSourced"/> object.</typeparam>
-    [InheritedExport(typeof(IEventSourcedRepository<>))]
-    public interface IEventSourcedRepository<T> where T : IEventSourced
+    [InheritedExport(typeof(IEventSourcedRepository))]
+    public interface IEventSourcedRepository
     {
         /// <summary>
         /// Apply all events for entity given.
         /// </summary>
+        /// <typeparam name="T">A <see cref="T:RaraAvis.nCubed.EventSourcing.Core.Events.IEventSourced"/> object.</typeparam>
         /// <param name="entity">Entity storing events.</param>
-        void Load(T entity);
+        void Load<T>(T entity) where T: IEventSourced;
         /// <summary>
         /// Saves the event sourced entity with correlationId.
         /// </summary>
+        /// <typeparam name="T">A <see cref="T:RaraAvis.nCubed.EventSourcing.Core.Events.IEventSourced"/> object.</typeparam>
         /// <param name="eventSourced">The entity.</param>
         /// <param name="correlationId">A correlation id to use when publishing events.</param>
-        void Save(T eventSourced, string correlationId);
+        void Save<T>(T eventSourced, string correlationId) where T : IEventSourced;
         /// <summary>
         /// Saves the event sourced entity without correlationId.
         /// </summary>
+        /// <typeparam name="T">A <see cref="T:RaraAvis.nCubed.EventSourcing.Core.Events.IEventSourced"/> object.</typeparam>
         /// <param name="eventSourced">The entity.</param>
-        void Save(T eventSourced);
+        void Save<T>(T eventSourced) where T : IEventSourced;
     }
 }

@@ -14,7 +14,7 @@ namespace RaraAvis.nCubed.EventSourcing.Core.Events
         /// </summary>
         Guid Id { get; }
         /// <summary>
-        /// Gets the entity's version. As the entity is being updated and events being generated, the version is incremented.
+        /// Gets or sets the entity's version. As the entity is being updated and events being generated, the version is incremented.
         /// </summary>
         int Version { get; }
         /// <summary>

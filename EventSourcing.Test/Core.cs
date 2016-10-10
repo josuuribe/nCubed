@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Linq;
-using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RaraAvis.nCubed.EventSourcing.Test.FakeObjects;
-using RaraAvis.nCubed.EventSourcing.Core;
-using RaraAvis.nCubed.Core.Serialization;
 using RaraAvis.nCubed.EventSourcing.Core.Services;
 using RaraAvis.nCubed.EventSourcing.Test.FakeObjects.Events;
 using RaraAvis.nCubed.EventSourcing.Core.Events;
 using RaraAvis.nCubed.EventSourcing.Core.Exceptions;
-using RaraAvis.nCubed.Core.Exceptions;
 
 namespace RaraAvis.nCubed.EventSourcing.Test
 {
@@ -88,7 +84,7 @@ namespace RaraAvis.nCubed.EventSourcing.Test
             Queue<IVersionedEvent> queue = new Queue<IVersionedEvent>();
             queue.Enqueue(new FakeEvent());
 
-            FakeVersionedEntity fve = new FakeVersionedEntity();
+            FakeSimpleEntity fve = new FakeSimpleEntity();
             FakeEvent fe1 = new FakeEvent() { TestString = one };
             FakeEvent fe2 = new FakeEvent() { TestString = two };
             FakeEvent fe3 = new FakeEvent() { TestString = three };
@@ -98,9 +94,9 @@ namespace RaraAvis.nCubed.EventSourcing.Test
 
             List<FakeEvent> fes = new List<FakeEvent>() { fe1, fe2, fe3 };
 
-            Assert.AreEqual(fve.FakeString, one + two + three, "Event not applied");
-            Assert.AreEqual(fve.Version, expectedVersion, "Version does not mismatch");
-            Assert.AreEqual(fve.Events.Count, expectedEvents, "Count events expected");
+            Assert.AreEqual(fve.FakeString, one + two + three, "Events not applied.");
+            Assert.AreEqual(fve.Version, expectedVersion, "Version does not mismatch.");
+            Assert.AreEqual(fve.Events.Count, expectedEvents, "Count events expected.");
         }
 
         [TestMethod]
@@ -130,7 +126,7 @@ namespace RaraAvis.nCubed.EventSourcing.Test
 
             Assert.AreEqual(fve.FakeString, one + two + three, "Event not applied");
             Assert.AreEqual(fve.Version, expectedVersion, "Version does not mismatch");
-            Assert.AreEqual(fve.Events.Count, expectedEvents, "There are pending events");
+            Assert.IsTrue(fve.Events == null || fve.Events.Count == expectedEvents, "There are pending events");
         }
 
         [TestMethod]

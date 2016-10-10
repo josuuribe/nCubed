@@ -25,7 +25,7 @@ namespace RaraAvis.nCubed.EventSourcing.Infrastructure
     {
         private MessageProcessor<EventDispatcher, IEventHandler> eventProcessor;
         /// <summary>
-        /// Eventbus that sends events.
+        /// Event bus that sends events.
         /// </summary>
         public IBus<EventDispatcher, IEventHandler> EventBus
         {
@@ -63,13 +63,12 @@ namespace RaraAvis.nCubed.EventSourcing.Infrastructure
             eventProcessor.Register(e.ContainerSimple.GetExportedValues<IEventHandler>());
         }
         /// <summary>
-        /// Returns or creates a <see cref="T:RaraAvis.nCubed.EventSourcing.Core.RepositoryContracts.IEventSourcedRepository`1"/>.  
+        /// Returns or creates a <see cref="T:RaraAvis.nCubed.EventSourcing.Core.RepositoryContracts.IEventSourcedRepository"/>.  
         /// </summary>
-        /// <typeparam name="TEventSourced">A <see cref="RaraAvis.nCubed.EventSourcing.Core.Events.IEventSourced"/> to be returned.</typeparam>
-        /// <returns>A <see cref="T:RaraAvis.nCubed.EventSourcing.Core.RepositoryContracts.IEventSourcedRepository`1"/>.</returns>
-        public IEventSourcedRepository<TEventSourced> CreateEventSourced<TEventSourced>() where TEventSourced : IEventSourced
+        /// <returns>A <see cref="T:RaraAvis.nCubed.EventSourcing.Core.RepositoryContracts.IEventSourcedRepository"/>.</returns>
+        public IEventSourcedRepository CreateEventSourced()
         {
-            return base.DIManager.CreateRequiredObject<IEventSourcedRepository<TEventSourced>>();
+            return base.DIManager.CreateRequiredObject<IEventSourcedRepository>();
         }
         /// <summary>
         /// All Event Sourcing types.

@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace RaraAvis.nCubed.EventSourcing.Core.Mementos
 {
     /// <summary>
