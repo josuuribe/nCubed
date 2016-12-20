@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 namespace RaraAvis.nCubed.Core.Configurations.CQRS
 {
     /// <summary>
-    /// Speccific CQRS configuration.
+    /// Specific CQRS configuration.
     /// </summary>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "CQRS")]
-    public class CQRSConfiguration : ConfigurationElement//, ICommonConfiguration
+    public class CQRSConfiguration : ConfigurationElement
     {
         /// <summary>
         /// All types inside CQRS.

@@ -1,13 +1,8 @@
-﻿using RaraAvis.nCubed.Core.Configurations.Common;
-using RaraAvis.nCubed.Core.Configurations.Common.Sections;
+﻿using RaraAvis.nCubed.Core.Configurations.Common.Sections;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace RaraAvis.nCubed.Core.Configurations
+namespace RaraAvis.nCubed.Core.Configurations.Common
 {
     /// <summary>
     /// Base class for common section.
@@ -57,6 +52,21 @@ namespace RaraAvis.nCubed.Core.Configurations
             set
             {
                 this["Retry"] = value;
+            }
+        }
+        /// <summary>
+        /// Common types configuration.
+        /// </summary>
+        [ConfigurationProperty("typesConfiguration", IsRequired = false)]
+        public SystemConfiguration TypesConfiguration
+        {
+            get
+            {
+                return (SystemConfiguration)this["typesConfiguration"];
+            }
+            set
+            {
+                this["typesConfiguration"] = value;
             }
         }
     }

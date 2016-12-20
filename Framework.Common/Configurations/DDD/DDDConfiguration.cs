@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 namespace RaraAvis.nCubed.Core.Configurations.DDD
 {
     /// <summary>
-    /// Speccific DDD configuration.
+    /// Specific DDD configuration.
     /// </summary>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "DDD")]
-    public class DDDConfiguration : ConfigurationElement//, ICommonConfiguration
+    public class DDDConfiguration : ConfigurationElement
     {
         /// <summary>
         /// All types inside DDD.

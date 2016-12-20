@@ -15,9 +15,9 @@ namespace RaraAvis.nCubed.Core
     {
 
         /// <summary>
-        /// This algorithm generates secuential GUIDs across system boundaries, ideal for databases 
+        /// This algorithm generates sequential GUIDs across system boundaries, ideal for databases 
         /// </summary>
-        /// <returns>A new sequential guid.</returns>
+        /// <returns>A new sequential Guid.</returns>
         public static Guid NewSequentialGuid()
         {
             byte[] uid = Guid.NewGuid().ToByteArray();
@@ -40,7 +40,7 @@ namespace RaraAvis.nCubed.Core
             // the last 8 bytes are sequential,    
             // it minimizes index fragmentation   
             // to a degree as long as there are not a large    
-            // number of Secuential-Guids generated per millisecond  
+            // number of sequential-Guids generated per millisecond  
 
             secuentialGuid[9] = binDate[0];
             secuentialGuid[8] = binDate[1];

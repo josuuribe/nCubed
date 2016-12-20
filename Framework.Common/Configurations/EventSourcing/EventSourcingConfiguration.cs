@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 namespace RaraAvis.nCubed.Core.Configurations.EventSourcing
 {
     /// <summary>
-    /// Speccific Event sourcing configuration.
+    /// Specific Event sourcing configuration.
     /// </summary>
-    public class EventSourcingConfiguration : ConfigurationElement//, ICommonConfiguration
+    public class EventSourcingConfiguration : ConfigurationElement
     {
         /// <summary>
         /// All types inside DDD.

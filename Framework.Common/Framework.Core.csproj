@@ -87,11 +87,13 @@
     <Compile Include="Configurations\Common\Sections\Retries\DatabaseRetrySection.cs" />
     <Compile Include="Configurations\Common\Sections\Retries\ProcessRetrySection.cs" />
     <Compile Include="Configurations\Common\Sections\RetrySection.cs" />
+    <Compile Include="Configurations\Common\SystemConfiguration.cs" />
     <Compile Include="Containers\DI\ApplicationFactory.cs" />
     <Compile Include="Containers\SystemContainer.cs" />
     <Compile Include="Containers\DI\SystemFactory.cs" />
     <Compile Include="Containers\DI\DIManager.cs" />
     <Compile Include="Containers\DI\FactoryManager.cs" />
+    <Compile Include="CommonContainer.cs" />
     <Compile Include="Exceptions\Core\CoreErrorEventSource.cs" />
     <Compile Include="Exceptions\Core\CoreExceptionProcessor.cs" />
     <Compile Include="Exceptions\FrameworkEventSource.cs" />

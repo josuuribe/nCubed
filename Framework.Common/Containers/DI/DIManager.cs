@@ -27,7 +27,6 @@ namespace RaraAvis.nCubed.Core.Containers.DI
         /// Gets a factory container, a container more complex with nested types.
         /// </summary>
         protected internal CompositionContainer ContainerFactory { get; set; }
-        private RegistrationBuilder builder = null;
         /// <summary>
         /// Registering event.
         /// </summary>

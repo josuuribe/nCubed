@@ -7,6 +7,11 @@ using Microsoft.QualityTools.Testing.Fakes;
 using System.Configuration;
 using RaraAvis.nCubed.Core.Infrastructure.StrategyErrors;
 using RaraAvis.nCubed.Core.Messaging.StrategyErrors;
+using RaraAvis.nCubed.Core.Configurations.Common;
+using RaraAvis.nCubed.Core.Containers.DI;
+using RaraAvis.nCubed.Core.Serialization;
+using RaraAvis.nCubed.Core.Containers;
+using Optimissa.nCubed.Core.Test.FakeObjects;
 
 namespace RaraAvis.nCubed.Core.Test
 {
@@ -18,6 +23,7 @@ namespace RaraAvis.nCubed.Core.Test
         [ClassInitialize]
         public static void Initialize(TestContext tc)
         {
+            /*
             shimsContext = ShimsContext.Create();
 
             N3Section n3Section = new N3Section();
@@ -42,11 +48,12 @@ namespace RaraAvis.nCubed.Core.Test
             n3Section.System.RetryConfiguration.MessagingConfiguration.MinBackOff = 1;
             n3Section.System.RetryConfiguration.MessagingConfiguration.MaxBackOff = 3;
             n3Section.System.RetryConfiguration.MessagingConfiguration.FirstFastRetry = true;
-
+            
             ShimConfigurationManager.GetSectionString = (name) =>
                 {
                     return n3Section as ConfigurationSection;
                 };
+                */
         }
 
 
@@ -105,6 +112,15 @@ namespace RaraAvis.nCubed.Core.Test
             });
 
             Assert.AreEqual(i, 3);
+        }
+
+        [TestMethod]
+        public void TestDummyInjection()
+        {
+            var dummy = SystemFactory<CommonContainer>.Container.Constructor.CreateObject<IDummy>();
+            var echo = "Echo";
+            dummy.Echo = "Echo";
+            Assert.AreEqual(echo, dummy.Echo, "Can not say " + echo + ".");
         }
 
         [ClassCleanup]

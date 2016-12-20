@@ -1,13 +1,9 @@
-﻿using RaraAvis.nCubed.Core.Configurations.CQRS;
+﻿using RaraAvis.nCubed.Core.Configurations.Common;
+using RaraAvis.nCubed.Core.Configurations.CQRS;
 using RaraAvis.nCubed.Core.Configurations.DDD;
 using RaraAvis.nCubed.Core.Configurations.EventSourcing;
-using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RaraAvis.nCubed.Core.Configurations
 {

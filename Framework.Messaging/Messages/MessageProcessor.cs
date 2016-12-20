@@ -25,7 +25,6 @@ namespace RaraAvis.nCubed.Core.Messaging.Messages
         /// </summary>
         [ImportingConstructor]
         public MessageProcessor()
-        //: base(contextFactory, serializer)
         {
             this.messageDispatcher = new T();
         }
