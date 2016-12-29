@@ -13,7 +13,7 @@ namespace RaraAvis.nCubed.Core.Logging
     /// <summary>
     /// A <see cref="T:System.Diagnostics.Tracing.EventSource"/> class to store core logging messages.
     /// </summary>
-    [EventSource(Name = "Optimissa-N3-Core-Logging")]
+    [EventSource(Name = "RaraAvis-N3-Core-Logging")]
     public class FrameworkLoggingEventSource : FrameworkEventSource
     {
         /// <summary>

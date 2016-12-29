@@ -11,7 +11,7 @@ using RaraAvis.nCubed.Core.Configurations.Common;
 using RaraAvis.nCubed.Core.Containers.DI;
 using RaraAvis.nCubed.Core.Serialization;
 using RaraAvis.nCubed.Core.Containers;
-using Optimissa.nCubed.Core.Test.FakeObjects;
+using RaraAvis.nCubed.Core.Test.FakeObjects;
 
 namespace RaraAvis.nCubed.Core.Test
 {

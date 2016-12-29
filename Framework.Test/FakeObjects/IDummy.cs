@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Optimissa.nCubed.Core.Test.FakeObjects
+namespace RaraAvis.nCubed.Core.Test.FakeObjects
 {
     public interface IDummy
     {

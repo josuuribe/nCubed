@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.Composition;
 
-namespace Optimissa.nCubed.Core.Test.FakeObjects
+namespace RaraAvis.nCubed.Core.Test.FakeObjects
 {
     [InheritedExport(typeof(IDummy))]
     public class Dummy : IDummy

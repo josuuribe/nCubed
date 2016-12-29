@@ -14,7 +14,7 @@ namespace RaraAvis.nCubed.Core.Exceptions
     /// <summary>
     /// A <see cref="T:System.Diagnostics.Tracing.EventSource"/> class to store core exception messages.
     /// </summary>
-    [EventSource(Name = "Optimissa-N3-Core-Error")]
+    [EventSource(Name = "RaraAvis-N3-Core-Error")]
     public class CoreErrorEventSource : FrameworkEventSource
     {
         /// <summary>

@@ -6,8 +6,8 @@
     <ProjectGuid>{6E7C1F8E-616C-404F-AAC0-C4DDB92BEDC7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Optimissa.nCubed.Core.Test</RootNamespace>
-    <AssemblyName>Optimissa.nCubed.Core.Test</AssemblyName>
+    <RootNamespace>RaraAvis.nCubed.Core.Test</RootNamespace>
+    <AssemblyName>RaraAvis.nCubed.Core.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

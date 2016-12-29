@@ -14,7 +14,7 @@ namespace RaraAvis.nCubed.Core.Infrastructure.Logging
     /// <summary>
     /// A <see cref="T:System.Diagnostics.Tracing.EventSource"/> class to store data access logging messages.
     /// </summary>
-    [EventSource(Name = "Optimissa-N3-Database-Logging")]
+    [EventSource(Name = "RaraAvis-N3-Database-Logging")]
     public class DatabaseLoggingEventSource : FrameworkEventSource
     {
         /// <summary>
