@@ -11,7 +11,7 @@ using System.Resources;
 [assembly: AssemblyTitle("RaraAvis.nCubed.CQRS.Infrastructure")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Optimissa")]
+[assembly: AssemblyCompany("RaraAvis")]
 [assembly: AssemblyProduct("nCubed")]
 [assembly: AssemblyCopyright("Copyright © RaraAvis 2016")]
 [assembly: AssemblyTrademark("")]

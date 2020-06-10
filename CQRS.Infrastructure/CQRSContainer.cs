@@ -59,8 +59,7 @@ namespace RaraAvis.nCubed.CQRS.Infrastructure
 
             commandProcessor = e.ContainerSimple.GetExportedValue<MessageProcessor<CommandDispatcher, ICommandHandler>>();
             this.CommandBus = e.ContainerSimple.GetExportedValue<IBus<CommandDispatcher, ICommandHandler>>();
-            var all = e.ContainerSimple.GetExportedValues<ICommandHandler>();
-            commandProcessor.Register(all);
+            commandProcessor.Register(e.ContainerSimple.GetExportedValues<ICommandHandler>());
         }
         /// <summary>
         /// Returns or creates a <see cref="T:RaraAvis.nCubed.CQRS.Core.ProcessManager.IProcessManager"/>.

@@ -39,9 +39,9 @@ namespace RaraAvis.nCubed.Core.Logging
         /// <param name="correlated">Correlation id associated.</param>
         /// <param name="message">Message to log.</param>
         [Event(1202, Opcode = EventOpcode.Send, Task = Tasks.Logging, Level = EventLevel.Verbose, Message = "{0}")]
-        internal void LogCorrelatedMessage(Guid correlated, string message)
+        internal void LogCorrelatedMessage(Guid relatedActivityId, string message)
         {
-            WriteEventWithRelatedActivityId(1202, correlated, message);
+            WriteEventWithRelatedActivityId(1202, relatedActivityId, message);
         }
     }
 }

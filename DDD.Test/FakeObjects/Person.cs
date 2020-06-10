@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 namespace RaraAvis.nCubed.DDD.Test.FakeObjects
 {
     [Export]
-    public class Person : Entity, IComparable
+    public class Person : Entity, IComparable, IAggregateRoot
     {
         public Person(Guid id) : base(id) { }
         [ImportingConstructor]
-        public Person() { }
+        public Person()  {
+            this.AggregateRoot = this;
+        }
 
         public int Id { get; set; }
 
@@ -22,6 +24,14 @@ namespace RaraAvis.nCubed.DDD.Test.FakeObjects
         public string Name { get; set; }
         public string SurName { get; set; }
         public string Age { get; set; }
+
+        public Guid AggregateId
+        {
+            get
+            {
+                return this.EntityId;
+            }
+        }
 
         public int CompareTo(object obj)
         {

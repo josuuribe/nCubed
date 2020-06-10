@@ -18,7 +18,7 @@ namespace RaraAvis.nCubed.DDD.Core
         #region ·   Members ·
 
         int? requestedHashCode;
-        
+
         #endregion
 
         #region ·   Properties  ·
@@ -28,9 +28,15 @@ namespace RaraAvis.nCubed.DDD.Core
         /// </summary>
         public virtual Guid EntityId
         {
-            get;protected set;
+            get; protected set;
         }
-
+        /// <summary>
+        /// The entity root this entity belongs to.
+        /// </summary>
+        public IAggregateRoot AggregateRoot
+        {
+            get; protected set;
+        }
         #endregion
 
         #region ·   Public Methods  ·
@@ -147,8 +153,9 @@ namespace RaraAvis.nCubed.DDD.Core
         /// Base contructor.
         /// </summary>
         /// <remarks>Generates a Guid.Empty Id to remark the fact that this entity is transient.</remarks>
-        protected Entity() {
-            
+        protected Entity()
+        {
+
         }
         #endregion
     }

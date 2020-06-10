@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 namespace RaraAvis.nCubed.DDD.Core
 {
     /// <summary>
-    /// Class that processses MEF container for DDD.
+    /// Class that processes MEF container for DDD.
     /// </summary>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "DDD")]
     public sealed class DDDContainer : SystemContainer

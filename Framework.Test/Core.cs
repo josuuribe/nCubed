@@ -1,17 +1,13 @@
-﻿using System;
+﻿using Microsoft.Practices.EnterpriseLibrary.SemanticLogging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RaraAvis.nCubed.Core.StrategyErrors;
-using System.Configuration.Fakes;
-using RaraAvis.nCubed.Core.Configurations;
-using Microsoft.QualityTools.Testing.Fakes;
-using System.Configuration;
-using RaraAvis.nCubed.Core.Infrastructure.StrategyErrors;
-using RaraAvis.nCubed.Core.Messaging.StrategyErrors;
-using RaraAvis.nCubed.Core.Configurations.Common;
 using RaraAvis.nCubed.Core.Containers.DI;
-using RaraAvis.nCubed.Core.Serialization;
-using RaraAvis.nCubed.Core.Containers;
+using RaraAvis.nCubed.Core.Infrastructure.StrategyErrors;
+using RaraAvis.nCubed.Core.Logging;
+using RaraAvis.nCubed.Core.Messaging.StrategyErrors;
+using RaraAvis.nCubed.Core.StrategyErrors;
 using RaraAvis.nCubed.Core.Test.FakeObjects;
+using System;
+using System.Diagnostics.Tracing;
 
 namespace RaraAvis.nCubed.Core.Test
 {
@@ -121,6 +117,36 @@ namespace RaraAvis.nCubed.Core.Test
             var echo = "Echo";
             dummy.Echo = "Echo";
             Assert.AreEqual(echo, dummy.Echo, "Can not say " + echo + ".");
+        }
+
+        [TestMethod]
+        public void InsertLog()
+        {
+            string expected = "Test Message";
+
+            var listener1 = new ObservableEventListener();
+            listener1.EnableEvents("RaraAvis-N3-Core-Logging", EventLevel.LogAlways);
+            TestObserver to = new TestObserver();
+            listener1.Subscribe(to);
+
+            FrameworkLogging.LogMessage("Test Message");
+
+            Assert.AreEqual(to.Entry.FormattedMessage, expected, "The log message is not correct.");
+        }
+
+        [TestMethod]
+        public void InsertLogWithCorrelationId()
+        {
+            string expected = "Test Message";
+
+            var listener1 = new ObservableEventListener();
+            listener1.EnableEvents("RaraAvis-N3-Core-Logging", EventLevel.LogAlways);
+            TestObserver to = new TestObserver();
+            listener1.Subscribe(to);
+
+            FrameworkLogging.LogMessage(Guid.NewGuid(), "Test Message");
+
+            Assert.AreEqual(to.Entry.FormattedMessage, expected, "The log message is not correct.");
         }
 
         [ClassCleanup]

@@ -15,7 +15,7 @@ namespace RaraAvis.nCubed.CQRS.Core.Exceptions
     /// A <see cref="T:System.Diagnostics.Tracing.EventSource"/> class to store CQRS messages.
     /// </summary>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "CQRS")]
-    [EventSource(Name = "Optimissa-N3-CQRS-Error")]
+    [EventSource(Name = "RaraAvis-N3-CQRS-Error")]
     public class CQRSErrorEventSource : FrameworkEventSource
     {
         /// <summary>

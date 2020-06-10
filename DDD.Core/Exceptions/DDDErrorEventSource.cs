@@ -15,7 +15,7 @@ namespace RaraAvis.nCubed.DDD.Core.Exceptions
     /// A <see cref="T:System.Diagnostics.Tracing.EventSource"/> class to store DDD messages.
     /// </summary>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId = "DDD")]
-    [EventSource(Name = "Optimissa-N3-DDD-Error")]
+    [EventSource(Name = "RaraAvis-N3-DDD-Error")]
     public class DDDErrorEventSource : FrameworkEventSource
     {
         /// <summary>

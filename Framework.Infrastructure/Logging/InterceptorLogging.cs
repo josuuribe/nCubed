@@ -39,7 +39,7 @@ namespace RaraAvis.nCubed.Core.Infrastructure.Logging
             stopwatch.Stop();
             if (interceptionContext.Exception != null)
             {
-                CoreExceptionProcessor.HandleExceptionDataSource(interceptionContext.Exception);
+                CoreExceptionProcessor.HandleExceptionInfrastructure(interceptionContext.Exception);
             }
             else
             {
@@ -68,7 +68,7 @@ namespace RaraAvis.nCubed.Core.Infrastructure.Logging
             stopwatch.Stop();
             if (interceptionContext.Exception != null)
             {
-                CoreExceptionProcessor.HandleExceptionDataSource(interceptionContext.Exception);
+                CoreExceptionProcessor.HandleExceptionInfrastructure(interceptionContext.Exception);
             }
             else
             {
@@ -97,7 +97,7 @@ namespace RaraAvis.nCubed.Core.Infrastructure.Logging
             stopwatch.Stop();
             if (interceptionContext.Exception != null)
             {
-                CoreExceptionProcessor.HandleExceptionDataSource(interceptionContext.Exception);
+                CoreExceptionProcessor.HandleExceptionInfrastructure(interceptionContext.Exception);
             }
             else
             {

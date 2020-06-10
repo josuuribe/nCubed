@@ -89,7 +89,7 @@
     <Compile Include="Exceptions\DDDErrorEventSource.cs" />
     <Compile Include="Exceptions\WebServiceFault.cs" />
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="IAggregate.cs" />
+    <Compile Include="IAggregateRoot.cs" />
     <Compile Include="IEntityRepository.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Projections.cs" />

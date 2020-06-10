@@ -6,8 +6,8 @@
     <ProjectGuid>{00169C1D-8B5C-4767-9ECD-A7459D086071}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Optimissa.nCubed.CQRS.Test</RootNamespace>
-    <AssemblyName>Optimissa.nCubed.CQRS.Test</AssemblyName>
+    <RootNamespace>RaraAvis.nCubed.CQRS.Test</RootNamespace>
+    <AssemblyName>RaraAvis.nCubed.CQRS.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

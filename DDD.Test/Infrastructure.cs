@@ -17,7 +17,6 @@ namespace DDD.Test
     {
         static TestAction testAction = null;
         static FakePersonRepository fpr = new FakePersonRepository();
-        //static FakeUoW fuow = new FakeUoW();
 
         [ClassInitialize]
         public static void ClassInitialize(TestContext context)
@@ -101,6 +100,28 @@ namespace DDD.Test
             Person p = null;
 
             fpr.Remove(p);
+        }
+
+        [TestMethod]
+        public void GetByAggregateId()
+        {
+            testAction.UseFind<Person>((data, parameters) =>
+            {
+                object firstElement = parameters[0];
+                if (firstElement is System.Guid)
+                {
+                    Guid id = (System.Guid)firstElement;
+                    return data.Where(x => x.EntityId == id).FirstOrDefault();
+                }
+                return null;
+            });
+
+            Person p1 = new Person();
+            p1.GenerateNewIdentity();
+            fpr.Add(p1);
+
+            Person p2 = fpr.GetById(p1.AggregateId);
+            Assert.IsNotNull(p2, "Person not found by Guid.");
         }
 
         [TestMethod]

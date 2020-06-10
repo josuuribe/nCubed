@@ -15,7 +15,7 @@ namespace RaraAvis.nCubed.EventSourcing.Core.Exceptions
     /// <summary>
     /// /// A <see cref="T:System.Diagnostics.Tracing.EventSource"/> class to store EventSourcing messages.
     /// </summary>
-    [EventSource(Name = "Optimissa-N3-EventSourcing-Error")]
+    [EventSource(Name = "RaraAvis-N3-EventSourcing-Error")]
     public class EventSourcingErrorEventSource : FrameworkEventSource
     {
         /// <summary>

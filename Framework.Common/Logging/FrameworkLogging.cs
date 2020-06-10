@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Practices.EnterpriseLibrary.SemanticLogging;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using System.Linq;

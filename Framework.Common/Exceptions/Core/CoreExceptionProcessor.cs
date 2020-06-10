@@ -44,7 +44,7 @@ namespace RaraAvis.nCubed.Core.Exceptions.Core
         /// <param name="exceptionToThrow">Returns a <see cref="T:System.Exception"/>, it depends on configuration.</param>
         /// <returns>True if exception is handled, False otherwise.</returns>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", MessageId = "1#", Justification = "It is used by EntLib Infrastructure")]
-        public static bool HandleExceptionDataSource(Exception exceptionToHandle, out Exception exceptionToThrow)
+        public static bool HandleExceptionInfrastructure(Exception exceptionToHandle, out Exception exceptionToThrow)
         {
             return ExceptionManager.HandleException(exceptionToHandle, POLICIES.INFRASTRUCTURE_POLICY.ToString(), out exceptionToThrow);
         }
@@ -62,7 +62,7 @@ namespace RaraAvis.nCubed.Core.Exceptions.Core
         /// </summary>
         /// <param name="exceptionToHandle">Exception that is going to be processed.</param>
         /// <returns>True if exception is handled, False otherwise.</returns>
-        public static bool HandleExceptionDataSource(Exception exceptionToHandle)
+        public static bool HandleExceptionInfrastructure(Exception exceptionToHandle)
         {
             return ExceptionManager.HandleException(exceptionToHandle, POLICIES.INFRASTRUCTURE_POLICY.ToString());
         }
